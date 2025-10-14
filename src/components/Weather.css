@@ -1,0 +1,123 @@
+.weather-container {
+  background: #f0fff4;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.weather-container h2 {
+  text-align: center;
+  color: #2f855a;
+  margin-bottom: 15px;
+}
+
+.city-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e0;
+}
+
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.weather-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.weather-card:hover {
+  transform: translateY(-3px);
+}
+
+.weather-card.main {
+  grid-column: span 2;
+  background-color: #2f855a;
+  color: white;
+}
+
+.loading {
+  text-align: center;
+  color: gray;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 300px;
+  margin: 0 auto 10px;
+}
+
+.city-input {
+  width: 100%;
+  padding: 10px 38px 10px 12px; /* space for mic button */
+  font-size: 1rem;
+  border: 2px solid #4caf50;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.city-input:focus {
+  border-color: #2e7d32;
+}
+
+.mic-btn {
+  position: absolute;
+  right: -100px;
+  top: 20px;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #4caf50;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.mic-btn:hover {
+  color: #2e7d32;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.listening {
+  color: #c62828;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: translateY(-50%) scale(1);
+  }
+  50% {
+    transform: translateY(-50%) scale(1.2);
+  }
+}
+
+/* 📍 Location button */
+.location-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin: 10px auto 20px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.location-btn:hover {
+  background-color: #388e3c;
+}
