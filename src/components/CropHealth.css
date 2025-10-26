@@ -1,0 +1,51 @@
+.crop-health-container {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  background: #f7fff7;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.input-section input[type="file"] {
+  border: none;
+}
+
+.input-section button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-section button:disabled {
+  background-color: #9e9e9e;
+  cursor: not-allowed;
+}
+
+.result-section {
+  background: #e8f5e9;
+  padding: 15px;
+  border-radius: 5px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.error {
+  color: red;
+}

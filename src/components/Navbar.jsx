@@ -35,10 +35,18 @@ function Navbar() {
         </li>
         <li>
           <NavLink
+            to="/crophealth"
+            className={({ isActive }) => (isActive ? "active-link" : "")}
+          >
+            Crop Health
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
             to="/disease"
             className={({ isActive }) => (isActive ? "active-link" : "")}
           >
-            Crop Disease
+            Disease Detection
           </NavLink>
         </li>
       </ul>

@@ -7,6 +7,7 @@ import Home from "./components/Home.jsx";
 import Soil from "./components/Soil.jsx";
 import Disease from "./components/Disease.jsx";
 import Weather from "./components/Weather.jsx";
+import CropHealth from "./components/CropHealth.jsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/weather" element={<Weather />} />
         <Route path="/soil" element={<Soil />} />
+        <Route path="/crophealth" element={<CropHealth />} />
         <Route path="/disease" element={<Disease />} />
       </Routes>
     </Router>

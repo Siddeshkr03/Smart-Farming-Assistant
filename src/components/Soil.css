@@ -1,0 +1,73 @@
+.soil-container {
+  padding: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.city-input {
+  padding: 10px 14px;
+  border: 2px solid #4caf50;
+  border-radius: 20px;
+  width: 280px;
+  font-size: 16px;
+  outline: none;
+}
+
+.mic-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.mic-btn.listening {
+  background: red;
+}
+
+.soil-section {
+  margin: 25px 0;
+}
+
+.soil-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.soil-card {
+  background: #f2f2f2;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.soil-card.large {
+  width: 60%;
+  margin: 10px auto;
+  font-size: 18px;
+}
+
+.tips-list {
+  list-style: none;
+  padding: 0;
+}
+
+.tips-list li {
+  background: #e8f5e9;
+  margin: 6px auto;
+  padding: 10px;
+  border-radius: 8px;
+  width: 60%;
+}
