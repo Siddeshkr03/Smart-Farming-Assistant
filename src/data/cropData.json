@@ -1,0 +1,2407 @@
+[
+{
+  "kannadaName": "ಅಕ್ಕಿ (Akki)",
+  "name": "Rice",
+  "scientificName": "Oryza sativa",
+  "category": "Cereal",
+  "description": "Rice is the staple food crop of India, thriving in areas with high rainfall and humidity. It is a major source of carbohydrates and energy.",
+  "soilType": "Clayey or loamy soil with good water retention",
+  "soilpH": "5.5 - 6.5",
+  "fertilizer": {
+    "basal": "Farmyard manure (10-15 tons/ha)",
+    "nitrogen": "100-150 kg/ha",
+    "phosphorus": "50 kg/ha",
+    "potassium": "50 kg/ha"
+  },
+  "growthConditions": {
+    "temperature": "20°C - 35°C",
+    "rainfall": "1000 - 2000 mm annually",
+    "light": "10-12 hours of sunlight daily",
+    "humidity": "70% - 90%",
+    "climate": "Hot and humid"
+  },
+  "irrigation": {
+    "frequency": "Continuous standing water of 2–5 cm depth",
+    "method": "Flood irrigation or alternate wetting and drying"
+  },
+  "plantingDetails": {
+    "season": "Kharif (June-Nov) and Rabi (Nov-April)",
+    "spacing": "20 cm x 15 cm",
+    "seedRate": "30-40 kg/ha"
+  },
+  "growthStages": [
+    "Seedling stage",
+    "Tillering",
+    "Panicle initiation",
+    "Flowering",
+    "Grain filling",
+    "Maturity"
+  ],
+  "harvesting": {
+    "duration": "110-150 days after transplanting",
+    "indicators": "Grains turn golden yellow and hard",
+    "method": "Manual or mechanical harvesting"
+  },
+  "yield": "3-6 tons/ha",
+  "storage": {
+    "temperature": "15°C - 20°C",
+    "humidity": "65% - 70%",
+    "shelfLife": "6-12 months"
+  },
+  "economicValue": {
+    "marketPrice": "₹20 - ₹40/kg",
+    "exportPotential": "High (Basmati and parboiled rice)",
+    "valueAddition": ["Rice flour", "Puffed rice", "Rice bran oil"]
+  },
+  "nutritionalValue": {
+    "carbohydrates": "80 g/100g",
+    "protein": "7 g/100g",
+    "benefits": [
+      "Excellent energy source",
+      "Gluten-free",
+      "Easily digestible"
+    ]
+  },
+  "organicPractices": {
+    "bioFertilizers": "Azospirillum, Azotobacter",
+    "weeding": "Use cono weeder in wetland rice",
+    "mulching": "Green manure (Sesbania)"
+  },
+  "postHarvestManagement": {
+    "drying": "Sun dry for 2-3 days",
+    "storage": "Store in gunny bags or silos"
+  },
+  "interestingFacts": [
+    "India is the second-largest rice producer in the world.",
+    "Basmati rice is famous worldwide for its aroma.",
+    "Rice is grown in more than 40 million hectares in India."
+  ]
+},
+{
+  "kannadaName": "ಗೋಧಿ (Godhi)",
+  "name": "Wheat",
+  "scientificName": "Triticum aestivum",
+  "category": "Cereal",
+  "description": "Wheat is the second most important food crop in India, mainly grown during the Rabi season in cooler, dry climates.",
+  "soilType": "Well-drained loamy or clay loam soil",
+  "soilpH": "6.0 - 7.5",
+  "fertilizer": {
+    "basal": "FYM 10 tons/ha",
+    "nitrogen": "120 kg/ha (split dose)",
+    "phosphorus": "60 kg/ha",
+    "potassium": "40 kg/ha"
+  },
+  "growthConditions": {
+    "temperature": "15°C - 25°C",
+    "rainfall": "500 - 1000 mm annually",
+    "light": "Bright sunlight required for grain filling",
+    "climate": "Cool and dry winter climate"
+  },
+  "irrigation": {
+    "frequency": "4-5 irrigations per crop",
+    "method": "Furrow or sprinkler irrigation"
+  },
+  "plantingDetails": {
+    "season": "Rabi (Oct-Dec sowing, Mar-May harvest)",
+    "spacing": "20 cm x 10 cm",
+    "seedRate": "100 kg/ha"
+  },
+  "growthStages": [
+    "Germination",
+    "Tillering",
+    "Booting",
+    "Flowering",
+    "Grain filling",
+    "Maturity"
+  ],
+  "harvesting": {
+    "duration": "120-140 days after sowing",
+    "indicators": "Grains hard and golden, straw turns dry",
+    "method": "Combine or manual harvesting"
+  },
+  "yield": "3-5 tons/ha",
+  "storage": {
+    "temperature": "10°C - 20°C",
+    "humidity": "60% - 70%",
+    "shelfLife": "Up to 1 year"
+  },
+  "economicValue": {
+    "marketPrice": "₹25 - ₹35/kg",
+    "exportPotential": "Moderate",
+    "valueAddition": ["Flour", "Bread", "Biscuits", "Pasta"]
+  },
+  "nutritionalValue": {
+    "carbohydrates": "71 g/100g",
+    "protein": "13 g/100g",
+    "fiber": "10 g/100g",
+    "benefits": [
+      "High in protein and fiber",
+      "Good for energy and digestion"
+    ]
+  },
+  "organicPractices": {
+    "bioFertilizers": "Azotobacter and Phosphobacteria",
+    "weeding": "Manual or mechanical in early stages"
+  },
+  "postHarvestManagement": {
+    "threshing": "Mechanical thresher or beating method",
+    "storage": "Clean, dry godowns with aeration"
+  },
+  "interestingFacts": [
+    "India is the second-largest producer of wheat after China.",
+    "Punjab and Haryana are major wheat-producing states.",
+    "Whole wheat is rich in Vitamin B-complex."
+  ]
+},
+{
+  "kannadaName": "ಮೆಕ್ಕೆ ಜೋಳ (Mekke Jola)",
+  "name": "Corn (Maize)",
+  "scientificName": "Zea mays",
+  "category": "Cereal",
+  "description": "Maize is a versatile cereal crop used for food, fodder, and industrial purposes. It grows well in both tropical and temperate climates.",
+  "soilType": "Well-drained loamy soil with high fertility",
+  "soilpH": "5.8 - 7.0",
+  "fertilizer": {
+    "basal": "FYM 10-15 tons/ha",
+    "nitrogen": "120-150 kg/ha",
+    "phosphorus": "60 kg/ha",
+    "potassium": "40 kg/ha"
+  },
+  "growthConditions": {
+    "temperature": "18°C - 27°C",
+    "rainfall": "500 - 800 mm annually",
+    "light": "Full sunlight required",
+    "climate": "Warm and moderately humid"
+  },
+  "irrigation": {
+    "frequency": "Every 7-10 days during dry season",
+    "method": "Furrow or drip irrigation"
+  },
+  "plantingDetails": {
+    "season": "Kharif and Rabi",
+    "spacing": "60 cm x 25 cm",
+    "seedRate": "20 kg/ha"
+  },
+  "growthStages": [
+    "Germination",
+    "Vegetative growth",
+    "Flowering",
+    "Silking",
+    "Grain filling",
+    "Maturity"
+  ],
+  "harvesting": {
+    "duration": "90-110 days after sowing",
+    "indicators": "Husks turn brown and grains harden",
+    "method": "Hand picking or mechanical harvesting"
+  },
+  "yield": "4-7 tons per hectare",
+  "storage": {
+    "temperature": "10°C - 15°C",
+    "humidity": "65%",
+    "shelfLife": "8-10 months"
+  },
+  "economicValue": {
+    "marketPrice": "₹20 - ₹30 per kg",
+    "exportPotential": "Moderate (used in feed and ethanol)",
+    "valueAddition": ["Corn flakes", "Popcorn", "Maize starch"]
+  },
+  "nutritionalValue": {
+    "carbohydrates": "74 g per 100g",
+    "protein": "9 g per 100g",
+    "fiber": "7 g per 100g",
+    "benefits": [
+      "Rich in fiber",
+      "Good for digestive health",
+      "Contains antioxidants like lutein"
+    ]
+  },
+  "organicPractices": {
+    "bioFertilizers": "Azospirillum, Trichoderma",
+    "mulching": "Maize stubble for moisture conservation"
+  },
+  "postHarvestManagement": {
+    "drying": "Sun-dry cobs for 3-4 days",
+    "storage": "Store in dry, aerated places to avoid fungal growth"
+  },
+  "interestingFacts": [
+    "Maize is also known as the queen of cereals.",
+    "It can be used to produce ethanol fuel.",
+    "Sweet corn is a popular variety for human consumption."
+  ]
+},
+
+{
+  "kannadaName": "ರಾಗಿ (Ragi)",
+  "name": "Ragi",
+  "scientificName": "Eleusine coracana",
+  "category": "Cereal",
+  "description": "Ragi, or finger millet, is a rich source of calcium and iron. It is widely cultivated in southern India and is known for its drought tolerance and high nutritional value.",
+  "soilType": "Well-drained loamy or red soil",
+  "soilpH": "5.5 - 7.5",
+  "fertilizer": {
+    "basal": "FYM 10 tons/ha",
+    "nitrogen": "50 kg/ha",
+    "phosphorus": "30 kg/ha",
+    "potassium": "20 kg/ha"
+  },
+  "growthConditions": {
+    "temperature": "26°C - 30°C",
+    "rainfall": "400 - 1000 mm annually",
+    "light": "Requires full sunlight",
+    "climate": "Tropical and subtropical"
+  },
+  "irrigation": {
+    "frequency": "Once every 10-12 days in dry areas",
+    "method": "Drip or furrow irrigation"
+  },
+  "plantingDetails": {
+    "season": "Kharif (June-July) or Rabi (October-November)",
+    "spacing": "30 cm x 10 cm",
+    "seedRate": "10 kg/ha"
+  },
+  "growthStages": [
+    "Germination",
+    "Tillering",
+    "Flowering",
+    "Grain filling",
+    "Maturity"
+  ],
+  "harvesting": {
+    "duration": "100-120 days",
+    "indicators": "Earheads turn brown and grains harden",
+    "method": "Manual cutting or mechanical harvesting"
+  },
+  "yield": "2.5 - 3 tons/ha",
+  "storage": {
+    "temperature": "15°C - 25°C",
+    "humidity": "60% - 70%",
+    "shelfLife": "Up to 1 year"
+  },
+  "economicValue": {
+    "marketPrice": "₹25 - ₹40/kg",
+    "exportPotential": "High, due to increasing health awareness",
+    "valueAddition": ["Ragi malt", "Ragi flour", "Ragi cookies"]
+  },
+  "nutritionalValue": {
+    "protein": "7.3 g/100g",
+    "fiber": "3.6 g/100g",
+    "minerals": "High in calcium and iron",
+    "benefits": [
+      "Strengthens bones",
+      "Controls diabetes",
+      "Aids digestion"
+    ]
+  },
+  "organicPractices": {
+    "bioFertilizers": "Azospirillum, Phosphobacteria",
+    "pestControl": "Neem extract spray for earhead bugs"
+  },
+  "postHarvestManagement": {
+    "drying": "Sun dry panicles before threshing",
+    "storage": "Store in dry, ventilated godowns"
+  },
+  "interestingFacts": [
+    "Ragi is a staple food in Karnataka.",
+    "Contains 10 times more calcium than rice.",
+    "Used in infant food and health drinks."
+  ]
+},
+
+{
+  "kannadaName": "ಸಜ್ಜೆ (Sajje)",
+  "name": "Pearl Millet (Bajra)",
+  "scientificName": "Pennisetum glaucum",
+  "category": "Cereal",
+  "description": "Pearl millet, commonly called Bajra, is a hardy crop grown in dry regions. It is rich in iron and fiber and forms a staple food in Rajasthan and Gujarat.",
+  "soilType": "Light sandy loam to black soil",
+  "soilpH": "6.0 - 7.5",
+  "fertilizer": {
+    "basal": "FYM 5 tons/ha",
+    "nitrogen": "60 kg/ha",
+    "phosphorus": "30 kg/ha",
+    "potassium": "20 kg/ha"
+  },
+  "growthConditions": {
+    "temperature": "25°C - 35°C",
+    "rainfall": "300 - 600 mm annually",
+    "light": "Full sunlight required",
+    "climate": "Hot and arid to semi-arid"
+  },
+  "irrigation": {
+    "frequency": "1-2 irrigations during critical stages",
+    "method": "Sprinkler or furrow irrigation"
+  },
+  "plantingDetails": {
+    "season": "Kharif (June-July)",
+    "spacing": "45 cm x 15 cm",
+    "seedRate": "4-5 kg/ha"
+  },
+  "growthStages": [
+    "Germination",
+    "Tillering",
+    "Booting",
+    "Flowering",
+    "Grain filling",
+    "Maturity"
+  ],
+  "harvesting": {
+    "duration": "75-90 days",
+    "indicators": "Earheads dry and grains become hard",
+    "method": "Manual harvesting with sickles"
+  },
+  "yield": "2-2.5 tons/ha",
+  "storage": {
+    "temperature": "15°C - 25°C",
+    "humidity": "60%",
+    "shelfLife": "6-8 months"
+  },
+  "economicValue": {
+    "marketPrice": "₹22 - ₹30/kg",
+    "exportPotential": "Moderate",
+    "valueAddition": ["Bajra flour", "Health bars", "Traditional rotis"]
+  },
+  "nutritionalValue": {
+    "protein": "10-12 g/100g",
+    "fiber": "2.3 g/100g",
+    "minerals": "Rich in iron, zinc, and magnesium",
+    "benefits": [
+      "Lowers cholesterol",
+      "Good for diabetics",
+      "Improves digestion"
+    ]
+  },
+  "organicPractices": {
+    "bioFertilizers": "Azospirillum and phosphate solubilizing bacteria",
+    "pestControl": "Neem oil spray for shoot fly"
+  },
+  "postHarvestManagement": {
+    "drying": "Sun dry grains for 3-4 days",
+    "storage": "Store in jute bags or bins"
+  },
+  "interestingFacts": [
+    "Bajra can survive extreme drought.",
+    "It’s one of the earliest domesticated millets.",
+    "Consumed as rotis in rural India."
+  ]
+},
+
+{
+  "name": "Sorghum (Jowar)",
+  "scientificName": "Sorghum bicolor",
+  "category": "Cereal",
+  "description": "Sorghum, or Jowar, is a versatile millet used as food, fodder, and biofuel. It is one of the most drought-tolerant cereals grown in semi-arid regions.",
+  "soilType": "Well-drained loamy or clay loam soil",
+  "soilpH": "6.0 - 7.5",
+  "fertilizer": {
+    "basal": "FYM 10 tons/ha",
+    "nitrogen": "80 kg/ha",
+    "phosphorus": "40 kg/ha",
+    "potassium": "20 kg/ha"
+  },
+  "growthConditions": {
+    "temperature": "25°C - 32°C",
+    "rainfall": "400 - 800 mm annually",
+    "light": "Needs full sun for photosynthesis",
+    "climate": "Tropical and sub-tropical"
+  },
+  "irrigation": {
+    "frequency": "3 irrigations during flowering and grain filling",
+    "method": "Furrow or sprinkler irrigation"
+  },
+  "plantingDetails": {
+    "season": "Kharif (June-July) or Rabi (October)",
+    "spacing": "45 cm x 15 cm",
+    "seedRate": "8-10 kg/ha"
+  },
+  "growthStages": [
+    "Emergence",
+    "Leaf development",
+    "Booting",
+    "Flowering",
+    "Grain filling",
+    "Maturity"
+  ],
+  "harvesting": {
+    "duration": "100-120 days",
+    "indicators": "Grains turn hard and dry",
+    "method": "Cutting with sickles or combine harvester"
+  },
+  "yield": "3-4 tons/ha",
+  "storage": {
+    "temperature": "15°C - 25°C",
+    "humidity": "55-65%",
+    "shelfLife": "Up to 1 year"
+  },
+  "economicValue": {
+    "marketPrice": "₹20 - ₹32/kg",
+    "exportPotential": "Moderate",
+    "valueAddition": ["Jowar flour", "Snacks", "Sorghum syrup"]
+  },
+  "nutritionalValue": {
+    "protein": "10.4 g/100g",
+    "fiber": "6.3 g/100g",
+    "minerals": "Contains iron, phosphorus, and potassium",
+    "benefits": [
+      "Supports heart health",
+      "Gluten-free alternative to wheat",
+      "Boosts energy levels"
+    ]
+  },
+  "organicPractices": {
+    "bioFertilizers": "Azotobacter and PSB",
+    "pestControl": "Neem-based formulations for stem borer"
+  },
+  "postHarvestManagement": {
+    "drying": "Sun dry ears before threshing",
+    "storage": "Keep in ventilated bins or silos"
+  },
+  "interestingFacts": [
+    "Sorghum is the 5th most important cereal crop globally.",
+    "Used in ethanol and biofuel production.",
+    "Has high drought tolerance and adaptability."
+  ]
+},
+
+{
+  "kannadaName": "ಕಂಗಣಿ / ನವಣೆ (Kangni / Navane)",
+  "name": "Foxtail Millet (Kangni / Navane)",
+  "scientificName": "Setaria italica",
+  "category": "Cereal",
+  "description": "Foxtail millet is one of the oldest cultivated millets known for its high dietary fiber and protein content. It is ideal for diabetic and heart patients.",
+  "soilType": "Well-drained sandy loam or red soil",
+  "soilpH": "5.5 - 7.0",
+  "fertilizer": {
+    "basal": "FYM 5-10 tons/ha",
+    "nitrogen": "40-50 kg/ha",
+    "phosphorus": "20-30 kg/ha",
+    "potassium": "20 kg/ha"
+  },
+  "growthConditions": {
+    "temperature": "23°C - 30°C",
+    "rainfall": "400 - 650 mm annually",
+    "light": "Requires bright sunlight",
+    "climate": "Tropical and sub-tropical"
+  },
+  "irrigation": {
+    "frequency": "Two irrigations (at tillering and flowering)",
+    "method": "Sprinkler or furrow irrigation"
+  },
+  "plantingDetails": {
+    "season": "Kharif (June-July) or Rabi (October-November)",
+    "spacing": "25 cm x 10 cm",
+    "seedRate": "8-10 kg/ha"
+  },
+  "growthStages": [
+    "Germination",
+    "Tillering",
+    "Flowering",
+    "Grain filling",
+    "Maturity"
+  ],
+  "harvesting": {
+    "duration": "80-90 days",
+    "indicators": "Panicles turn yellow and grains harden",
+    "method": "Manual or mechanical harvesting"
+  },
+  "yield": "2-2.5 tons/ha",
+  "storage": {
+    "temperature": "15°C - 25°C",
+    "humidity": "60%",
+    "shelfLife": "Up to 1 year"
+  },
+  "economicValue": {
+    "marketPrice": "₹25 - ₹35/kg",
+    "exportPotential": "High (used in health foods)",
+    "valueAddition": ["Foxtail flour", "Millet noodles", "Breakfast cereals"]
+  },
+  "nutritionalValue": {
+    "protein": "12.3 g/100g",
+    "fiber": "8 g/100g",
+    "minerals": "Rich in iron and calcium",
+    "benefits": [
+      "Lowers cholesterol",
+      "Good for diabetic patients",
+      "Improves metabolism"
+    ]
+  },
+  "organicPractices": {
+    "bioFertilizers": "Azospirillum and PSB mix",
+    "pestControl": "Neem oil for shoot fly management"
+  },
+  "postHarvestManagement": {
+    "drying": "Sun dry for 3-4 days after threshing",
+    "storage": "Store in clean, airtight containers"
+  },
+  "interestingFacts": [
+    "One of the earliest domesticated millets in Asia.",
+    "Highly recommended for diabetic diets.",
+    "Known as Navane in Kannada and Kangni in Hindi."
+  ]
+},
+
+{
+  "kannadaName": "ಸಾಂವ (Sanwa) / ಊದಲು (Oodalu)",
+  "name": "Barnyard Millet (Sanwa / Oodalu)",
+  "scientificName": "Echinochloa frumentacea",
+  "category": "Cereal",
+  "description": "Barnyard millet is a short-duration crop that grows quickly even under low fertility soils. It is rich in iron and fiber and helps in managing blood sugar levels.",
+  "soilType": "Loamy or sandy loam with good drainage",
+  "soilpH": "6.0 - 7.5",
+  "fertilizer": {
+    "basal": "FYM 5-10 tons/ha",
+    "nitrogen": "40 kg/ha",
+    "phosphorus": "20 kg/ha",
+    "potassium": "20 kg/ha"
+  },
+  "growthConditions": {
+    "temperature": "20°C - 32°C",
+    "rainfall": "500 - 800 mm annually",
+    "light": "Prefers bright sunlight",
+    "climate": "Tropical and temperate"
+  },
+  "irrigation": {
+    "frequency": "At 15-day intervals if rainfall is inadequate",
+    "method": "Drip or sprinkler irrigation"
+  },
+  "plantingDetails": {
+    "season": "Kharif (June-July) and Rabi (October)",
+    "spacing": "25 cm x 10 cm",
+    "seedRate": "8-10 kg/ha"
+  },
+  "growthStages": [
+    "Germination",
+    "Tillering",
+    "Panicle emergence",
+    "Flowering",
+    "Maturity"
+  ],
+  "harvesting": {
+    "duration": "70-80 days",
+    "indicators": "Grains turn grayish-white and hard",
+    "method": "Manual harvesting with sickles"
+  },
+  "yield": "2-2.8 tons/ha",
+  "storage": {
+    "temperature": "15°C - 25°C",
+    "humidity": "60%",
+    "shelfLife": "Up to 1 year"
+  },
+  "economicValue": {
+    "marketPrice": "₹30 - ₹40/kg",
+    "exportPotential": "High for organic and gluten-free foods",
+    "valueAddition": ["Barnyard flour", "Snacks", "Breakfast porridge"]
+  },
+  "nutritionalValue": {
+    "protein": "11.2 g/100g",
+    "fiber": "10 g/100g",
+    "minerals": "Rich in iron and magnesium",
+    "benefits": [
+      "Controls blood sugar",
+      "Improves digestion",
+      "Supports weight management"
+    ]
+  },
+  "organicPractices": {
+    "bioFertilizers": "Azospirillum, Trichoderma for seed treatment",
+    "pestControl": "Neem leaf extract or cow urine spray"
+  },
+  "postHarvestManagement": {
+    "drying": "Sun dry before threshing",
+    "storage": "Use jute bags or airtight bins"
+  },
+  "interestingFacts": [
+    "Matures in just 60-80 days.",
+    "Excellent fasting food during Navratri.",
+    "Rich in iron — helps prevent anemia."
+  ]
+},
+
+{
+  "kannadaName": "ಸಾಮೆ (Saame)",
+  "name": "Little Millet (Kutki / Saame)",
+  "scientificName": "Panicum sumatrense",
+  "category": "Cereal",
+  "description": "Little millet is a climate-resilient crop that grows well in poor soils. It is small-grained, rich in minerals, and ideal for gluten-free diets.",
+  "soilType": "Well-drained sandy loam or clay loam",
+  "soilpH": "5.5 - 7.5",
+  "fertilizer": {
+    "basal": "FYM 5-10 tons/ha",
+    "nitrogen": "40 kg/ha",
+    "phosphorus": "20 kg/ha",
+    "potassium": "20 kg/ha"
+  },
+  "growthConditions": {
+    "temperature": "22°C - 32°C",
+    "rainfall": "400 - 700 mm annually",
+    "light": "Thrives in bright sunlight",
+    "climate": "Semi-arid and sub-tropical"
+  },
+  "irrigation": {
+    "frequency": "At tillering and flowering stages if dry",
+    "method": "Sprinkler or drip irrigation"
+  },
+  "plantingDetails": {
+    "season": "Kharif (June-July)",
+    "spacing": "25 cm x 10 cm",
+    "seedRate": "8-10 kg/ha"
+  },
+  "growthStages": [
+    "Germination",
+    "Tillering",
+    "Panicle initiation",
+    "Flowering",
+    "Grain filling",
+    "Maturity"
+  ],
+  "harvesting": {
+    "duration": "80-100 days",
+    "indicators": "Panicles dry and grains harden",
+    "method": "Manual cutting or mechanical harvesting"
+  },
+  "yield": "2.5 - 3 tons/ha",
+  "storage": {
+    "temperature": "15°C - 25°C",
+    "humidity": "55% - 65%",
+    "shelfLife": "Up to 1 year"
+  },
+  "economicValue": {
+    "marketPrice": "₹28 - ₹38/kg",
+    "exportPotential": "High (used in health and baby foods)",
+    "valueAddition": ["Little millet flour", "Idli mix", "Health bars"]
+  },
+  "nutritionalValue": {
+    "protein": "9.7 g/100g",
+    "fiber": "7.6 g/100g",
+    "minerals": "Rich in phosphorus and iron",
+    "benefits": [
+      "Regulates cholesterol",
+      "Improves digestion",
+      "Gluten-free and heart-healthy"
+    ]
+  },
+  "organicPractices": {
+    "bioFertilizers": "Azospirillum, PSB, Rhizobium mix",
+    "pestControl": "Neem-based sprays for stem borers"
+  },
+  "postHarvestManagement": {
+    "drying": "Sun dry thoroughly before threshing",
+    "storage": "Store in clean, dry bags or bins"
+  },
+  "interestingFacts": [
+    "Called Saame in Kannada and Kutki in Hindi.",
+    "Matures even under poor rainfall conditions.",
+    "Used in South Indian dishes like dosa and upma."
+  ]
+},
+
+{
+  "kannadaName": "ಕಬ್ಬು (Kabbu)",
+  "name": "Sugarcane",
+  "scientificName": "Saccharum officinarum",
+  "category": "Commercial Crop",
+  "description": "Sugarcane is a tall perennial grass grown for its sugar-rich stalks. It is a major source of sugar, jaggery, and ethanol.",
+  "soilType": "Deep, well-drained loamy soil",
+  "soilpH": "6.0 - 8.0",
+  "fertilizer": {
+    "basal": "FYM 25 tons/ha",
+    "nitrogen": "250 kg/ha",
+    "phosphorus": "100 kg/ha",
+    "potassium": "120 kg/ha"
+  },
+  "growthConditions": {
+    "temperature": "20°C - 35°C",
+    "rainfall": "1000 - 1500 mm annually",
+    "light": "Full sunlight",
+    "climate": "Tropical and subtropical"
+  },
+  "irrigation": {
+    "frequency": "Every 10-15 days",
+    "method": "Furrow or drip irrigation"
+  },
+  "plantingDetails": {
+    "season": "February - April or September - October",
+    "spacing": "90 cm x 30 cm",
+    "seedRate": "75,000 setts/ha"
+  },
+  "growthStages": [
+    "Germination",
+    "Tillering",
+    "Grand growth",
+    "Maturity"
+  ],
+  "harvesting": {
+    "duration": "10-12 months",
+    "indicators": "Drying of leaves, hardening of stalks",
+    "method": "Manual cutting"
+  },
+  "yield": "80 - 100 tons/ha",
+  "storage": {
+    "temperature": "Ambient (avoid drying)",
+    "humidity": "70% - 80%",
+    "shelfLife": "3-5 days after harvest"
+  },
+  "economicValue": {
+    "marketPrice": "₹3,000 - ₹4,000/ton",
+    "exportPotential": "High (for sugar & ethanol)",
+    "valueAddition": ["Jaggery", "Molasses", "Ethanol"]
+  },
+  "nutritionalValue": {
+    "benefits": [
+      "Rich in natural sugars",
+      "Boosts energy",
+      "Source of antioxidants"
+    ]
+  },
+  "organicPractices": {
+    "bioFertilizers": "Azospirillum, PSB",
+    "pestControl": "Use Trichogramma for borers"
+  },
+  "postHarvestManagement": {
+    "drying": "Avoid direct sun to prevent sugar loss",
+    "storage": "Store stalks in moist shade"
+  },
+  "interestingFacts": [
+    "India is the 2nd largest producer after Brazil.",
+    "Used for ethanol production in biofuel industries."
+  ]
+},
+
+{
+  "kannadaName": "ಹತ್ತಿ (Hatti)",
+  "name": "Cotton",
+  "scientificName": "Gossypium hirsutum",
+  "category": "Fiber Crop",
+  "description": "Cotton is a soft fiber crop used mainly for textiles. It is known as the ‘white gold’ of agriculture.",
+  "soilType": "Black cotton soil or loamy soil",
+  "soilpH": "6.0 - 8.0",
+  "fertilizer": {
+    "basal": "FYM 10 tons/ha",
+    "nitrogen": "120 kg/ha",
+    "phosphorus": "60 kg/ha",
+    "potassium": "60 kg/ha"
+  },
+  "growthConditions": {
+    "temperature": "21°C - 30°C",
+    "rainfall": "600 - 1000 mm annually",
+    "light": "Bright sunlight",
+    "climate": "Tropical and subtropical"
+  },
+  "irrigation": {
+    "frequency": "Every 12-15 days",
+    "method": "Drip irrigation preferred"
+  },
+  "plantingDetails": {
+    "season": "June - July (Kharif)",
+    "spacing": "75 cm x 30 cm",
+    "seedRate": "20 kg/ha"
+  },
+  "growthStages": [
+    "Germination",
+    "Square formation",
+    "Flowering",
+    "Boll formation",
+    "Maturity"
+  ],
+  "harvesting": {
+    "duration": "150 - 180 days",
+    "indicators": "Bolls burst and lint visible",
+    "method": "Manual picking"
+  },
+  "yield": "15 - 20 quintals/ha",
+  "economicValue": {
+    "marketPrice": "₹6,000 - ₹8,000/quintal",
+    "exportPotential": "Very high (textiles)",
+    "valueAddition": ["Cottonseed oil", "Lint", "Textiles"]
+  },
+  "organicPractices": {
+    "bioFertilizers": "Rhizobium, Azotobacter",
+    "pestControl": "Neem spray for bollworms"
+  },
+  "interestingFacts": [
+    "India is one of the largest cotton producers.",
+    "Bt cotton is a popular genetically modified variant."
+  ]
+},
+
+{
+  "kannadaName": "ಕಾಫಿ (Kapi)",
+  "name": "Coffee",
+  "scientificName": "Coffea arabica / Coffea canephora (Robusta)",
+  "category": "Beverage Crop",
+  "description": "Coffee is a popular beverage crop grown for its beans that are roasted and ground to make coffee powder.",
+  "soilType": "Rich, well-drained loamy soil with good organic matter",
+  "soilpH": "6.0 - 6.5",
+  "growthConditions": {
+    "temperature": "15°C - 28°C",
+    "rainfall": "1500 - 2500 mm annually",
+    "climate": "Tropical with shade",
+    "light": "Partial shade"
+  },
+  "fertilizer": {
+    "basal": "FYM 10 tons/ha",
+    "NPK": "120:90:120 kg/ha"
+  },
+  "irrigation": {
+    "frequency": "At flowering and berry development stages",
+    "method": "Drip irrigation"
+  },
+  "plantingDetails": {
+    "season": "June - August",
+    "spacing": "2.5 m x 2.5 m",
+    "seedRate": "2 kg/ha (nursery raised)"
+  },
+  "harvesting": {
+    "duration": "2.5 - 3 years to first yield",
+    "method": "Manual picking of red cherries"
+  },
+  "yield": "800 - 1000 kg beans/ha",
+  "economicValue": {
+    "marketPrice": "₹120 - ₹200/kg",
+    "exportPotential": "Very high",
+    "valueAddition": ["Instant coffee", "Coffee powder", "Cold brew"]
+  },
+  "interestingFacts": [
+    "India mainly grows Arabica and Robusta varieties.",
+    "Karnataka produces over 70% of India’s coffee."
+  ]
+},
+
+{
+  "kannadaName": "ಚಹಾ (Chaha)",
+  "name": "Tea",
+  "scientificName": "Camellia sinensis",
+  "category": "Beverage Crop",
+  "description": "Tea is a popular beverage crop cultivated for its tender leaves, which are processed to produce black, green, and white teas.",
+  "soilType": "Well-drained acidic loamy soil rich in organic matter",
+  "soilpH": "4.5 - 5.5",
+  "growthConditions": {
+    "temperature": "18°C - 30°C",
+    "rainfall": "1500 - 2500 mm annually",
+    "light": "Partial sunlight",
+    "climate": "Humid tropical and subtropical"
+  },
+  "fertilizer": {
+    "basal": "FYM 10 tons/ha",
+    "NPK": "120:90:60 kg/ha"
+  },
+  "irrigation": {
+    "frequency": "Regular moisture required, irrigate during dry spells",
+    "method": "Drip or sprinkler irrigation"
+  },
+  "plantingDetails": {
+    "season": "April - June or September - October",
+    "spacing": "1.2 m x 0.75 m",
+    "seedRate": "Nursery-raised seedlings"
+  },
+  "growthStages": [
+    "Planting",
+    "Bush establishment",
+    "Pruning and tipping",
+    "Plucking stage"
+  ],
+  "harvesting": {
+    "duration": "3 years for first harvest",
+    "method": "Hand plucking of tender leaves and buds"
+  },
+  "yield": "1500 - 2500 kg made tea/ha",
+  "economicValue": {
+    "marketPrice": "₹150 - ₹300/kg",
+    "exportPotential": "Very high",
+    "valueAddition": ["Green tea", "Black tea", "Tea powder"]
+  },
+  "organicPractices": {
+    "bioFertilizers": "Azospirillum, phosphate solubilizers",
+    "pestControl": "Neem and garlic-based sprays for tea mosquito bugs"
+  },
+  "interestingFacts": [
+    "India is the 2nd largest tea producer globally.",
+    "Assam and Nilgiris are famous tea-growing regions."
+  ]
+},
+
+{
+  "kannadaName": "ಜ್ಯೂಟ್ (Jute)",
+  "name": "Jute",
+  "scientificName": "Corchorus olitorius / Corchorus capsularis",
+  "category": "Fiber Crop",
+  "description": "Jute is a long, soft, and shiny fiber used for making gunny bags, ropes, and mats. It is known as the ‘Golden Fiber’.",
+  "soilType": "Alluvial soil rich in organic matter",
+  "soilpH": "6.0 - 7.5",
+  "growthConditions": {
+    "temperature": "25°C - 35°C",
+    "rainfall": "1500 - 2500 mm annually",
+    "light": "Full sunlight",
+    "climate": "Warm and humid"
+  },
+  "fertilizer": {
+    "basal": "FYM 5 tons/ha",
+    "NPK": "80:40:40 kg/ha"
+  },
+  "irrigation": {
+    "frequency": "As required until establishment",
+    "method": "Surface irrigation"
+  },
+  "plantingDetails": {
+    "season": "March - May",
+    "spacing": "30 cm x 10 cm",
+    "seedRate": "5-6 kg/ha"
+  },
+  "harvesting": {
+    "duration": "100 - 120 days",
+    "method": "Cutting plants at ground level and retting in water"
+  },
+  "yield": "25 - 30 quintals fiber/ha",
+  "economicValue": {
+    "marketPrice": "₹4,000 - ₹6,000/quintal",
+    "exportPotential": "High (bags, ropes, and mats)",
+    "valueAddition": ["Jute bags", "Carpet backing", "Ropes"]
+  },
+  "interestingFacts": [
+    "Known as the Golden Fiber of India.",
+    "Biodegradable and eco-friendly alternative to plastics."
+  ]
+},
+
+{
+  "kannadaName": "ತಮಾಕು (Tamaku)",
+  "name": "Tobacco",
+  "scientificName": "Nicotiana tabacum",
+  "category": "Commercial Crop",
+  "description": "Tobacco is a leafy plant grown for its leaves, which are dried and processed for smoking and industrial purposes.",
+  "soilType": "Well-drained sandy loam or red soil",
+  "soilpH": "5.5 - 6.5",
+  "growthConditions": {
+    "temperature": "20°C - 30°C",
+    "rainfall": "600 - 800 mm annually",
+    "light": "Full sunlight",
+    "climate": "Dry and warm"
+  },
+  "fertilizer": {
+    "basal": "FYM 10 tons/ha",
+    "NPK": "80:40:40 kg/ha"
+  },
+  "irrigation": {
+    "frequency": "Every 7-10 days",
+    "method": "Furrow irrigation"
+  },
+  "plantingDetails": {
+    "season": "October - December",
+    "spacing": "75 cm x 60 cm",
+    "seedRate": "0.5 kg/ha (nursery raised)"
+  },
+  "harvesting": {
+    "duration": "100 - 120 days",
+    "method": "Leaf picking at maturity and sun-curing"
+  },
+  "yield": "1500 - 2000 kg cured leaves/ha",
+  "economicValue": {
+    "marketPrice": "₹120 - ₹200/kg",
+    "exportPotential": "High (used in cigarettes, cigars, snuff)",
+    "valueAddition": ["Chewing tobacco", "Snuff", "Cigarettes"]
+  },
+  "interestingFacts": [
+    "India is the world’s 3rd largest tobacco producer.",
+    "Tobacco exports bring significant foreign exchange."
+  ]
+},
+
+{
+  "kannadaName": "ರಬ್ಬರ್ (Rubber)",
+  "name": "Rubber",
+  "scientificName": "Hevea brasiliensis",
+  "category": "Commercial Crop",
+  "description": "Rubber is a tropical plantation crop grown for its latex, which is processed into natural rubber.",
+  "soilType": "Well-drained lateritic or alluvial soil",
+  "soilpH": "4.5 - 6.5",
+  "growthConditions": {
+    "temperature": "25°C - 35°C",
+    "rainfall": "2000 - 3000 mm annually",
+    "light": "Full sunlight",
+    "climate": "Humid tropical"
+  },
+  "fertilizer": {
+    "basal": "FYM 10 tons/ha",
+    "NPK": "30:30:30 g per plant every 6 months"
+  },
+  "irrigation": {
+    "frequency": "Once in 10-15 days during dry months",
+    "method": "Basin irrigation"
+  },
+  "plantingDetails": {
+    "season": "June - July (onset of monsoon)",
+    "spacing": "6 m x 3 m",
+    "seedRate": "500-600 plants/ha"
+  },
+  "harvesting": {
+    "duration": "6-7 years after planting",
+    "method": "Tapping the bark to collect latex"
+  },
+  "yield": "1500 - 2000 kg latex/ha annually",
+  "economicValue": {
+    "marketPrice": "₹120 - ₹160/kg",
+    "exportPotential": "High (industrial uses)",
+    "valueAddition": ["Rubber sheets", "Tyres", "Industrial goods"]
+  },
+  "interestingFacts": [
+    "Kerala contributes over 90% of India’s rubber production.",
+    "Rubber trees can produce latex for 20-25 years."
+  ]
+},
+
+{
+  "kannadaName": "ತೆಂಗು (Tengu)",
+  "name": "Coconut",
+  "scientificName": "Cocos nucifera",
+  "category": "Plantation Crop",
+  "description": "Coconut is called the 'Tree of Life'. Every part of the tree is useful, from its fruit to leaves and trunk.",
+  "soilType": "Coastal sandy loam or red laterite soil",
+  "soilpH": "5.5 - 7.5",
+  "growthConditions": {
+    "temperature": "25°C - 35°C",
+    "rainfall": "1000 - 2000 mm annually",
+    "light": "Full sunlight",
+    "climate": "Tropical and humid"
+  },
+  "fertilizer": {
+    "perPalm": "500 g N, 320 g P2O5, 1200 g K2O annually"
+  },
+  "irrigation": {
+    "frequency": "Every 5-7 days during dry months",
+    "method": "Basin or drip irrigation"
+  },
+  "plantingDetails": {
+    "season": "June - September",
+    "spacing": "7.5 m x 7.5 m",
+    "seedRate": "130-150 palms/ha"
+  },
+  "harvesting": {
+    "duration": "6-7 years after planting",
+    "method": "Climbing and cutting mature nuts"
+  },
+  "yield": "80 - 100 nuts/tree/year",
+  "economicValue": {
+    "marketPrice": "₹15 - ₹30/nut",
+    "valueAddition": ["Coconut oil", "Coir", "Desiccated coconut"]
+  },
+  "interestingFacts": [
+    "Coconut water is sterile and rich in electrolytes.",
+    "India ranks among top three coconut producers."
+  ]
+},
+
+{
+  "kannadaName": "ಅಡಕೆ (Adake)",
+  "name": "Arecanut",
+  "scientificName": "Areca catechu",
+  "category": "Plantation Crop",
+  "description": "Arecanut, also known as betel nut, is an important commercial crop used in chewing and in traditional ceremonies.",
+  "soilType": "Well-drained red loam or lateritic soil",
+  "soilpH": "5.5 - 6.5",
+  "growthConditions": {
+    "temperature": "15°C - 38°C",
+    "rainfall": "1500 - 2500 mm annually",
+    "light": "Partial shade preferred",
+    "climate": "Tropical and humid"
+  },
+  "fertilizer": {
+    "perPalm": "100 g N, 40 g P2O5, 140 g K2O annually"
+  },
+  "irrigation": {
+    "frequency": "Every 7-10 days",
+    "method": "Basin irrigation"
+  },
+  "plantingDetails": {
+    "season": "May - July",
+    "spacing": "2.7 m x 2.7 m",
+    "seedRate": "1300-1500 plants/ha"
+  },
+  "harvesting": {
+    "duration": "5-7 years after planting",
+    "method": "Plucking ripe nuts and drying"
+  },
+  "yield": "1500 - 2000 kg dry nuts/ha",
+  "economicValue": {
+    "marketPrice": "₹350 - ₹500/kg",
+    "exportPotential": "Moderate (used in pan and ayurvedic uses)",
+    "valueAddition": ["Supari", "Powdered arecanut"]
+  },
+  "interestingFacts": [
+    "Karnataka is the largest producer of arecanut in India.",
+    "Also known as betel nut (Adike) in South India."
+  ]
+},
+  {
+    "kannadaName": "ಟೊಮೇಟೊ (Tomato)",
+    "name": "Tomato",
+    "scientificName": "Solanum lycopersicum",
+    "category": "Vegetable Crop",
+    "description": "Tomato is one of the most popular vegetable crops, rich in vitamins A and C, and used in a variety of dishes worldwide.",
+    "soilType": "Well-drained loamy soil",
+    "soilpH": "6.0 - 7.0",
+    "growthConditions": {
+      "temperature": "20°C - 30°C",
+      "rainfall": "600 - 800 mm annually",
+      "light": "Full sunlight",
+      "climate": "Warm and dry"
+    },
+    "fertilizer": {
+      "nitrogen": "100 kg/ha",
+      "phosphorus": "75 kg/ha",
+      "potassium": "75 kg/ha"
+    },
+    "irrigation": {
+      "frequency": "Every 5-6 days",
+      "method": "Drip irrigation preferred"
+    },
+    "plantingDetails": {
+      "season": "June - October or January - February",
+      "spacing": "60 cm x 45 cm",
+      "seedRate": "400-500 g/ha"
+    },
+    "harvesting": {
+      "duration": "100 - 120 days",
+      "method": "Manual picking of ripe fruits"
+    },
+    "yield": "25 - 35 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹15 - ₹35/kg",
+      "valueAddition": ["Tomato sauce", "Ketchup", "Juice"]
+    },
+    "interestingFacts": [
+      "Tomato is botanically a fruit but used as a vegetable.",
+      "Lycopene in tomato is a powerful antioxidant."
+    ]
+  },
+  {
+    "kannadaName": "ಈರುಳ್ಳಿ (Eerulli)",
+    "name": "Onion",
+    "scientificName": "Allium cepa",
+    "category": "Vegetable Crop",
+    "description": "Onion is a bulb crop valued for its pungent flavor and medicinal properties.",
+    "soilType": "Fertile sandy loam",
+    "soilpH": "6.0 - 7.5",
+    "growthConditions": {
+      "temperature": "15°C - 25°C",
+      "rainfall": "600 - 800 mm",
+      "light": "Full sunlight",
+      "climate": "Cool and dry"
+    },
+    "fertilizer": {
+      "nitrogen": "75 kg/ha",
+      "phosphorus": "50 kg/ha",
+      "potassium": "50 kg/ha"
+    },
+    "irrigation": {
+      "frequency": "Every 7 days",
+      "method": "Furrow irrigation"
+    },
+    "plantingDetails": {
+      "season": "October - December or January - February",
+      "spacing": "15 cm x 10 cm",
+      "seedRate": "8-10 kg/ha"
+    },
+    "harvesting": {
+      "duration": "90 - 120 days",
+      "method": "Pulling mature bulbs and drying"
+    },
+    "yield": "20 - 25 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹10 - ₹30/kg",
+      "valueAddition": ["Dehydrated onion", "Onion powder"]
+    },
+    "interestingFacts": [
+      "India is the second-largest onion producer globally.",
+      "Onions contain antioxidants and help reduce inflammation."
+    ]
+  },
+  {
+    "kannadaName": "ಬೆಳ್ಳುಳ್ಳಿ (Bellulli)",
+    "name": "Garlic",
+    "scientificName": "Allium sativum",
+    "category": "Vegetable Crop",
+    "description": "Garlic is a bulbous crop known for its strong flavor and medicinal benefits such as improving heart health and immunity.",
+    "soilType": "Loamy soil rich in organic matter",
+    "soilpH": "6.0 - 7.5",
+    "growthConditions": {
+      "temperature": "15°C - 25°C",
+      "rainfall": "500 - 600 mm",
+      "light": "Full sunlight",
+      "climate": "Cool and dry"
+    },
+    "fertilizer": {
+      "nitrogen": "100 kg/ha",
+      "phosphorus": "50 kg/ha",
+      "potassium": "50 kg/ha"
+    },
+    "irrigation": {
+      "frequency": "Every 8-10 days",
+      "method": "Furrow irrigation"
+    },
+    "plantingDetails": {
+      "season": "October - November",
+      "spacing": "10 cm x 7.5 cm",
+      "seedRate": "500-600 kg cloves/ha"
+    },
+    "harvesting": {
+      "duration": "110 - 120 days",
+      "method": "Pulling bulbs and curing under shade"
+    },
+    "yield": "6 - 10 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹80 - ₹150/kg",
+      "valueAddition": ["Garlic paste", "Garlic powder"]
+    },
+    "interestingFacts": [
+      "Garlic has natural antibacterial properties.",
+      "Used in Ayurveda for centuries for boosting immunity."
+    ]
+  },
+  {
+    "kannadaName": "ಶುಂಠಿ (Shunti)",
+    "name": "Ginger",
+    "scientificName": "Zingiber officinale",
+    "category": "Spice Crop",
+    "description": "Ginger is a spice crop known for its aromatic rhizomes and wide use in culinary and medicinal purposes.",
+    "soilType": "Loamy or clay loam soil rich in humus",
+    "soilpH": "5.5 - 6.5",
+    "growthConditions": {
+      "temperature": "20°C - 30°C",
+      "rainfall": "1500 - 2000 mm",
+      "light": "Partial shade",
+      "climate": "Warm and humid"
+    },
+    "fertilizer": {
+      "nitrogen": "75 kg/ha",
+      "phosphorus": "50 kg/ha",
+      "potassium": "50 kg/ha"
+    },
+    "irrigation": {
+      "frequency": "Every 10 days",
+      "method": "Drip or furrow irrigation"
+    },
+    "plantingDetails": {
+      "season": "May - June",
+      "spacing": "30 cm x 25 cm",
+      "seedRate": "1500 kg rhizomes/ha"
+    },
+    "harvesting": {
+      "duration": "200 - 250 days",
+      "method": "Lifting clumps and cleaning rhizomes"
+    },
+    "yield": "15 - 20 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹60 - ₹100/kg",
+      "valueAddition": ["Dry ginger powder", "Ginger oil"]
+    },
+    "interestingFacts": [
+      "Ginger aids digestion and reduces inflammation.",
+      "India is the largest producer of ginger globally."
+    ]
+  },
+  {
+    "kannadaName": "ಅಲೂಗಡ್ಡೆ (Aloogadde)",
+    "name": "Potato",
+    "scientificName": "Solanum tuberosum",
+    "category": "Vegetable Crop",
+    "description": "Potato is a major food crop rich in carbohydrates, widely consumed across the world.",
+    "soilType": "Well-drained loamy soil",
+    "soilpH": "5.5 - 6.5",
+    "growthConditions": {
+      "temperature": "15°C - 25°C",
+      "rainfall": "600 - 800 mm",
+      "light": "Full sunlight",
+      "climate": "Cool climate preferred"
+    },
+    "fertilizer": {
+      "nitrogen": "120 kg/ha",
+      "phosphorus": "60 kg/ha",
+      "potassium": "60 kg/ha"
+    },
+    "irrigation": {
+      "frequency": "Every 6-8 days",
+      "method": "Furrow irrigation"
+    },
+    "plantingDetails": {
+      "season": "October - December",
+      "spacing": "60 cm x 20 cm",
+      "seedRate": "2000 kg tubers/ha"
+    },
+    "harvesting": {
+      "duration": "90 - 110 days",
+      "method": "Manual or mechanical digging"
+    },
+    "yield": "25 - 35 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹15 - ₹25/kg",
+      "valueAddition": ["Potato chips", "Dehydrated flakes"]
+    },
+    "interestingFacts": [
+      "Potato is the fourth most important food crop globally.",
+      "Rich in vitamin C and potassium."
+    ]
+  },
+
+  {
+    "kannadaName": "ದೋಣ್ ಮೆಣಸಿನಕಾಯಿ (Capsicum / Don Menasinakayi)",
+    "name": "Capsicum",
+    "scientificName": "Capsicum annuum",
+    "category": "Vegetable Crop",
+    "description": "Capsicum, also known as bell pepper or sweet pepper, is a popular vegetable grown for its colorful fruits rich in vitamins A and C.",
+    "soilType": "Well-drained loamy soil rich in organic matter",
+    "soilpH": "6.0 - 6.8",
+    "growthConditions": {
+      "temperature": "20°C - 25°C",
+      "rainfall": "600 - 800 mm",
+      "light": "Full sunlight or partial shade",
+      "climate": "Cool and moist climate"
+    },
+    "fertilizer": {
+      "nitrogen": "120 kg/ha",
+      "phosphorus": "80 kg/ha",
+      "potassium": "80 kg/ha"
+    },
+    "irrigation": {
+      "frequency": "Every 5-6 days",
+      "method": "Drip irrigation preferred"
+    },
+    "plantingDetails": {
+      "season": "September - December",
+      "spacing": "45 cm x 45 cm",
+      "seedRate": "200 g/ha"
+    },
+    "harvesting": {
+      "duration": "90 - 120 days",
+      "method": "Manual picking of mature fruits"
+    },
+    "yield": "20 - 25 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹25 - ₹60/kg",
+      "valueAddition": ["Capsicum powder", "Pickles"]
+    },
+    "interestingFacts": [
+      "Capsicum is rich in antioxidants and vitamin C.",
+      "Comes in various colors — green, red, yellow, and orange."
+    ]
+  },
+  {
+    "kannadaName": "ಹಸಿಮೆಣಸಿನಕಾಯಿ (Hasimenesinakayi)",
+    "name": "Green Chilli",
+    "scientificName": "Capsicum frutescens",
+    "category": "Vegetable Crop",
+    "description": "Green chilli is cultivated for its pungent fruits used as spice and condiment in Indian cuisine.",
+    "soilType": "Well-drained loamy soil",
+    "soilpH": "6.0 - 7.0",
+    "growthConditions": {
+      "temperature": "20°C - 30°C",
+      "rainfall": "700 - 900 mm",
+      "light": "Full sunlight",
+      "climate": "Warm and humid"
+    },
+    "fertilizer": {
+      "nitrogen": "120 kg/ha",
+      "phosphorus": "60 kg/ha",
+      "potassium": "60 kg/ha"
+    },
+    "irrigation": {
+      "frequency": "Every 7 days",
+      "method": "Furrow or drip irrigation"
+    },
+    "plantingDetails": {
+      "season": "June - July or January - February",
+      "spacing": "45 cm x 45 cm",
+      "seedRate": "1 kg/ha"
+    },
+    "harvesting": {
+      "duration": "90 - 100 days",
+      "method": "Hand-picking at regular intervals"
+    },
+    "yield": "8 - 10 tons/ha (green chilli)",
+    "economicValue": {
+      "marketPrice": "₹40 - ₹100/kg",
+      "valueAddition": ["Chilli powder", "Pickles"]
+    },
+    "interestingFacts": [
+      "Capsaicin gives chilli its spiciness.",
+      "India is one of the largest producers of chilli in the world."
+    ]
+  },
+  {
+    "kannadaName": "ಗಜ್ಜರಿ (Gajjari)",
+    "name": "Carrot",
+    "scientificName": "Daucus carota",
+    "category": "Root Vegetable",
+    "description": "Carrot is a nutritious root vegetable rich in beta-carotene, vitamins, and minerals.",
+    "soilType": "Loose sandy loam soil",
+    "soilpH": "6.0 - 7.0",
+    "growthConditions": {
+      "temperature": "15°C - 25°C",
+      "rainfall": "600 - 800 mm",
+      "light": "Full sunlight",
+      "climate": "Cool climate preferred"
+    },
+    "fertilizer": {
+      "nitrogen": "60 kg/ha",
+      "phosphorus": "40 kg/ha",
+      "potassium": "40 kg/ha"
+    },
+    "irrigation": {
+      "frequency": "Every 5 days",
+      "method": "Sprinkler irrigation"
+    },
+    "plantingDetails": {
+      "season": "October - December",
+      "spacing": "30 cm x 10 cm",
+      "seedRate": "5-6 kg/ha"
+    },
+    "harvesting": {
+      "duration": "90 - 110 days",
+      "method": "Pulling roots when tender"
+    },
+    "yield": "25 - 30 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹15 - ₹30/kg",
+      "valueAddition": ["Carrot juice", "Pickles", "Halwa"]
+    },
+    "interestingFacts": [
+      "Carrots improve eyesight due to high vitamin A.",
+      "Orange carrots were first cultivated in the Netherlands."
+    ]
+  },
+  {
+    "kannadaName": "ಬೀಟ್ರೂಟ್ (Beetroot)",
+    "name": "Beetroot",
+    "scientificName": "Beta vulgaris",
+    "category": "Root Vegetable",
+    "description": "Beetroot is grown for its edible taproot, rich in iron, folate, and antioxidants.",
+    "soilType": "Well-drained sandy loam soil",
+    "soilpH": "6.0 - 7.5",
+    "growthConditions": {
+      "temperature": "18°C - 25°C",
+      "rainfall": "500 - 700 mm",
+      "light": "Full sunlight",
+      "climate": "Cool season crop"
+    },
+    "fertilizer": {
+      "nitrogen": "60 kg/ha",
+      "phosphorus": "40 kg/ha",
+      "potassium": "40 kg/ha"
+    },
+    "irrigation": {
+      "frequency": "Every 6 days",
+      "method": "Furrow irrigation"
+    },
+    "plantingDetails": {
+      "season": "October - December",
+      "spacing": "30 cm x 10 cm",
+      "seedRate": "6-8 kg/ha"
+    },
+    "harvesting": {
+      "duration": "80 - 100 days",
+      "method": "Pulling roots when mature"
+    },
+    "yield": "25 - 30 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹20 - ₹35/kg",
+      "valueAddition": ["Beetroot juice", "Pickles"]
+    },
+    "interestingFacts": [
+      "Beetroot helps purify blood and improves stamina.",
+      "Natural red color is used as food dye."
+    ]
+  },
+  {
+    "kannadaName": "ಹೂಕೋಸು (Hookosu)",
+    "name": "Cauliflower",
+    "scientificName": "Brassica oleracea var. botrytis",
+    "category": "Vegetable Crop",
+    "description": "Cauliflower is a cool-season crop grown for its edible white curd rich in vitamins and minerals.",
+    "soilType": "Loamy soil rich in organic matter",
+    "soilpH": "6.0 - 7.0",
+    "growthConditions": {
+      "temperature": "15°C - 20°C",
+      "rainfall": "600 - 800 mm",
+      "light": "Full sunlight",
+      "climate": "Cool climate preferred"
+    },
+    "fertilizer": {
+      "nitrogen": "100 kg/ha",
+      "phosphorus": "75 kg/ha",
+      "potassium": "75 kg/ha"
+    },
+    "irrigation": {
+      "frequency": "Every 7 days",
+      "method": "Furrow irrigation"
+    },
+    "plantingDetails": {
+      "season": "September - December",
+      "spacing": "45 cm x 45 cm",
+      "seedRate": "400 g/ha"
+    },
+    "harvesting": {
+      "duration": "90 - 120 days",
+      "method": "Cutting curds when compact and white"
+    },
+    "yield": "20 - 25 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹20 - ₹40/kg",
+      "valueAddition": ["Frozen florets", "Pickles"]
+    },
+    "interestingFacts": [
+      "Cauliflower is rich in vitamin C and fiber.",
+      "Purple and orange varieties are rich in antioxidants."
+    ]
+  },
+
+  {
+    "kannadaName": "ಬದನೇಕಾಯಿ (Badanekayi)",
+    "name": "Brinjal",
+    "scientificName": "Solanum melongena",
+    "category": "Vegetable Crop",
+    "description": "Brinjal, also known as eggplant or aubergine, is a popular vegetable crop grown for its edible fruit used in a variety of dishes.",
+    "soilType": "Well-drained fertile loamy soil",
+    "soilpH": "5.5 - 6.6",
+    "growthConditions": {
+      "temperature": "22°C - 30°C",
+      "rainfall": "600 - 800 mm",
+      "light": "Full sunlight",
+      "climate": "Warm climate preferred"
+    },
+    "fertilizer": {
+      "nitrogen": "120 kg/ha",
+      "phosphorus": "60 kg/ha",
+      "potassium": "80 kg/ha"
+    },
+    "irrigation": {
+      "frequency": "Every 6-8 days",
+      "method": "Furrow or drip irrigation"
+    },
+    "plantingDetails": {
+      "season": "June - July and October - November",
+      "spacing": "60 cm x 60 cm",
+      "seedRate": "400 g/ha"
+    },
+    "harvesting": {
+      "duration": "100 - 120 days",
+      "method": "Hand picking of mature fruits"
+    },
+    "yield": "25 - 35 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹20 - ₹40/kg",
+      "valueAddition": ["Pickles", "Brinjal chips"]
+    },
+    "interestingFacts": [
+      "Brinjal is rich in fiber and low in calories.",
+      "It is one of the oldest cultivated vegetables in India."
+    ]
+  },
+  {
+    "kannadaName": "ಎಲೆಕೋಸು (Elekosu)",
+    "name": "Cabbage",
+    "scientificName": "Brassica oleracea var. capitata",
+    "category": "Vegetable Crop",
+    "description": "Cabbage is a leafy green vegetable grown for its compact head. It is rich in vitamin C and dietary fiber.",
+    "soilType": "Well-drained loamy soil rich in organic matter",
+    "soilpH": "6.0 - 7.0",
+    "growthConditions": {
+      "temperature": "15°C - 20°C",
+      "rainfall": "600 - 800 mm",
+      "light": "Full sunlight",
+      "climate": "Cool season crop"
+    },
+    "fertilizer": {
+      "nitrogen": "100 kg/ha",
+      "phosphorus": "60 kg/ha",
+      "potassium": "80 kg/ha"
+    },
+    "irrigation": {
+      "frequency": "Every 7 days",
+      "method": "Furrow or sprinkler irrigation"
+    },
+    "plantingDetails": {
+      "season": "September - December",
+      "spacing": "45 cm x 45 cm",
+      "seedRate": "500 g/ha"
+    },
+    "harvesting": {
+      "duration": "90 - 110 days",
+      "method": "Cutting firm, compact heads"
+    },
+    "yield": "25 - 30 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹15 - ₹30/kg",
+      "valueAddition": ["Cabbage pickle", "Dehydrated flakes"]
+    },
+    "interestingFacts": [
+      "Cabbage contains anti-cancer compounds called glucosinolates.",
+      "China and India are the largest producers of cabbage."
+    ]
+  },
+  {
+    "kannadaName": "ಮೂಲಂಗಿ (Moolangi)",
+    "name": "Radish",
+    "scientificName": "Raphanus sativus",
+    "category": "Root Vegetable",
+    "description": "Radish is a fast-growing root vegetable consumed raw or cooked, known for its crisp texture and peppery flavor.",
+    "soilType": "Loose sandy loam soil",
+    "soilpH": "6.0 - 7.0",
+    "growthConditions": {
+      "temperature": "15°C - 25°C",
+      "rainfall": "500 - 700 mm",
+      "light": "Full sunlight",
+      "climate": "Cool season crop"
+    },
+    "fertilizer": {
+      "nitrogen": "50 kg/ha",
+      "phosphorus": "30 kg/ha",
+      "potassium": "30 kg/ha"
+    },
+    "irrigation": {
+      "frequency": "Every 5 days",
+      "method": "Sprinkler irrigation"
+    },
+    "plantingDetails": {
+      "season": "October - December",
+      "spacing": "30 cm x 10 cm",
+      "seedRate": "10 kg/ha"
+    },
+    "harvesting": {
+      "duration": "45 - 60 days",
+      "method": "Manual pulling of roots"
+    },
+    "yield": "15 - 20 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹15 - ₹25/kg",
+      "valueAddition": ["Radish pickle", "Salad mix"]
+    },
+    "interestingFacts": [
+      "Radish is rich in vitamin C and detoxifies the liver.",
+      "It can be harvested in less than two months."
+    ]
+  },
+  {
+    "kannadaName": "ಸೊರೆಕಾಯಿ (Sorekayi)",
+    "name": "Bottle Gourd",
+    "scientificName": "Lagenaria siceraria",
+    "category": "Vegetable Crop",
+    "description": "Bottle gourd is a nutritious vegetable with high water content, grown widely in tropical regions.",
+    "soilType": "Fertile loamy soil rich in organic matter",
+    "soilpH": "6.5 - 7.5",
+    "growthConditions": {
+      "temperature": "25°C - 35°C",
+      "rainfall": "700 - 900 mm",
+      "light": "Full sunlight",
+      "climate": "Warm and humid"
+    },
+    "fertilizer": {
+      "nitrogen": "100 kg/ha",
+      "phosphorus": "60 kg/ha",
+      "potassium": "60 kg/ha"
+    },
+    "irrigation": {
+      "frequency": "Every 5-6 days",
+      "method": "Furrow or drip irrigation"
+    },
+    "plantingDetails": {
+      "season": "June - July and January - February",
+      "spacing": "2 m x 1 m",
+      "seedRate": "2.5 kg/ha"
+    },
+    "harvesting": {
+      "duration": "90 - 120 days",
+      "method": "Picking tender fruits"
+    },
+    "yield": "25 - 30 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹20 - ₹40/kg",
+      "valueAddition": ["Juice", "Dry powder"]
+    },
+    "interestingFacts": [
+      "Bottle gourd is 92% water and aids in digestion.",
+      "Used in making traditional musical instruments."
+    ]
+  },
+  {
+    "kannadaName": "ಹಾಗಲಕಾಯಿ (Hagalakayi)",
+    "name": "Bitter Gourd",
+    "scientificName": "Momordica charantia",
+    "category": "Vegetable Crop",
+    "description": "Bitter gourd is a medicinal vegetable known for its bitter taste and blood sugar-regulating properties.",
+    "soilType": "Well-drained sandy loam soil",
+    "soilpH": "5.5 - 6.7",
+    "growthConditions": {
+      "temperature": "25°C - 30°C",
+      "rainfall": "600 - 800 mm",
+      "light": "Full sunlight",
+      "climate": "Warm and humid climate"
+    },
+    "fertilizer": {
+      "nitrogen": "100 kg/ha",
+      "phosphorus": "60 kg/ha",
+      "potassium": "60 kg/ha"
+    },
+    "irrigation": {
+      "frequency": "Every 5-7 days",
+      "method": "Drip irrigation recommended"
+    },
+    "plantingDetails": {
+      "season": "June - July or January - February",
+      "spacing": "2 m x 1 m",
+      "seedRate": "3 kg/ha"
+    },
+    "harvesting": {
+      "duration": "90 - 100 days",
+      "method": "Picking tender fruits regularly"
+    },
+    "yield": "20 - 25 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹25 - ₹50/kg",
+      "valueAddition": ["Bitter gourd powder", "Medicinal extracts"]
+    },
+    "interestingFacts": [
+      "Bitter gourd helps lower blood sugar levels.",
+      "Used in Ayurvedic medicine for diabetes."
+    ]
+  },
+  {
+    "kannadaName": "ಕುಂಬಳಕಾಯಿ (Kumbalakayi)",
+    "name": "Ash Gourd",
+    "scientificName": "Benincasa hispida",
+    "category": "Vegetable Crop",
+    "description": "Ash gourd is a long-duration vegetable crop known for its large fruits and medicinal uses in cooling and digestion.",
+    "soilType": "Loamy soil rich in organic matter",
+    "soilpH": "6.0 - 7.5",
+    "growthConditions": {
+      "temperature": "25°C - 35°C",
+      "rainfall": "600 - 900 mm",
+      "light": "Full sunlight",
+      "climate": "Tropical and subtropical"
+    },
+    "fertilizer": {
+      "nitrogen": "100 kg/ha",
+      "phosphorus": "60 kg/ha",
+      "potassium": "80 kg/ha"
+    },
+    "irrigation": {
+      "frequency": "Every 5 days",
+      "method": "Drip or basin irrigation"
+    },
+    "plantingDetails": {
+      "season": "June - July or January - February",
+      "spacing": "2.5 m x 1 m",
+      "seedRate": "3-4 kg/ha"
+    },
+    "harvesting": {
+      "duration": "120 - 150 days",
+      "method": "Picking mature fruits with white waxy coating"
+    },
+    "yield": "30 - 40 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹20 - ₹35/kg",
+      "valueAddition": ["Petha sweet", "Ash gourd juice"]
+    },
+    "interestingFacts": [
+      "Ash gourd has cooling and detoxifying properties.",
+      "Also known as winter melon or white pumpkin."
+    ]
+  },
+  {
+    "kannadaName": "ಹುರಳಿ (Hurali)",
+    "name": "Beans",
+    "scientificName": "Phaseolus vulgaris",
+    "category": "Vegetable Crop",
+    "description": "Beans are leguminous crops grown for their edible pods or seeds, rich in proteins and vitamins.",
+    "soilType": "Well-drained loamy soil",
+    "soilpH": "6.0 - 7.0",
+    "growthConditions": {
+      "temperature": "18°C - 28°C",
+      "rainfall": "500 - 700 mm",
+      "light": "Full sunlight",
+      "climate": "Moderate and frost-free"
+    },
+    "fertilizer": {
+      "nitrogen": "25 kg/ha",
+      "phosphorus": "50 kg/ha",
+      "potassium": "30 kg/ha"
+    },
+    "irrigation": {
+      "frequency": "Every 6-7 days",
+      "method": "Furrow irrigation"
+    },
+    "plantingDetails": {
+      "season": "October - December",
+      "spacing": "45 cm x 10 cm",
+      "seedRate": "30 kg/ha"
+    },
+    "harvesting": {
+      "duration": "60 - 90 days",
+      "method": "Picking tender pods"
+    },
+    "yield": "8 - 10 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹25 - ₹60/kg",
+      "valueAddition": ["Canned beans", "Dehydrated beans"]
+    },
+    "interestingFacts": [
+      "Beans fix atmospheric nitrogen and enrich soil fertility.",
+      "They are rich in proteins and dietary fiber."
+    ]
+  },
+
+  {
+    "kannadaName": "ಬಾಳೆಹಣ್ಣು (Balehannu)",
+    "name": "Banana",
+    "scientificName": "Musa paradisiaca",
+    "category": "Fruit Crop",
+    "description": "Banana is one of the most popular tropical fruits, cultivated for its nutritious and easily digestible fruit.",
+    "soilType": "Rich loamy soil with good drainage",
+    "soilpH": "6.0 - 7.5",
+    "growthConditions": {
+      "temperature": "26°C - 30°C",
+      "rainfall": "1000 - 2500 mm",
+      "light": "Full sunlight",
+      "climate": "Warm and humid tropical climate"
+    },
+    "fertilizer": {
+      "nitrogen": "200 g/plant",
+      "phosphorus": "100 g/plant",
+      "potassium": "200 g/plant"
+    },
+    "irrigation": {
+      "frequency": "Every 5-7 days",
+      "method": "Drip or basin irrigation"
+    },
+    "plantingDetails": {
+      "season": "June - September or February - April",
+      "spacing": "1.8 m x 1.5 m",
+      "seedRate": "1500 suckers/ha"
+    },
+    "harvesting": {
+      "duration": "11 - 12 months after planting",
+      "method": "Cutting the whole bunch when mature"
+    },
+    "yield": "40 - 50 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹20 - ₹35/kg",
+      "valueAddition": ["Banana chips", "Banana powder", "Fiber"]
+    },
+    "interestingFacts": [
+      "India is the largest producer of bananas in the world.",
+      "Banana plants are technically herbs, not trees."
+    ]
+  },
+  {
+    "kannadaName": "ಮಾವಿನ ಹಣ್ಣು (Mavina Hannu)",
+    "name": "Mango",
+    "scientificName": "Mangifera indica",
+    "category": "Fruit Crop",
+    "description": "Mango, the king of fruits, is widely grown in India and enjoyed for its sweetness and flavor.",
+    "soilType": "Deep, well-drained loamy soil",
+    "soilpH": "5.5 - 7.5",
+    "growthConditions": {
+      "temperature": "24°C - 30°C",
+      "rainfall": "750 - 2500 mm",
+      "light": "Full sunlight",
+      "climate": "Tropical and subtropical"
+    },
+    "fertilizer": {
+      "nitrogen": "1 kg/tree",
+      "phosphorus": "0.5 kg/tree",
+      "potassium": "1 kg/tree annually"
+    },
+    "irrigation": {
+      "frequency": "Every 10-15 days during fruiting",
+      "method": "Basin or drip irrigation"
+    },
+    "plantingDetails": {
+      "season": "June - August",
+      "spacing": "10 m x 10 m",
+      "seedRate": "100 trees/ha"
+    },
+    "harvesting": {
+      "duration": "3 - 5 years for grafted plants",
+      "method": "Hand picking of mature fruits"
+    },
+    "yield": "8 - 10 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹40 - ₹120/kg",
+      "valueAddition": ["Juices", "Pickles", "Pulp"]
+    },
+    "interestingFacts": [
+      "India is the largest producer and exporter of mangoes.",
+      "Mango is the national fruit of India."
+    ]
+  },
+  {
+    "kannadaName": "ಪಪ್ಪಾಯಿ (Pappayi)",
+    "name": "Papaya",
+    "scientificName": "Carica papaya",
+    "category": "Fruit Crop",
+    "description": "Papaya is a tropical fruit rich in vitamins A and C, commonly used for eating fresh and in juice form.",
+    "soilType": "Fertile, well-drained loamy soil",
+    "soilpH": "6.0 - 7.0",
+    "growthConditions": {
+      "temperature": "22°C - 33°C",
+      "rainfall": "1000 - 1500 mm",
+      "light": "Full sunlight",
+      "climate": "Warm and frost-free"
+    },
+    "fertilizer": {
+      "nitrogen": "250 g/plant",
+      "phosphorus": "200 g/plant",
+      "potassium": "500 g/plant"
+    },
+    "irrigation": {
+      "frequency": "Every 4-5 days",
+      "method": "Drip irrigation"
+    },
+    "plantingDetails": {
+      "season": "June - July and October - November",
+      "spacing": "1.8 m x 1.8 m",
+      "seedRate": "400-500 g/ha"
+    },
+    "harvesting": {
+      "duration": "8 - 10 months after planting",
+      "method": "Hand picking of yellowing fruits"
+    },
+    "yield": "40 - 60 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹20 - ₹40/kg",
+      "valueAddition": ["Papaya jam", "Papain enzyme"]
+    },
+    "interestingFacts": [
+      "Papaya latex contains papain, used in medicine and food industry.",
+      "It is one of the fastest-growing tropical fruit trees."
+    ]
+  },
+  {
+    "kannadaName": "ಸೀತಾಫಲ (Seetaphala)",
+    "name": "Custard Apple",
+    "scientificName": "Annona squamosa",
+    "category": "Fruit Crop",
+    "description": "Custard apple is a delicious fruit known for its sweet, creamy pulp and nutritional value.",
+    "soilType": "Red loamy soil with good drainage",
+    "soilpH": "6.0 - 7.5",
+    "growthConditions": {
+      "temperature": "25°C - 35°C",
+      "rainfall": "700 - 1000 mm",
+      "light": "Full sunlight",
+      "climate": "Tropical and subtropical"
+    },
+    "fertilizer": {
+      "nitrogen": "100 g/tree",
+      "phosphorus": "50 g/tree",
+      "potassium": "100 g/tree"
+    },
+    "irrigation": {
+      "frequency": "Every 10 days",
+      "method": "Basin irrigation"
+    },
+    "plantingDetails": {
+      "season": "June - July",
+      "spacing": "5 m x 5 m",
+      "seedRate": "400 plants/ha"
+    },
+    "harvesting": {
+      "duration": "3 - 4 years after planting",
+      "method": "Hand picking of mature fruits"
+    },
+    "yield": "10 - 12 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹60 - ₹100/kg",
+      "valueAddition": ["Custard apple pulp", "Ice cream flavoring"]
+    },
+    "interestingFacts": [
+      "Custard apple is rich in iron and antioxidants.",
+      "It is also known as 'Sitaphal' in many Indian languages."
+    ]
+  },
+  {
+    "kannadaName": "ಪೇರಲೆ (Perale)",
+    "name": "Guava",
+    "scientificName": "Psidium guajava",
+    "category": "Fruit Crop",
+    "description": "Guava is a hardy fruit crop rich in vitamin C, grown in tropical and subtropical regions.",
+    "soilType": "Alluvial or sandy loam soil",
+    "soilpH": "5.5 - 7.0",
+    "growthConditions": {
+      "temperature": "23°C - 28°C",
+      "rainfall": "1000 mm",
+      "light": "Full sunlight",
+      "climate": "Tropical and subtropical"
+    },
+    "fertilizer": {
+      "nitrogen": "200 g/tree",
+      "phosphorus": "100 g/tree",
+      "potassium": "200 g/tree"
+    },
+    "irrigation": {
+      "frequency": "Every 7-10 days",
+      "method": "Basin irrigation"
+    },
+    "plantingDetails": {
+      "season": "June - August or February - March",
+      "spacing": "6 m x 6 m",
+      "seedRate": "250 trees/ha"
+    },
+    "harvesting": {
+      "duration": "2 - 3 years after planting",
+      "method": "Hand picking of mature fruits"
+    },
+    "yield": "15 - 25 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹20 - ₹60/kg",
+      "valueAddition": ["Guava juice", "Jelly", "Candy"]
+    },
+    "interestingFacts": [
+      "Guava contains 4 times more vitamin C than oranges.",
+      "It can be grown in a wide range of soil conditions."
+    ]
+  },
+
+  {
+    "kannadaName": "ಅರಿಶಿನ (Arishina)",
+    "name": "Turmeric",
+    "scientificName": "Curcuma longa",
+    "category": "Spice Crop",
+    "description": "Turmeric is a rhizome crop known for its vibrant yellow color and medicinal properties. It is used in cooking, cosmetics, and Ayurvedic medicine.",
+    "soilType": "Well-drained loamy or alluvial soil rich in organic matter",
+    "soilpH": "5.5 - 7.5",
+    "growthConditions": {
+      "temperature": "20°C - 30°C",
+      "rainfall": "1000 - 2000 mm",
+      "light": "Partial shade to full sunlight",
+      "climate": "Warm and humid tropical climate"
+    },
+    "fertilizer": {
+      "basal": "FYM 25 tons/ha",
+      "nitrogen": "150 kg/ha",
+      "phosphorus": "60 kg/ha",
+      "potassium": "90 kg/ha"
+    },
+    "irrigation": {
+      "frequency": "Every 7-10 days during dry season",
+      "method": "Furrow or drip irrigation"
+    },
+    "plantingDetails": {
+      "season": "April - June (onset of monsoon)",
+      "spacing": "45 cm x 30 cm",
+      "seedRate": "2500 kg rhizomes/ha"
+    },
+    "harvesting": {
+      "duration": "7 - 9 months after planting",
+      "method": "Lifting whole plants and collecting rhizomes"
+    },
+    "yield": "20 - 25 tons/ha (fresh rhizomes)",
+    "economicValue": {
+      "marketPrice": "₹60 - ₹120/kg (dry turmeric)",
+      "valueAddition": ["Turmeric powder", "Essential oil", "Curcumin extract"]
+    },
+    "interestingFacts": [
+      "India accounts for over 75% of global turmeric production.",
+      "Curcumin, the active ingredient, has strong anti-inflammatory properties."
+    ]
+  },
+  {
+    "kannadaName": "ಶುಂಠಿ (Shunti)",
+    "name": "Ginger",
+    "scientificName": "Zingiber officinale",
+    "category": "Spice Crop",
+    "description": "Ginger is an aromatic spice used for its pungent flavor and medicinal properties. It is a popular ingredient in both food and herbal medicine.",
+    "soilType": "Sandy loam soil rich in organic matter",
+    "soilpH": "6.0 - 6.5",
+    "growthConditions": {
+      "temperature": "25°C - 30°C",
+      "rainfall": "1500 - 2500 mm",
+      "light": "Partial shade",
+      "climate": "Warm and humid"
+    },
+    "fertilizer": {
+      "basal": "FYM 20-25 tons/ha",
+      "nitrogen": "75 kg/ha",
+      "phosphorus": "50 kg/ha",
+      "potassium": "50 kg/ha"
+    },
+    "irrigation": {
+      "frequency": "Every 7 days",
+      "method": "Furrow irrigation"
+    },
+    "plantingDetails": {
+      "season": "April - June (pre-monsoon)",
+      "spacing": "30 cm x 20 cm",
+      "seedRate": "1500-2000 kg rhizomes/ha"
+    },
+    "harvesting": {
+      "duration": "8 - 10 months after planting",
+      "method": "Hand lifting of rhizomes"
+    },
+    "yield": "15 - 20 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹40 - ₹100/kg",
+      "valueAddition": ["Dried ginger", "Ginger powder", "Essential oil"]
+    },
+    "interestingFacts": [
+      "Ginger is native to South Asia and is one of the earliest spices known to mankind.",
+      "It is used in tea, medicines, and beauty products."
+    ]
+  },
+  {
+    "kannadaName": "ಎಲಕ್ಕಿ (Elakki)",
+    "name": "Cardamom",
+    "scientificName": "Elettaria cardamomum",
+    "category": "Spice Crop",
+    "description": "Cardamom is known as the 'Queen of Spices' for its aromatic pods used in flavoring foods and beverages.",
+    "soilType": "Deep, well-drained forest loamy soil rich in humus",
+    "soilpH": "5.5 - 6.5",
+    "growthConditions": {
+      "temperature": "15°C - 35°C",
+      "rainfall": "1500 - 2500 mm",
+      "light": "Partial shade under forest canopy",
+      "climate": "Humid tropical climate"
+    },
+    "fertilizer": {
+      "nitrogen": "75 kg/ha",
+      "phosphorus": "75 kg/ha",
+      "potassium": "150 kg/ha"
+    },
+    "irrigation": {
+      "frequency": "Every 10-12 days",
+      "method": "Sprinkler irrigation"
+    },
+    "plantingDetails": {
+      "season": "June - September",
+      "spacing": "2 m x 2 m",
+      "seedRate": "2500 suckers/ha"
+    },
+    "harvesting": {
+      "duration": "2-3 years after planting",
+      "method": "Hand picking of mature pods"
+    },
+    "yield": "400 - 600 kg/ha (dry pods)",
+    "economicValue": {
+      "marketPrice": "₹800 - ₹1500/kg",
+      "valueAddition": ["Cardamom powder", "Oil", "Extracts"]
+    },
+    "interestingFacts": [
+      "India and Guatemala are the leading producers of cardamom.",
+      "Cardamom is used in sweets, teas, and perfumes."
+    ]
+  },
+  {
+    "kannadaName": "ಮೆಣಸು (Menasu)",
+    "name": "Black Pepper",
+    "scientificName": "Piper nigrum",
+    "category": "Spice Crop",
+    "description": "Black pepper, known as the 'King of Spices', is a climbing vine cultivated for its dried fruit used as spice and seasoning.",
+    "soilType": "Well-drained clay loam soil rich in organic matter",
+    "soilpH": "5.5 - 6.5",
+    "growthConditions": {
+      "temperature": "23°C - 32°C",
+      "rainfall": "2000 - 3000 mm",
+      "light": "Partial shade",
+      "climate": "Hot and humid tropical"
+    },
+    "fertilizer": {
+      "nitrogen": "100 g/vine",
+      "phosphorus": "40 g/vine",
+      "potassium": "140 g/vine"
+    },
+    "irrigation": {
+      "frequency": "Every 7-10 days during dry period",
+      "method": "Drip or basin irrigation"
+    },
+    "plantingDetails": {
+      "season": "June - August",
+      "spacing": "2.5 m x 2.5 m",
+      "seedRate": "1000 vines/ha"
+    },
+    "harvesting": {
+      "duration": "3 - 4 years after planting",
+      "method": "Hand picking of mature spikes"
+    },
+    "yield": "1 - 1.5 tons/ha (dry pepper)",
+    "economicValue": {
+      "marketPrice": "₹500 - ₹900/kg",
+      "valueAddition": ["Ground pepper", "Pepper oil", "White pepper"]
+    },
+    "interestingFacts": [
+      "Black pepper is native to the Western Ghats of India.",
+      "It was once used as a form of currency."
+    ]
+  },
+  {
+    "kannadaName": "ಲವಂಗ (Lavanga)",
+    "name": "Clove",
+    "scientificName": "Syzygium aromaticum",
+    "category": "Spice Crop",
+    "description": "Clove is a valuable aromatic spice used in food, perfumery, and medicine for its antiseptic properties.",
+    "soilType": "Deep loamy soil with good drainage",
+    "soilpH": "5.5 - 6.5",
+    "growthConditions": {
+      "temperature": "20°C - 30°C",
+      "rainfall": "1500 - 2500 mm",
+      "light": "Partial shade",
+      "climate": "Humid tropical"
+    },
+    "fertilizer": {
+      "nitrogen": "150 g/tree",
+      "phosphorus": "100 g/tree",
+      "potassium": "150 g/tree"
+    },
+    "irrigation": {
+      "frequency": "Every 10-15 days",
+      "method": "Basin irrigation"
+    },
+    "plantingDetails": {
+      "season": "June - September",
+      "spacing": "6 m x 6 m",
+      "seedRate": "250 trees/ha"
+    },
+    "harvesting": {
+      "duration": "6 - 8 years after planting",
+      "method": "Hand picking of flower buds"
+    },
+    "yield": "250 - 400 kg/ha (dry cloves)",
+    "economicValue": {
+      "marketPrice": "₹800 - ₹1200/kg",
+      "valueAddition": ["Clove oil", "Powder", "Medicinal extracts"]
+    },
+    "interestingFacts": [
+      "Cloves are flower buds dried before opening.",
+      "Indonesia and India are leading producers."
+    ]
+  },
+
+  {
+    "kannadaName": "ಟೊಮ್ಯಾಟೊ (Tomato)",
+    "name": "Tomato",
+    "scientificName": "Solanum lycopersicum",
+    "category": "Vegetable Crop",
+    "description": "Tomato is a widely cultivated vegetable used in various cuisines. It is rich in vitamin C, lycopene, and antioxidants.",
+    "soilType": "Well-drained loamy soil",
+    "soilpH": "6.0 - 7.0",
+    "growthConditions": {
+      "temperature": "21°C - 27°C",
+      "rainfall": "600 - 800 mm",
+      "light": "Full sunlight",
+      "climate": "Warm and dry during fruiting"
+    },
+    "fertilizer": {
+      "basal": "FYM 20-25 tons/ha",
+      "nitrogen": "75 kg/ha",
+      "phosphorus": "40 kg/ha",
+      "potassium": "25 kg/ha"
+    },
+    "irrigation": {
+      "frequency": "Once every 7–10 days",
+      "method": "Drip or furrow irrigation"
+    },
+    "plantingDetails": {
+      "season": "Rabi and Kharif",
+      "spacing": "60 cm x 45 cm",
+      "seedRate": "250–300 g/ha"
+    },
+    "harvesting": {
+      "duration": "90–120 days",
+      "method": "Manual picking of red ripe fruits"
+    },
+    "yield": "25–30 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹15 – ₹30/kg",
+      "valueAddition": ["Tomato puree", "Ketchup", "Sauce"]
+    },
+    "interestingFacts": [
+      "Tomatoes were once considered poisonous in Europe.",
+      "Rich in lycopene, an antioxidant beneficial for heart health."
+    ]
+  },
+  {
+    "kannadaName": "ಈರುಳ್ಳಿ (Eerulli)",
+    "name": "Onion",
+    "scientificName": "Allium cepa",
+    "category": "Vegetable Crop",
+    "description": "Onion is an essential spice and vegetable crop used in almost every cuisine.",
+    "soilType": "Fertile sandy loam",
+    "soilpH": "6.0 - 7.5",
+    "growthConditions": {
+      "temperature": "15°C - 25°C",
+      "rainfall": "500 - 700 mm",
+      "light": "Full sunlight",
+      "climate": "Cool and dry during bulb formation"
+    },
+    "fertilizer": {
+      "basal": "FYM 25 tons/ha",
+      "nitrogen": "75 kg/ha",
+      "phosphorus": "40 kg/ha",
+      "potassium": "40 kg/ha"
+    },
+    "irrigation": {
+      "frequency": "Every 8–10 days",
+      "method": "Furrow or sprinkler"
+    },
+    "plantingDetails": {
+      "season": "Rabi (October–December)",
+      "spacing": "15 cm x 10 cm",
+      "seedRate": "8–10 kg/ha"
+    },
+    "harvesting": {
+      "duration": "100–120 days",
+      "method": "Pulling bulbs after neck fall"
+    },
+    "yield": "20–25 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹18 – ₹35/kg",
+      "valueAddition": ["Onion flakes", "Onion powder"]
+    },
+    "interestingFacts": [
+      "India is the second-largest producer of onions.",
+      "Onion has antibacterial and heart-healthy properties."
+    ]
+  },
+  {
+    "kannadaName": "ಬೆಳ್ಳುಳ್ಳಿ (Bellulli)",
+    "name": "Garlic",
+    "scientificName": "Allium sativum",
+    "category": "Vegetable Crop",
+    "description": "Garlic is a spice crop valued for its flavor and medicinal properties.",
+    "soilType": "Well-drained sandy loam",
+    "soilpH": "6.0 - 7.0",
+    "growthConditions": {
+      "temperature": "15°C - 25°C",
+      "rainfall": "600 mm",
+      "light": "Full sunlight",
+      "climate": "Cool and dry"
+    },
+    "fertilizer": {
+      "basal": "FYM 20 tons/ha",
+      "nitrogen": "50 kg/ha",
+      "phosphorus": "25 kg/ha",
+      "potassium": "25 kg/ha"
+    },
+    "irrigation": {
+      "frequency": "Every 10–12 days",
+      "method": "Furrow irrigation"
+    },
+    "plantingDetails": {
+      "season": "Rabi (October–November)",
+      "spacing": "15 cm x 10 cm",
+      "seedRate": "500 kg cloves/ha"
+    },
+    "harvesting": {
+      "duration": "120–150 days",
+      "method": "Manual pulling of bulbs"
+    },
+    "yield": "6–8 tons/ha",
+    "economicValue": {
+      "marketPrice": "₹70 – ₹150/kg",
+      "valueAddition": ["Garlic paste", "Dehydrated garlic"]
+    },
+    "interestingFacts": [
+      "Garlic is known for lowering blood pressure.",
+      "Used both as a spice and herbal medicine."
+    ]
+  }
+]
+
+
+

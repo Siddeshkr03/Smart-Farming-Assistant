@@ -1,106 +1,160 @@
-// src/components/CropHealth.jsx
 import React, { useState } from "react";
+import cropData from "../data/cropData.json";
 import "./CropHealth.css";
 
-const CropHealth = () => {
-  const [plantName, setPlantName] = useState("");
-  const [imageFile, setImageFile] = useState(null);
-  const [result, setResult] = useState(null);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
+function CropHealth() {
+  const [search, setSearch] = useState("");
+  const [crop, setCrop] = useState(null);
+  const [image, setImage] = useState(null);
+  const [message, setMessage] = useState("");
 
-  const API_URL = "https://plant.id/api/v3/identify";
-  const API_KEY = "7OICEhjghJboOUZjFjk0RzvLxNiRZm0Ns6xKKhlK03p44hJ6tR";
-
-  const handleSubmit = async () => {
-    setError("");
-    setResult(null);
-
-    if (!plantName && !imageFile) {
-      setError("Please enter a crop name or upload a photo.");
+  // 🎤 Voice Input
+  const handleVoiceInput = () => {
+    if (!("webkitSpeechRecognition" in window)) {
+      alert("Voice input not supported in this browser.");
       return;
     }
 
-    setLoading(true);
+    const recognition = new window.webkitSpeechRecognition();
+    recognition.lang = "kn-IN"; // Kannada language
+    recognition.start();
 
-    let payload = {};
+    recognition.onresult = (event) => {
+      const voiceText = event.results[0][0].transcript;
+      setSearch(voiceText);
+      handleSearch(voiceText);
+    };
 
-    if (plantName && !imageFile) {
-      payload = {
-        api_key: API_KEY,
-        plant_name: plantName,
-      };
-    } else if (imageFile && !plantName) {
-      const base64 = await toBase64(imageFile);
-      payload = {
-        api_key: API_KEY,
-        images: [base64],
-      };
-    }
-
-    try {
-      const res = await fetch(API_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-
-      if (!res.ok) throw new Error("Failed to fetch data");
-
-      const data = await res.json();
-      setResult(data);
-    } catch (err) {
-      console.error(err);
-      setError("Failed to fetch data. Please try again.");
-    } finally {
-      setLoading(false);
-    }
+    recognition.onerror = () => {
+      setMessage("🎤 Voice recognition error. Please try again.");
+    };
   };
 
-  const toBase64 = (file) =>
-    new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onload = () => resolve(reader.result.split(",")[1]); // remove data:image/...;base64,
-      reader.onerror = (error) => reject(error);
-    });
+  // 🔍 Search Crop
+  const handleSearch = (customQuery) => {
+    const query = (customQuery || search).trim().toLowerCase();
+
+    if (!query) {
+      setMessage("⚠️ Please enter or speak a crop name.");
+      return;
+    }
+
+    setMessage("🔍 Searching crop details...");
+    setCrop(null);
+    setImage(null);
+
+    // ✅ Partial match search (English + Kannada)
+    const foundCrop = cropData.find(
+      (c) =>
+        c.name?.toLowerCase().includes(query) ||
+        c.kannadaName?.toLowerCase().includes(query)
+    );
+
+    setTimeout(() => {
+      if (foundCrop) {
+        setCrop(foundCrop);
+        setMessage("");
+      } else {
+        setMessage("❌ No data found for this crop.");
+      }
+    }, 700);
+  };
+
+  // 📸 Image Upload (Optional)
+  const handleImageUpload = (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    setSearch("");
+    setCrop(null);
+    setMessage("🪴 Analyzing uploaded image...");
+
+    const fileName = file.name.toLowerCase();
+    const foundCrop = cropData.find((c) =>
+      fileName.includes(c.name?.toLowerCase())
+    );
+
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      setImage(reader.result);
+      setTimeout(() => {
+        if (foundCrop) {
+          setCrop(foundCrop);
+          setMessage("");
+        } else {
+          setMessage(
+            "❌ Could not identify crop from image. Try renaming it clearly."
+          );
+        }
+      }, 1000);
+    };
+    reader.readAsDataURL(file);
+  };
 
   return (
-    <div className="crop-health-container">
-      <h2>🌿 Crop Health Analysis</h2>
+    <div className="crop-container">
+      <h2>🌾 Crop Identification & Health Analysis</h2>
+      <p className="note">
+        Enter a crop name (English or Kannada), upload a photo, or use 🎤 voice input.
+      </p>
 
       <div className="input-section">
         <input
           type="text"
-          placeholder="Enter crop name"
-          value={plantName}
+          placeholder="Enter crop name (e.g., Tomato / ಟೊಮ್ಯಾಟೊ)"
+          value={search}
           onChange={(e) => {
-            setPlantName(e.target.value);
-            setImageFile(null); // disable image if name is entered
+            setSearch(e.target.value);
+            setCrop(null);
+            setImage(null);
           }}
         />
-        <input
-          type="file"
-          accept="image/*"
-          onChange={(e) => {
-            setImageFile(e.target.files[0]);
-            setPlantName(""); // disable name if image is uploaded
-          }}
-        />
-        <button onClick={handleSubmit} disabled={loading}>
-          {loading ? "Fetching..." : "Analyze"}
-        </button>
+        <button onClick={() => handleSearch()}>Search</button>
+        <button onClick={handleVoiceInput}>🎤 Voice</button>
+        <span className="or-text">OR</span>
+        <input type="file" accept="image/*" onChange={handleImageUpload} />
       </div>
 
-      {error && <p className="error">{error}</p>}
+      {message && <p className="message">{message}</p>}
 
-      {result && (
-        <div className="result-section">
-          <pre>{JSON.stringify(result, null, 2)}</pre>
+      {image && (
+        <div className="uploaded-preview">
+          <img src={image} alt="Uploaded Crop" className="uploaded-img" />
+        </div>
+      )}
+
+      {crop && (
+        <div className="crop-details">
+          {crop.image && (
+            <img src={crop.image} alt={crop.name} className="crop-img" />
+          )}
+          <h3>
+            {crop.kannadaName} ({crop.name})
+          </h3>
+          <p><strong>🧬 Scientific Name:</strong> {crop.scientificName || "N/A"}</p>
+          <p><strong>🌱 Soil Type:</strong> {crop.soilType || "N/A"}</p>
+          <p>
+            <strong>💧 Fertilizer:</strong>{" "}
+            {crop.fertilizer?.perAcre || crop.fertilizer?.basal || "N/A"}
+          </p>
+          <p>
+            <strong>🌤 Growth Conditions:</strong>{" "}
+            {crop.growthConditions
+              ? `${crop.growthConditions.temperature || ""}, ${
+                  crop.growthConditions.climate || ""
+                }`
+              : "N/A"}
+          </p>
+          <p>
+            <strong>📅 Planting Season:</strong>{" "}
+            {crop.plantingDetails?.season || "N/A"}
+          </p>
+          <p><strong>💰 Yield:</strong> {crop.yield || "N/A"}</p>
+          <p><strong>🦠 Common Diseases:</strong> {crop.commonDiseases || "N/A"}</p>
         </div>
       )}
     </div>
   );
-};
+}
 
 export default CropHealth;
