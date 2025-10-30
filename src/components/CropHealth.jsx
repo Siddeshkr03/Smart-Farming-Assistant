@@ -1,22 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import cropData from "../data/cropData.json";
 import "./CropHealth.css";
 
 function CropHealth() {
   const [search, setSearch] = useState("");
-  const [crop, setCrop] = useState(null);
-  const [image, setImage] = useState(null);
+  const [language, setLanguage] = useState("en");
   const [message, setMessage] = useState("");
+  const [searchedCrops, setSearchedCrops] = useState([]);
 
-  // 🎤 Voice Input
+  // Load crops from localStorage
+  useEffect(() => {
+    const savedCrops = localStorage.getItem("searchedCrops");
+    if (savedCrops) setSearchedCrops(JSON.parse(savedCrops));
+  }, []);
+
+  // Save crops to localStorage
+  useEffect(() => {
+    localStorage.setItem("searchedCrops", JSON.stringify(searchedCrops));
+  }, [searchedCrops]);
+
+  // Toggle language
+  const toggleLanguage = () => {
+    setLanguage((prev) => (prev === "en" ? "kn" : "en"));
+    setSearch("");
+    setMessage("");
+  };
+
+  // Voice input
   const handleVoiceInput = () => {
     if (!("webkitSpeechRecognition" in window)) {
       alert("Voice input not supported in this browser.");
       return;
     }
-
     const recognition = new window.webkitSpeechRecognition();
-    recognition.lang = "kn-IN"; // Kannada language
+    recognition.lang = language === "kn" ? "kn-IN" : "en-IN";
     recognition.start();
 
     recognition.onresult = (event) => {
@@ -25,25 +42,19 @@ function CropHealth() {
       handleSearch(voiceText);
     };
 
-    recognition.onerror = () => {
-      setMessage("🎤 Voice recognition error. Please try again.");
-    };
+    recognition.onerror = () => setMessage("🎤 Voice recognition error.");
   };
 
-  // 🔍 Search Crop
+  // Search crops
   const handleSearch = (customQuery) => {
     const query = (customQuery || search).trim().toLowerCase();
-
     if (!query) {
       setMessage("⚠️ Please enter or speak a crop name.");
       return;
     }
 
     setMessage("🔍 Searching crop details...");
-    setCrop(null);
-    setImage(null);
 
-    // ✅ Partial match search (English + Kannada)
     const foundCrop = cropData.find(
       (c) =>
         c.name?.toLowerCase().includes(query) ||
@@ -52,107 +63,129 @@ function CropHealth() {
 
     setTimeout(() => {
       if (foundCrop) {
-        setCrop(foundCrop);
-        setMessage("");
+        const exists = searchedCrops.some(
+          (c) =>
+            c.name.toLowerCase() === foundCrop.name.toLowerCase() ||
+            c.kannadaName.toLowerCase() === foundCrop.kannadaName.toLowerCase()
+        );
+
+        if (!exists) {
+          setSearchedCrops((prev) => [...prev, foundCrop]);
+          setMessage("");
+        } else {
+          setMessage("✅ Crop already displayed.");
+        }
       } else {
         setMessage("❌ No data found for this crop.");
       }
-    }, 700);
+    }, 600);
   };
 
-  // 📸 Image Upload (Optional)
-  const handleImageUpload = (e) => {
-    const file = e.target.files[0];
-    if (!file) return;
+  // Delete one crop
+  const handleDeleteCrop = (index) => {
+    const updated = searchedCrops.filter((_, i) => i !== index);
+    setSearchedCrops(updated);
+    localStorage.setItem("searchedCrops", JSON.stringify(updated));
+  };
 
-    setSearch("");
-    setCrop(null);
-    setMessage("🪴 Analyzing uploaded image...");
-
-    const fileName = file.name.toLowerCase();
-    const foundCrop = cropData.find((c) =>
-      fileName.includes(c.name?.toLowerCase())
-    );
-
-    const reader = new FileReader();
-    reader.onloadend = () => {
-      setImage(reader.result);
-      setTimeout(() => {
-        if (foundCrop) {
-          setCrop(foundCrop);
-          setMessage("");
-        } else {
-          setMessage(
-            "❌ Could not identify crop from image. Try renaming it clearly."
-          );
-        }
-      }, 1000);
-    };
-    reader.readAsDataURL(file);
+  // Clear all crops
+  const handleClearAll = () => {
+    if (window.confirm("Are you sure you want to clear all crops?")) {
+      setSearchedCrops([]);
+      localStorage.removeItem("searchedCrops");
+    }
   };
 
   return (
     <div className="crop-container">
-      <h2>🌾 Crop Identification & Health Analysis</h2>
+      <div className="header-section">
+        <h2>🌾 Crop Identification & Health Analysis</h2>
+        <button className="lang-toggle" onClick={toggleLanguage}>
+          🌐 {language === "en" ? "Switch to Kannada" : "Switch to English"}
+        </button>
+      </div>
+
       <p className="note">
-        Enter a crop name (English or Kannada), upload a photo, or use 🎤 voice input.
+        {language === "en"
+          ? "Enter or speak a crop name to fetch details. Previous crops stay visible."
+          : "ಬೆಳೆ ಹೆಸರನ್ನು ನಮೂದಿಸಿ ಅಥವಾ ಹೇಳಿ. ಹಿಂದಿನ ಬೆಳೆಗಳ ವಿವರಗಳು ಪುಟದಲ್ಲಿ ಉಳಿಯುತ್ತವೆ."}
       </p>
 
       <div className="input-section">
         <input
           type="text"
-          placeholder="Enter crop name (e.g., Tomato / ಟೊಮ್ಯಾಟೊ)"
+          placeholder={
+            language === "en"
+              ? "Enter crop name (e.g., Tomato)"
+              : "ಬೆಳೆ ಹೆಸರನ್ನು ನಮೂದಿಸಿ (ಉದಾ: ಟೊಮ್ಯಾಟೊ)"
+          }
           value={search}
-          onChange={(e) => {
-            setSearch(e.target.value);
-            setCrop(null);
-            setImage(null);
-          }}
+          onChange={(e) => setSearch(e.target.value)}
         />
-        <button onClick={() => handleSearch()}>Search</button>
+        <button onClick={() => handleSearch()}>🔍 Search</button>
         <button onClick={handleVoiceInput}>🎤 Voice</button>
-        <span className="or-text">OR</span>
-        <input type="file" accept="image/*" onChange={handleImageUpload} />
+        <button onClick={handleClearAll} className="clear-btn">
+          🗑️ Clear All
+        </button>
       </div>
 
       {message && <p className="message">{message}</p>}
 
-      {image && (
-        <div className="uploaded-preview">
-          <img src={image} alt="Uploaded Crop" className="uploaded-img" />
-        </div>
-      )}
+      <div className="crop-history">
+        <h3>{language === "en" ? "🪴 Fetched Crops" : "🪴 ಪಡೆದ ಬೆಳೆಗಳು"}</h3>
 
-      {crop && (
-        <div className="crop-details">
-          {crop.image && (
-            <img src={crop.image} alt={crop.name} className="crop-img" />
-          )}
-          <h3>
-            {crop.kannadaName} ({crop.name})
-          </h3>
-          <p><strong>🧬 Scientific Name:</strong> {crop.scientificName || "N/A"}</p>
-          <p><strong>🌱 Soil Type:</strong> {crop.soilType || "N/A"}</p>
-          <p>
-            <strong>💧 Fertilizer:</strong>{" "}
-            {crop.fertilizer?.perAcre || crop.fertilizer?.basal || "N/A"}
-          </p>
-          <p>
-            <strong>🌤 Growth Conditions:</strong>{" "}
-            {crop.growthConditions
-              ? `${crop.growthConditions.temperature || ""}, ${
-                  crop.growthConditions.climate || ""
-                }`
-              : "N/A"}
-          </p>
-          <p>
-            <strong>📅 Planting Season:</strong>{" "}
-            {crop.plantingDetails?.season || "N/A"}
-          </p>
-          <p><strong>💰 Yield:</strong> {crop.yield || "N/A"}</p>
-          <p><strong>🦠 Common Diseases:</strong> {crop.commonDiseases || "N/A"}</p>
+        <div className="crop-grid">
+          {searchedCrops.map((crop, index) => (
+            <div key={index} className="crop-card">
+              <button
+                className="delete-btn"
+                onClick={() => handleDeleteCrop(index)}
+              >
+                ✖
+              </button>
+
+              {crop.image && (
+                <img src={crop.image} alt={crop.name} className="crop-img" />
+              )}
+              <h4>
+                {crop.kannadaName} ({crop.name})
+              </h4>
+              <p>
+                <strong>🧬 Scientific Name:</strong>{" "}
+                {crop.scientificName || "Not Available"}
+              </p>
+              <p>
+                <strong>🌱 Soil Type:</strong> {crop.soilType || "Not specified"}
+              </p>
+              <p>
+                <strong>💧 Fertilizer:</strong>{" "}
+                {crop.fertilizer?.perAcre ||
+                  crop.fertilizer?.basal ||
+                  "Use organic manure or balanced NPK fertilizers"}
+              </p>
+              <p>
+                <strong>🌤 Growth Conditions:</strong>{" "}
+                {crop.growthConditions
+                  ? `${crop.growthConditions.temperature || ""}, ${
+                      crop.growthConditions.climate || ""
+                    }`
+                  : "Requires moderate climate with proper sunlight"}
+              </p>
+              <p>
+                <strong>📅 Planting Season:</strong>{" "}
+                {crop.plantingDetails?.season || "Seasonal crop"}
+              </p>
+              <p>
+                <strong>💰 Yield:</strong> {crop.yield || "Yield varies by soil"}
+              </p>
+              <p>
+                <strong>🦠 Diseases:</strong>{" "}
+                {crop.commonDiseases || "May suffer from common fungal infections"}
+              </p>
+            </div>
+          ))}
         </div>
-      )}
+      </div>
     </div>
   );
 }
