@@ -1,0 +1,67 @@
+[
+  {
+    "location": "Bengaluru",
+    "soilType": "Red Soil",
+    "pH": 6.5,
+    "moisture": "Moderate",
+    "nutrients": {
+      "nitrogen": "Medium",
+      "phosphorus": "Low",
+      "potassium": "Medium"
+    },
+    "recommendedCrops": ["Ragi", "Groundnut", "Cotton", "Tobacco"],
+    "image": "/images/red_soil.jpg"
+  },
+  {
+    "location": "Nagpur",
+    "soilType": "Black Soil",
+    "pH": 7.2,
+    "moisture": "High",
+    "nutrients": {
+      "nitrogen": "High",
+      "phosphorus": "Medium",
+      "potassium": "High"
+    },
+    "recommendedCrops": ["Cotton", "Soybean", "Sunflower", "Wheat"],
+    "image": "/images/black_soil.jpg"
+  },
+  {
+    "location": "Patna",
+    "soilType": "Alluvial Soil",
+    "pH": 7.0,
+    "moisture": "Good",
+    "nutrients": {
+      "nitrogen": "High",
+      "phosphorus": "Medium",
+      "potassium": "High"
+    },
+    "recommendedCrops": ["Rice", "Wheat", "Sugarcane", "Pulses"],
+    "image": "/images/alluvial_soil.jpg"
+  },
+  {
+    "location": "Jaipur",
+    "soilType": "Sandy Soil",
+    "pH": 8.0,
+    "moisture": "Low",
+    "nutrients": {
+      "nitrogen": "Low",
+      "phosphorus": "Low",
+      "potassium": "Low"
+    },
+    "recommendedCrops": ["Barley", "Millets", "Groundnut", "Watermelon"],
+    "image": "/images/sandy_soil.jpg"
+  },
+  {
+    "location": "Kollam",
+    "soilType": "Laterite Soil",
+    "pH": 5.5,
+    "moisture": "Moderate",
+    "nutrients": {
+      "nitrogen": "Medium",
+      "phosphorus": "Medium",
+      "potassium": "Low"
+    },
+    "recommendedCrops": ["Coconut", "Cashew", "Tea", "Coffee"],
+    "image": "/images/laterite_soil.jpg"
+  }
+]

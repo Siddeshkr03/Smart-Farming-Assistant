@@ -1,210 +1,183 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
+import soilData from "../data/soilData.json"; // ✅ Soil data in /data folder
 import "./Soil.css";
 
-const Soil = () => {
-  const [soilData, setSoilData] = useState(null);
-  const [city, setCity] = useState("Bengaluru");
-  const [inputCity, setInputCity] = useState("Bengaluru");
-  const [listening, setListening] = useState(false);
-  const recognitionRef = useRef(null);
+function SoilHealth() {
+  const [search, setSearch] = useState("");
+  const [language, setLanguage] = useState("en");
+  const [message, setMessage] = useState("");
+  const [searchedSoils, setSearchedSoils] = useState([]);
 
-  // Initialize Speech Recognition
+  // 🧠 Load saved soils from localStorage
   useEffect(() => {
-    if ("webkitSpeechRecognition" in window) {
-      const recognition = new window.webkitSpeechRecognition();
-      recognition.lang = "en-IN";
-      recognition.continuous = false;
-      recognition.interimResults = false;
-
-      recognition.onresult = (event) => {
-        const spokenCity = event.results[0][0].transcript;
-        setInputCity(spokenCity);
-        setCity(spokenCity);
-      };
-
-      recognition.onend = () => setListening(false);
-      recognitionRef.current = recognition;
-    } else {
-      console.warn("Speech recognition not supported in this browser.");
+    const savedSoils = localStorage.getItem("searchedSoils");
+    if (savedSoils) {
+      setSearchedSoils(JSON.parse(savedSoils));
     }
   }, []);
 
-  // Mock API for soil data (you can replace this with real API)
-  const fetchSoilData = async (cityName) => {
-    setSoilData(null); // show loading
-    await new Promise((r) => setTimeout(r, 1000)); // simulate delay
+  // 💾 Save soils whenever they change
+  useEffect(() => {
+    localStorage.setItem("searchedSoils", JSON.stringify(searchedSoils));
+  }, [searchedSoils]);
 
-    const mockData = {
-      city: cityName,
-      type: "Loamy",
-      color: "Dark Brown",
-      pH: 6.8,
-      ec: 1.2,
-      temperature: 26,
-      moisture: 55,
-      nutrients: {
-        N: "Medium",
-        P: "Low",
-        K: "High",
-        OrganicCarbon: "Moderate",
-        Sulphur: "Low",
-      },
-      healthIndex: 82,
-      suitableCrops: ["Maize 🌽", "Groundnut 🥜", "Sunflower 🌻"],
-      unsuitableCrops: ["Wheat 🌾"],
-      fertilizerRecommendation:
-        "Apply 60kg N, 30kg P₂O₅, 40kg K₂O per acre. Use Urea, DAP, and MOP.",
-    };
-
-    setSoilData(mockData);
+  // 🌐 Language Toggle
+  const toggleLanguage = () => {
+    setLanguage((prev) => (prev === "en" ? "kn" : "en"));
+    setMessage("");
+    setSearch("");
   };
 
-  useEffect(() => {
-    fetchSoilData(city);
-  }, [city]);
-
+  // 🎤 Voice Input
   const handleVoiceInput = () => {
-    if (!recognitionRef.current) {
-      alert("Speech Recognition not supported in your browser.");
+    if (!("webkitSpeechRecognition" in window)) {
+      alert("🎙️ Voice input not supported in this browser.");
       return;
     }
-    if (!listening) {
-      setListening(true);
-      recognitionRef.current.start();
-    } else {
-      recognitionRef.current.stop();
-      setListening(false);
-    }
+
+    const recognition = new window.webkitSpeechRecognition();
+    recognition.lang = language === "kn" ? "kn-IN" : "en-IN";
+    recognition.start();
+
+    recognition.onresult = (event) => {
+      const voiceText = event.results[0][0].transcript;
+      setSearch(voiceText);
+      handleSearch(voiceText);
+    };
   };
 
-  if (!soilData)
-    return (
-      <div className="soil-container">
-        <h2>🌱 Soil Dashboard</h2>
-        <div className="input-wrapper">
-          <input
-            type="text"
-            className="city-input"
-            placeholder="🎤 Speak or type location..."
-            value={inputCity}
-            onChange={(e) => setInputCity(e.target.value)}
-            onKeyDown={(e) => {
-              if (e.key === "Enter" && inputCity.trim() !== "") {
-                setCity(inputCity.trim());
-              }
-            }}
-          />
-          <button
-            className={`mic-btn ${listening ? "listening" : ""}`}
-            onClick={handleVoiceInput}
-            title="Speak location"
-          >
-            🎤
-          </button>
-        </div>
-        <p className="loading">Fetching soil data for {inputCity}...</p>
-      </div>
+  // 🔍 Search Soil Type
+  const handleSearch = (customQuery) => {
+    const query = (customQuery || search).trim().toLowerCase();
+    if (!query) {
+      setMessage("⚠️ Please enter or speak a soil type.");
+      return;
+    }
+
+    setMessage("🔍 Searching soil details...");
+
+    const foundSoil = soilData.find(
+      (s) =>
+        s.name?.toLowerCase().includes(query) ||
+        s.kannadaName?.toLowerCase().includes(query)
     );
+
+    setTimeout(() => {
+      if (foundSoil) {
+        const exists = searchedSoils.some(
+          (s) =>
+            s.name.toLowerCase() === foundSoil.name.toLowerCase() ||
+            s.kannadaName.toLowerCase() === foundSoil.kannadaName.toLowerCase()
+        );
+
+        if (!exists) {
+          setSearchedSoils((prev) => [...prev, foundSoil]);
+          setMessage("");
+        } else {
+          setMessage("✅ Soil already displayed.");
+        }
+      } else {
+        setMessage("❌ No data found for this soil type.");
+      }
+    }, 600);
+  };
+
+  // 🗑️ Remove single soil card
+  const handleRemove = (index) => {
+    const updated = searchedSoils.filter((_, i) => i !== index);
+    setSearchedSoils(updated);
+    localStorage.setItem("searchedSoils", JSON.stringify(updated));
+  };
+
+  // 🗑️ Clear all
+  const handleClearAll = () => {
+    if (window.confirm("Are you sure you want to clear all soils?")) {
+      setSearchedSoils([]);
+      localStorage.removeItem("searchedSoils");
+    }
+  };
 
   return (
     <div className="soil-container">
-      <h2>🌱 Soil Dashboard</h2>
-
-      <div className="input-wrapper">
-        <input
-          type="text"
-          className="city-input"
-          placeholder="🎤 Speak or type location..."
-          value={inputCity}
-          onChange={(e) => setInputCity(e.target.value)}
-          onKeyDown={(e) => {
-            if (e.key === "Enter" && inputCity.trim() !== "") {
-              setCity(inputCity.trim());
-            }
-          }}
-        />
-        <button
-          className={`mic-btn ${listening ? "listening" : ""}`}
-          onClick={handleVoiceInput}
-          title="Speak location"
-        >
-          🎤
+      <div className="header-section">
+        <h2>🌍 Soil Information & Analysis</h2>
+        <button className="lang-toggle" onClick={toggleLanguage}>
+          🌐 {language === "en" ? "Switch to Kannada" : "Switch to English"}
         </button>
       </div>
 
-      {/* Soil Overview */}
-      <div className="soil-section">
-        <h3>🧾 Soil Overview</h3>
-        <div className="soil-grid">
-          <div className="soil-card">Type: {soilData.type}</div>
-          <div className="soil-card">Color: {soilData.color}</div>
-          <div className="soil-card">pH: {soilData.pH}</div>
-          <div className="soil-card">EC: {soilData.ec} dS/m</div>
-          <div className="soil-card">Temp: {soilData.temperature}°C</div>
-          <div className="soil-card">Moisture: {soilData.moisture}%</div>
-        </div>
+      <p className="note">
+        {language === "en"
+          ? "Enter or speak a soil type to view its characteristics and crop suitability."
+          : "ಮಣ್ಣಿನ ಪ್ರಕಾರವನ್ನು ನಮೂದಿಸಿ ಅಥವಾ ಹೇಳಿ ಅದರ ವೈಶಿಷ್ಟ್ಯಗಳು ಮತ್ತು ಬೆಳೆಗೆ ಅನುಕೂಲತೆಗಳನ್ನು ನೋಡಲು."}
+      </p>
+
+      <div className="input-section">
+        <input
+          type="text"
+          placeholder={
+            language === "en"
+              ? "Enter soil type (e.g., Red soil)"
+              : "ಮಣ್ಣಿನ ಪ್ರಕಾರವನ್ನು ನಮೂದಿಸಿ (ಉದಾ: ಕೆಂಪು ಮಣ್ಣು)"
+          }
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+        <button onClick={() => handleSearch()}>🔍 Search</button>
+        <button onClick={handleVoiceInput}>🎤 Voice</button>
+        <button onClick={handleClearAll} className="clear-btn">
+          🗑️ Clear All
+        </button>
       </div>
 
-      {/* Nutrient Composition */}
-      <div className="soil-section">
-        <h3>🌿 Nutrient Composition</h3>
+      {message && <p className="message">{message}</p>}
+
+      <div className="soil-history">
+        <h3>{language === "en" ? "🪴 Fetched Soils" : "🪴 ಪಡೆದ ಮಣ್ಣುಗಳು"}</h3>
         <div className="soil-grid">
-          {Object.entries(soilData.nutrients).map(([key, value]) => (
-            <div key={key} className="soil-card">
-              {key}: {value}
+          {searchedSoils.map((soil, index) => (
+            <div key={index} className="soil-card">
+              <button
+                className="delete-btn"
+                onClick={() => handleRemove(index)}
+                title="Remove soil"
+              >
+                🗑️
+              </button>
+
+              <img
+                src={soil.image || "/images/default-soil.jpg"}
+                alt={soil.name}
+                className="soil-img"
+              />
+
+              <h4>
+                {soil.kannadaName} ({soil.name})
+              </h4>
+              <p>
+                <strong>🌱 Description:</strong> {soil.description || "N/A"}
+              </p>
+              <p>
+                <strong>🌾 Suitable Crops:</strong>{" "}
+                {soil.suitableCrops?.join(", ") || "N/A"}
+              </p>
+              <p>
+                <strong>💧 Water Holding Capacity:</strong>{" "}
+                {soil.waterHoldingCapacity || "N/A"}
+              </p>
+              <p>
+                <strong>🌤 Ideal Conditions:</strong>{" "}
+                {soil.conditions || "N/A"}
+              </p>
+              <p>
+                <strong>📍 Region Found:</strong> {soil.region || "N/A"}
+              </p>
             </div>
           ))}
         </div>
       </div>
-
-      {/* Soil Health Index */}
-      <div className="soil-section">
-        <h3>❤️ Soil Health Index</h3>
-        <div className="soil-card large">
-          <h1>{soilData.healthIndex}%</h1>
-          <p>
-            {soilData.healthIndex >= 80
-              ? "Healthy 🌱"
-              : soilData.healthIndex >= 50
-              ? "Moderate ⚠️"
-              : "Poor 🚫"}
-          </p>
-        </div>
-      </div>
-
-      {/* Crop Suitability */}
-      <div className="soil-section">
-        <h3>🌾 Crop Suitability</h3>
-        <div className="soil-grid">
-          <div className="soil-card">
-            <strong>Suitable:</strong> {soilData.suitableCrops.join(", ")}
-          </div>
-          <div className="soil-card">
-            <strong>Not Suitable:</strong> {soilData.unsuitableCrops.join(", ")}
-          </div>
-        </div>
-      </div>
-
-      {/* Fertilizer Recommendation */}
-      <div className="soil-section">
-        <h3>🧪 Fertilizer Recommendation</h3>
-        <div className="soil-card large">
-          <p>{soilData.fertilizerRecommendation}</p>
-        </div>
-      </div>
-
-      {/* Tips */}
-      <div className="soil-section">
-        <h3>💡 Soil Conservation Tips</h3>
-        <ul className="tips-list">
-          <li>Use organic compost to improve soil fertility.</li>
-          <li>Rotate crops to balance nutrient levels.</li>
-          <li>Prevent erosion by planting cover crops.</li>
-          <li>Avoid over-irrigation to reduce nutrient loss.</li>
-        </ul>
-      </div>
     </div>
   );
-};
+}
 
-export default Soil;
+export default SoilHealth;

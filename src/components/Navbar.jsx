@@ -38,7 +38,7 @@ function Navbar() {
             to="/crophealth"
             className={({ isActive }) => (isActive ? "active-link" : "")}
           >
-            Crop Health
+            Crop Details
           </NavLink>
         </li>
         <li>
