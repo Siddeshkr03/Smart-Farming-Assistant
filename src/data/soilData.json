@@ -1,67 +1,734 @@
 [
   {
-    "location": "Bengaluru",
-    "soilType": "Red Soil",
-    "pH": 6.5,
-    "moisture": "Moderate",
-    "nutrients": {
-      "nitrogen": "Medium",
-      "phosphorus": "Low",
-      "potassium": "Medium"
-    },
-    "recommendedCrops": ["Ragi", "Groundnut", "Cotton", "Tobacco"],
-    "image": "/images/red_soil.jpg"
+    "district": "Bengaluru Urban",
+    "soilTypes": [
+      {
+        "name": "Red Soil",
+        "kannadaName": "ಕೆಂಪು ಮಣ್ಣು",
+        "description": "Reddish soil formed from weathered granite and gneiss, rich in iron but poor in nitrogen and organic matter.",
+        "suitableCrops": ["Ragi", "Groundnut", "Maize", "Pulses", "Vegetables"],
+        "waterHoldingCapacity": "Low to Medium",
+        "conditions": "Slightly acidic and well-drained",
+        "region": "Southern Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Red_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Low",
+          "Phosphorus": "Medium",
+          "Potassium": "High",
+          "OrganicCarbon": "Low",
+          "pH": "Slightly Acidic",
+          "Sulfur": "Sufficient",
+          "Zinc": "Deficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
   },
   {
-    "location": "Nagpur",
-    "soilType": "Black Soil",
-    "pH": 7.2,
-    "moisture": "High",
-    "nutrients": {
-      "nitrogen": "High",
-      "phosphorus": "Medium",
-      "potassium": "High"
-    },
-    "recommendedCrops": ["Cotton", "Soybean", "Sunflower", "Wheat"],
-    "image": "/images/black_soil.jpg"
+    "district": "Bengaluru Rural",
+    "soilTypes": [
+      {
+        "name": "Red Loamy Soil",
+        "kannadaName": "ಕೆಂಪು ಲೋಮಿ ಮಣ್ಣು",
+        "description": "Well-drained loamy soil, rich in iron but low in nitrogen, suitable for millets and pulses.",
+        "suitableCrops": ["Ragi", "Groundnut", "Pulses", "Vegetables"],
+        "waterHoldingCapacity": "Medium",
+        "conditions": "Slightly acidic and well-drained",
+        "region": "Southern Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Red_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Low",
+          "Phosphorus": "Medium",
+          "Potassium": "Medium",
+          "OrganicCarbon": "Low",
+          "pH": "Neutral",
+          "Sulfur": "Deficient",
+          "Zinc": "Deficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
   },
   {
-    "location": "Patna",
-    "soilType": "Alluvial Soil",
-    "pH": 7.0,
-    "moisture": "Good",
-    "nutrients": {
-      "nitrogen": "High",
-      "phosphorus": "Medium",
-      "potassium": "High"
-    },
-    "recommendedCrops": ["Rice", "Wheat", "Sugarcane", "Pulses"],
-    "image": "/images/alluvial_soil.jpg"
+    "district": "Kolar",
+    "soilTypes": [
+      {
+        "name": "Red Soil",
+        "kannadaName": "ಕೆಂಪು ಮಣ್ಣು",
+        "description": "Red loamy soil derived from granite, low fertility but suitable for dryland crops.",
+        "suitableCrops": ["Ragi", "Millets", "Groundnut"],
+        "waterHoldingCapacity": "Medium",
+        "conditions": "Low moisture retention, iron-rich",
+        "region": "Southern Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Red_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Low",
+          "Phosphorus": "Medium",
+          "Potassium": "Medium",
+          "OrganicCarbon": "Low",
+          "pH": "Neutral",
+          "Sulfur": "Deficient",
+          "Zinc": "Deficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
   },
   {
-    "location": "Jaipur",
-    "soilType": "Sandy Soil",
-    "pH": 8.0,
-    "moisture": "Low",
-    "nutrients": {
-      "nitrogen": "Low",
-      "phosphorus": "Low",
-      "potassium": "Low"
-    },
-    "recommendedCrops": ["Barley", "Millets", "Groundnut", "Watermelon"],
-    "image": "/images/sandy_soil.jpg"
+    "district": "Tumakuru",
+    "soilTypes": [
+      {
+        "name": "Red Soil",
+        "kannadaName": "ಕೆಂಪು ಮಣ್ಣು",
+        "description": "Reddish soil mixed with loam, suitable for millets, ragi, and pulses.",
+        "suitableCrops": ["Ragi", "Pulses", "Millets"],
+        "waterHoldingCapacity": "Medium",
+        "conditions": "Neutral pH, low fertility",
+        "region": "Southern Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Red_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Low",
+          "Phosphorus": "Low",
+          "Potassium": "Medium",
+          "OrganicCarbon": "Low",
+          "pH": "Neutral",
+          "Sulfur": "Deficient",
+          "Zinc": "Deficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
   },
   {
-    "location": "Kollam",
-    "soilType": "Laterite Soil",
-    "pH": 5.5,
-    "moisture": "Moderate",
-    "nutrients": {
-      "nitrogen": "Medium",
-      "phosphorus": "Medium",
-      "potassium": "Low"
-    },
-    "recommendedCrops": ["Coconut", "Cashew", "Tea", "Coffee"],
-    "image": "/images/laterite_soil.jpg"
+    "district": "Mysuru",
+    "soilTypes": [
+      {
+        "name": "Red and Black Mixed Soil",
+        "kannadaName": "ಕೆಂಪು ಮತ್ತು ಕಪ್ಪು ಮಣ್ಣು",
+        "description": "Combination of red and black soils; fertile with moderate clay content.",
+        "suitableCrops": ["Cotton", "Sugarcane", "Maize", "Pulses"],
+        "waterHoldingCapacity": "High",
+        "conditions": "Moist and fertile, rich in iron and lime",
+        "region": "Southern Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Black_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Medium",
+          "Phosphorus": "Medium",
+          "Potassium": "Medium",
+          "OrganicCarbon": "Medium",
+          "pH": "Neutral",
+          "Sulfur": "Sufficient",
+          "Zinc": "Sufficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
+  },
+  {
+    "district": "Mandya",
+    "soilTypes": [
+      {
+        "name": "Alluvial Soil",
+        "kannadaName": "ಆಲ್ಯೂವಿಯಲ್ ಮಣ್ಣು",
+        "description": "Fertile soil found along river banks, best for paddy, sugarcane, and vegetables.",
+        "suitableCrops": ["Paddy", "Sugarcane", "Vegetables"],
+        "waterHoldingCapacity": "High",
+        "conditions": "Well-drained, neutral pH",
+        "region": "Southern Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/02/Alluvial_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Medium",
+          "Phosphorus": "Medium",
+          "Potassium": "Medium",
+          "OrganicCarbon": "Medium",
+          "pH": "Neutral",
+          "Sulfur": "Sufficient",
+          "Zinc": "Deficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
+  },
+  {
+    "district": "Chamarajanagara",
+    "soilTypes": [
+      {
+        "name": "Red Soil",
+        "kannadaName": "ಕೆಂಪು ಮಣ್ಣು",
+        "description": "Reddish soil rich in iron, low in nitrogen and phosphorus.",
+        "suitableCrops": ["Ragi", "Groundnut", "Sugarcane"],
+        "waterHoldingCapacity": "Low",
+        "conditions": "Slightly acidic and dry",
+        "region": "Southern Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Red_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Low",
+          "Phosphorus": "Low",
+          "Potassium": "High",
+          "OrganicCarbon": "Low",
+          "pH": "Slightly Acidic",
+          "Sulfur": "Deficient",
+          "Zinc": "Deficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
+  },
+  {
+    "district": "Ballari",
+    "soilTypes": [
+      {
+        "name": "Black Soil",
+        "kannadaName": "ಕಪ್ಪು ಮಣ್ಣು",
+        "description": "Deep black clayey soil formed from basalt, rich in lime and iron.",
+        "suitableCrops": ["Cotton", "Sunflower", "Jowar"],
+        "waterHoldingCapacity": "Very High",
+        "conditions": "Sticky when wet, cracks when dry",
+        "region": "Northern Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Black_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Medium",
+          "Phosphorus": "Medium",
+          "Potassium": "High",
+          "OrganicCarbon": "Medium",
+          "pH": "Slightly Alkaline",
+          "Sulfur": "Sufficient",
+          "Zinc": "Sufficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
+  },
+  {
+    "district": "Belagavi",
+    "soilTypes": [
+      {
+        "name": "Black Soil",
+        "kannadaName": "ಕಪ್ಪು ಮಣ್ಣು",
+        "description": "Deep black soil, highly fertile and moisture-retentive, good for cotton and sugarcane.",
+        "suitableCrops": ["Cotton", "Sugarcane", "Maize"],
+        "waterHoldingCapacity": "High",
+        "conditions": "Alkaline and rich in minerals",
+        "region": "Northern Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Black_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Medium",
+          "Phosphorus": "Medium",
+          "Potassium": "High",
+          "OrganicCarbon": "Medium",
+          "pH": "Neutral",
+          "Sulfur": "Sufficient",
+          "Zinc": "Sufficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
+  },
+  {
+    "district": "Hassan",
+    "soilTypes": [
+      {
+        "name": "Laterite Soil",
+        "kannadaName": "ಲೇಟರೈಟ್ ಮಣ್ಣು",
+        "description": "Rich in iron and aluminum, poor in nitrogen, found in hilly regions.",
+        "suitableCrops": ["Coffee", "Tea", "Cashew"],
+        "waterHoldingCapacity": "Low",
+        "conditions": "Humid and well-drained",
+        "region": "Western Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Laterite_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Medium",
+          "Phosphorus": "Medium",
+          "Potassium": "Medium",
+          "OrganicCarbon": "Medium",
+          "pH": "Slightly Acidic",
+          "Sulfur": "Sufficient",
+          "Zinc": "Sufficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
+  },
+  {
+    "district": "Chikkamagaluru",
+    "soilTypes": [
+      {
+        "name": "Laterite Soil",
+        "kannadaName": "ಲೇಟರೈಟ್ ಮಣ್ಣು",
+        "description": "Found in hilly and coffee-growing regions; rich in iron, poor in nitrogen.",
+        "suitableCrops": ["Coffee", "Pepper", "Arecanut"],
+        "waterHoldingCapacity": "Low",
+        "conditions": "High rainfall and humidity",
+        "region": "Western Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Laterite_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Medium",
+          "Phosphorus": "Medium",
+          "Potassium": "Medium",
+          "OrganicCarbon": "Medium",
+          "pH": "Slightly Acidic",
+          "Sulfur": "Sufficient",
+          "Zinc": "Sufficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
+  },
+  {
+    "district": "Kodagu",
+    "soilTypes": [
+      {
+        "name": "Laterite Soil",
+        "kannadaName": "ಲೇಟರೈಟ್ ಮಣ್ಣು",
+        "description": "Deep red lateritic soil, ideal for plantation crops like coffee and spices.",
+        "suitableCrops": ["Coffee", "Pepper", "Cardamom"],
+        "waterHoldingCapacity": "Medium",
+        "conditions": "Humid and well-drained",
+        "region": "Western Ghat Region",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Laterite_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Medium",
+          "Phosphorus": "Medium",
+          "Potassium": "High",
+          "OrganicCarbon": "Medium",
+          "pH": "Slightly Acidic",
+          "Sulfur": "Sufficient",
+          "Zinc": "Sufficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
+  },
+  {
+    "district": "Udupi",
+    "soilTypes": [
+      {
+        "name": "Coastal Alluvial Soil",
+        "kannadaName": "ತೀರದ ಆಲ್ಯೂವಿಯಲ್ ಮಣ್ಣು",
+        "description": "Fertile soil formed by sea and river deposits, suitable for paddy and coconut.",
+        "suitableCrops": ["Paddy", "Coconut", "Arecanut", "Vegetables"],
+        "waterHoldingCapacity": "Medium to High",
+        "conditions": "Saline near coast, rich in organic matter",
+        "region": "Coastal Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Coastal_alluvial_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "High",
+          "Phosphorus": "Medium",
+          "Potassium": "High",
+          "OrganicCarbon": "High",
+          "pH": "Neutral",
+          "Sulfur": "Sufficient",
+          "Zinc": "Sufficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
+  },
+  {
+    "district": "Dakshina Kannada",
+    "soilTypes": [
+      {
+        "name": "Coastal Alluvial Soil",
+        "kannadaName": "ತೀರದ ಮಣ್ಣು",
+        "description": "Coastal sandy loam, high in organic matter, used for paddy and plantation crops.",
+        "suitableCrops": ["Paddy", "Coconut", "Banana"],
+        "waterHoldingCapacity": "Medium",
+        "conditions": "High rainfall, saline in coastal belt",
+        "region": "Coastal Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Coastal_alluvial_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "High",
+          "Phosphorus": "Medium",
+          "Potassium": "High",
+          "OrganicCarbon": "High",
+          "pH": "Neutral",
+          "Sulfur": "Sufficient",
+          "Zinc": "Sufficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
+  },
+  {
+    "district": "Vijayapura",
+    "soilTypes": [
+      {
+        "name": "Black Soil",
+        "kannadaName": "ಕಪ್ಪು ಮಣ್ಣು",
+        "description": "Deep black cotton soil rich in clay and lime, ideal for cotton and pulses.",
+        "suitableCrops": ["Cotton", "Pulses", "Sunflower"],
+        "waterHoldingCapacity": "High",
+        "conditions": "Moisture retentive and fertile",
+        "region": "Northern Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Black_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Medium",
+          "Phosphorus": "Medium",
+          "Potassium": "High",
+          "OrganicCarbon": "Medium",
+          "pH": "Neutral",
+          "Sulfur": "Sufficient",
+          "Zinc": "Sufficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
+  },
+  {
+    "district": "Bidar",
+    "soilTypes": [
+      {
+        "name": "Lateritic Black Soil",
+        "kannadaName": "ಲೇಟರೈಟ್ ಕಪ್ಪು ಮಣ್ಣು",
+        "description": "Mixture of black and lateritic soil, rich in iron and lime.",
+        "suitableCrops": ["Cotton", "Tur", "Jowar"],
+        "waterHoldingCapacity": "Medium",
+        "conditions": "Slightly alkaline and fertile",
+        "region": "Northern Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Black_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Medium",
+          "Phosphorus": "Medium",
+          "Potassium": "Medium",
+          "OrganicCarbon": "Medium",
+          "pH": "Neutral",
+          "Sulfur": "Sufficient",
+          "Zinc": "Sufficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
+  },
+
+  {
+    "district": "Bagalkote",
+    "soilTypes": [
+      {
+        "name": "Black Cotton Soil",
+        "kannadaName": "ಕಪ್ಪು ಹತ್ತಿ ಮಣ್ಣು",
+        "description": "Formed from basalt rocks, rich in lime and iron, retains moisture well and ideal for cotton and sorghum.",
+        "suitableCrops": ["Cotton", "Jowar", "Maize", "Sunflower"],
+        "waterHoldingCapacity": "High",
+        "conditions": "Fertile, deep clay soil",
+        "region": "Northern Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Black_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Medium",
+          "Phosphorus": "Low",
+          "Potassium": "High",
+          "OrganicCarbon": "Medium",
+          "pH": "Slightly Alkaline",
+          "Sulfur": "Sufficient",
+          "Zinc": "Deficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
+  },
+  
+  {
+    "district": "Kalaburagi",
+    "soilTypes": [
+      {
+        "name": "Deep Black Soil",
+        "kannadaName": "ಆಳವಾದ ಕಪ್ಪು ಮಣ್ಣು",
+        "description": "Highly fertile clay soil with great water-holding capacity, ideal for cotton and pulses.",
+        "suitableCrops": ["Cotton", "Pigeon Pea", "Jowar", "Bajra"],
+        "waterHoldingCapacity": "High",
+        "conditions": "Moisture-retentive and rich in lime",
+        "region": "Northern Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Black_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Low",
+          "Phosphorus": "Low",
+          "Potassium": "High",
+          "OrganicCarbon": "Medium",
+          "pH": "Neutral",
+          "Sulfur": "Deficient",
+          "Zinc": "Deficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
+  },
+  {
+    "district": "Koppal",
+    "soilTypes": [
+      {
+        "name": "Black Cotton Soil",
+        "kannadaName": "ಕಪ್ಪು ಹತ್ತಿ ಮಣ್ಣು",
+        "description": "Rich in clay, suitable for oilseeds and cereals, retains water efficiently.",
+        "suitableCrops": ["Cotton", "Sunflower", "Groundnut", "Maize"],
+        "waterHoldingCapacity": "High",
+        "conditions": "Clayey and alkaline",
+        "region": "Northern Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Black_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Medium",
+          "Phosphorus": "Medium",
+          "Potassium": "High",
+          "OrganicCarbon": "Medium",
+          "pH": "Slightly Alkaline",
+          "Sulfur": "Sufficient",
+          "Zinc": "Deficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
+  },
+  {
+    "district": "Gadag",
+    "soilTypes": [
+      {
+        "name": "Red Sandy Soil",
+        "kannadaName": "ಕೆಂಪು ಮರಳು ಮಣ್ಣು",
+        "description": "Well-drained and aerated soil, suitable for millets, pulses, and groundnut.",
+        "suitableCrops": ["Groundnut", "Jowar", "Bajra", "Pulses"],
+        "waterHoldingCapacity": "Low",
+        "conditions": "Sandy, poor in organic matter",
+        "region": "Northern Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Red_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Low",
+          "Phosphorus": "Medium",
+          "Potassium": "Medium",
+          "OrganicCarbon": "Low",
+          "pH": "Neutral",
+          "Sulfur": "Deficient",
+          "Zinc": "Deficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
+  },
+  {
+    "district": "Dharwad",
+    "soilTypes": [
+      {
+        "name": "Red Loamy Soil",
+        "kannadaName": "ಕೆಂಪು ಲೋಮಿ ಮಣ್ಣು",
+        "description": "Well-drained loamy soil suitable for maize, pulses, and sugarcane.",
+        "suitableCrops": ["Maize", "Pulses", "Sugarcane", "Groundnut"],
+        "waterHoldingCapacity": "Medium",
+        "conditions": "Rich in iron and potash",
+        "region": "Northern Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Red_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Low",
+          "Phosphorus": "Medium",
+          "Potassium": "High",
+          "OrganicCarbon": "Medium",
+          "pH": "Neutral",
+          "Sulfur": "Sufficient",
+          "Zinc": "Deficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
+  },
+  {
+    "district": "Chitradurga",
+    "soilTypes": [
+      {
+        "name": "Red Soil",
+        "kannadaName": "ಕೆಂಪು ಮಣ್ಣು",
+        "description": "Dry, well-drained red soil, good for ragi, maize, and pulses.",
+        "suitableCrops": ["Ragi", "Maize", "Pulses"],
+        "waterHoldingCapacity": "Medium",
+        "conditions": "Slightly acidic and iron-rich",
+        "region": "Central Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Red_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Low",
+          "Phosphorus": "Low",
+          "Potassium": "Medium",
+          "OrganicCarbon": "Low",
+          "pH": "Neutral",
+          "Sulfur": "Deficient",
+          "Zinc": "Deficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
+  },
+  {
+    "district": "Ramanagara",
+    "soilTypes": [
+      {
+        "name": "Red Sandy Soil",
+        "kannadaName": "ಕೆಂಪು ಮರಳು ಮಣ್ಣು",
+        "description": "Coarse-textured soil suitable for ragi, pulses, and coconut.",
+        "suitableCrops": ["Ragi", "Pulses", "Coconut"],
+        "waterHoldingCapacity": "Low",
+        "conditions": "Sandy, slightly acidic",
+        "region": "Southern Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Red_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Low",
+          "Phosphorus": "Low",
+          "Potassium": "Medium",
+          "OrganicCarbon": "Low",
+          "pH": "Slightly Acidic",
+          "Sulfur": "Deficient",
+          "Zinc": "Deficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
+  },
+  {
+    "district": "Shivamogga",
+    "soilTypes": [
+      {
+        "name": "Lateritic and Red Soil",
+        "kannadaName": "ಲೇಟರೈಟ್ ಮತ್ತು ಕೆಂಪು ಮಣ್ಣು",
+        "description": "Mixture of red and lateritic soils, rich in iron and good for plantation crops.",
+        "suitableCrops": ["Arecanut", "Coconut", "Paddy", "Spices"],
+        "waterHoldingCapacity": "Medium",
+        "conditions": "Humid and well-drained",
+        "region": "Western Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Laterite_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Medium",
+          "Phosphorus": "Medium",
+          "Potassium": "High",
+          "OrganicCarbon": "Medium",
+          "pH": "Neutral",
+          "Sulfur": "Sufficient",
+          "Zinc": "Sufficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
+  },
+  {
+    "district": "Davangere",
+    "soilTypes": [
+      {
+        "name": "Red and Black Mixed Soil",
+        "kannadaName": "ಕೆಂಪು ಮತ್ತು ಕಪ್ಪು ಮಿಶ್ರ ಮಣ್ಣು",
+        "description": "Combination of red and black soils, moderately fertile, supports multiple crops.",
+        "suitableCrops": ["Ragi", "Maize", "Paddy", "Pulses"],
+        "waterHoldingCapacity": "Medium to High",
+        "conditions": "Loamy and clayey mix",
+        "region": "Central Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Red_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Medium",
+          "Phosphorus": "Medium",
+          "Potassium": "High",
+          "OrganicCarbon": "Medium",
+          "pH": "Neutral",
+          "Sulfur": "Sufficient",
+          "Zinc": "Deficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
+  },
+  {
+    "district": "Uttara Kannada",
+    "soilTypes": [
+      {
+        "name": "Laterite Soil",
+        "kannadaName": "ಲೇಟರೈಟ್ ಮಣ್ಣು",
+        "description": "Rich in iron and aluminum oxides, formed in high rainfall regions.",
+        "suitableCrops": ["Cashew", "Coconut", "Arecanut", "Pineapple"],
+        "waterHoldingCapacity": "Low to Medium",
+        "conditions": "Well-drained, leached soil",
+        "region": "Coastal and Western Ghat Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Laterite_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Low",
+          "Phosphorus": "Low",
+          "Potassium": "Medium",
+          "OrganicCarbon": "Medium",
+          "pH": "Slightly Acidic",
+          "Sulfur": "Sufficient",
+          "Zinc": "Sufficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
+  },
+  {
+    "district": "Chikkaballapura",
+    "soilTypes": [
+      {
+        "name": "Red Loamy Soil",
+        "kannadaName": "ಕೆಂಪು ಲೋಮಿ ಮಣ್ಣು",
+        "description": "Well-drained soil rich in iron, suitable for groundnut and ragi.",
+        "suitableCrops": ["Ragi", "Groundnut", "Millets", "Pulses"],
+        "waterHoldingCapacity": "Medium",
+        "conditions": "Slightly acidic, moderate fertility",
+        "region": "Southern Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Red_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Low",
+          "Phosphorus": "Medium",
+          "Potassium": "Medium",
+          "OrganicCarbon": "Low",
+          "pH": "Neutral",
+          "Sulfur": "Deficient",
+          "Zinc": "Deficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
+  },
+  {
+    "district": "Raichur",
+    "soilTypes": [
+      {
+        "name": "Black Soil",
+        "kannadaName": "ಕಪ್ಪು ಮಣ್ಣು",
+        "description": "Clay-rich soil with high moisture retention, ideal for cotton and rice.",
+        "suitableCrops": ["Cotton", "Paddy", "Tur", "Sunflower"],
+        "waterHoldingCapacity": "High",
+        "conditions": "Deep and fertile",
+        "region": "North-Eastern Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Black_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Medium",
+          "Phosphorus": "Medium",
+          "Potassium": "High",
+          "OrganicCarbon": "Medium",
+          "pH": "Slightly Alkaline",
+          "Sulfur": "Sufficient",
+          "Zinc": "Deficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
+  },
+   {
+    "district": "Yadgiri",
+    "soilTypes": [
+      {
+        "name": "Deep Black Soil",
+        "kannadaName": "ಆಳವಾದ ಕಪ್ಪು ಮಣ್ಣು",
+        "description": "Highly fertile black clay soil, retains moisture, suitable for cotton and pulses.",
+        "description_kn": "ಅತ್ಯಂತ ಫಲವತ್ತಾದ ಕಪ್ಪು ಮಣ್ಣು, ತೇವಾಂಶವನ್ನು ಉಳಿಸಿಕೊಂಡಿರುತ್ತದೆ ಮತ್ತು ಹತ್ತಿ ಹಾಗೂ ಬೇಳೆಗಳಿಗೆ ಸೂಕ್ತವಾಗಿದೆ.",
+        "suitableCrops": ["Cotton", "Pigeon Pea", "Maize", "Tur"],
+        "suitableCrops_kn": ["ಹತ್ತಿ", "ತೊಗರಿ", "ಮೆಕ್ಕೆಜೋಳ", "ತೂರ್ದಾಳೆ"],
+        "waterHoldingCapacity": "High",
+        "waterHoldingCapacity_kn": "ಹೆಚ್ಚು",
+        "conditions": "Moisture-retentive and alkaline",
+        "conditions_kn": "ತೇವಾಂಶವನ್ನು ಉಳಿಸಿಕೊಳ್ಳುವ ಮತ್ತು ಕ್ಷಾರಯುಕ್ತ",
+        "region": "Northern Karnataka",
+        "region_kn": "ಉತ್ತರ ಕರ್ನಾಟಕ",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Black_soil.jpg",
+        "nutrients": {
+          "Nitrogen": "Low",
+          "Phosphorus": "Medium",
+          "Potassium": "High",
+          "OrganicCarbon": "Medium",
+          "pH": "Slightly Alkaline",
+          "Sulfur": "Sufficient",
+          "Zinc": "Deficient",
+          "Iron": "Sufficient"
+        }
+      }
+    ]
   }
 ]

@@ -1,201 +1,163 @@
-/* 🌿 Overall Page Styling */
+/* 🌾 General Container */
 .soil-container {
-  text-align: center;
   padding: 30px;
-  background: #f8fff9;
-  min-height: 90vh;
   font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom right, #f5fff6, #e9fbe9);
+  color: #2e7d32;
+  min-height: 100vh;
 }
 
-/* Header Section */
+/* 🧭 Header Section */
 .header-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   margin-bottom: 15px;
 }
 
 .header-section h2 {
-  color: #1d6b1d;
+  font-size: 1.8rem;
   font-weight: 700;
+  color: #1b5e20;
 }
 
-/* 🌐 Language Toggle Button */
 .lang-toggle {
-  background-color: #fefefe;
-  color: #1f6a1f;
-  border: 2px solid #1f6a1f;
-  padding: 6px 14px;
-  border-radius: 25px;
+  background-color: #43a047;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .lang-toggle:hover {
-  background-color: #1f6a1f;
-  color: white;
+  background-color: #2e7d32;
 }
 
-/* Instructional Note */
+/* 🧾 Instruction Note */
 .note {
-  font-size: 15px;
-  color: #444;
-  margin-top: 10px;
+  background-color: #e8f5e9;
+  border-left: 5px solid #66bb6a;
+  padding: 10px 14px;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #2e7d32;
+  margin-bottom: 20px;
 }
 
-/* 🧾 Input Section */
+/* 🔍 Input Section */
 .input-section {
-  margin: 25px auto;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
-.input-section input[type="text"] {
-  padding: 10px;
-  width: 270px;
-  border: 1.5px solid #b5e0b5;
+.input-section input {
+  padding: 10px 15px;
   border-radius: 8px;
-  font-size: 15px;
-  transition: 0.3s ease;
+  border: 2px solid #a5d6a7;
+  width: 250px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s;
 }
 
 .input-section input:focus {
-  outline: none;
-  border-color: #1f6a1f;
+  border-color: #43a047;
 }
 
 .input-section button {
-  padding: 10px 14px;
-  border: none;
-  background-color: #2d862d;
+  background-color: #43a047;
   color: white;
+  border: none;
+  padding: 10px 16px;
   border-radius: 8px;
+  font-weight: 600;
   cursor: pointer;
-  font-weight: 500;
-  transition: 0.3s;
+  transition: background 0.3s ease;
 }
 
 .input-section button:hover {
-  background-color: #256b25;
+  background-color: #2e7d32;
 }
 
-.clear-btn {
-  background-color: #a94442;
-}
-
-.clear-btn:hover {
-  background-color: #7a2f2d;
-}
-
-/* Message Text */
+/* ⚠️ Message */
 .message {
-  color: #333;
-  font-style: italic;
-  margin-top: 12px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 500;
+  color: #1b5e20;
 }
 
-/* 📊 Soil Card Grid */
-.soil-history {
-  margin-top: 30px;
-}
-
-.soil-history h3 {
-  color: #1c5d1c;
-  margin-bottom: 15px;
-  font-size: 1.3rem;
-}
-
-/* Responsive Card Grid */
+/* 🪴 Soil Card Grid */
 .soil-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 20px;
-  padding: 10px;
+  margin-top: 25px;
 }
 
-/* 🌱 Individual Soil Card */
+/* 🌍 Individual Soil Card */
 .soil-card {
-  background: #ffffff;
-  border-radius: 14px;
-  padding: 15px;
-  text-align: left;
-  position: relative;
-  box-shadow: 0 4px 10px rgba(34, 139, 34, 0.2);
-  transition: 0.3s ease;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(46, 125, 50, 0.2);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .soil-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 14px rgba(34, 139, 34, 0.25);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(46, 125, 50, 0.3);
 }
 
-/* 🖼️ Soil Image */
+/* 🌱 Soil Image */
 .soil-img {
   width: 100%;
-  height: 150px;
-  border-radius: 10px;
+  height: 180px;
+  border-radius: 12px;
   object-fit: cover;
   margin-bottom: 10px;
-  border: 1px solid #c7eac7;
 }
 
-/* 🗑️ Delete Button */
-.delete-btn {
-  position: absolute;
-  top: 8px;
-  right: 10px;
-  background: transparent;
-  border: none;
+/* 🧾 Soil Text */
+.soil-card h4 {
   font-size: 1.3rem;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.3s;
+  color: #1b5e20;
+  margin-bottom: 10px;
 }
 
-.soil-card:hover .delete-btn {
-  opacity: 1;
-}
-
-.delete-btn:hover {
-  transform: scale(1.1);
-}
-
-/* Text Elements */
-h4 {
-  text-align: center;
-  color: #1f5d1f;
-  margin-bottom: 8px;
-  font-size: 1.1rem;
-}
-
-p {
+.soil-card p {
   font-size: 0.95rem;
-  color: #333;
   margin: 4px 0;
   line-height: 1.4;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+/* 📊 Radar Chart */
+.chart-container {
+  margin-top: 15px;
+  background-color: #f1f8e9;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+/* 🧍 Responsive Adjustments */
+@media (max-width: 480px) {
   .header-section {
     flex-direction: column;
-    gap: 10px;
-  }
-
-  .input-section {
-    flex-direction: column;
-  }
-
-  .soil-card {
     text-align: center;
   }
 
-  p {
-    font-size: 0.9rem;
+  .input-section input {
+    width: 100%;
+  }
+
+  .soil-card {
+    padding: 15px;
   }
 }

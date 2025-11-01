@@ -1,32 +1,21 @@
-import React, { useState, useEffect } from "react";
-import soilData from "../data/soilData.json"; // ✅ Soil data in /data folder
+import React, { useState } from "react";
+import soilData from "../data/soilData.json";
 import "./Soil.css";
+import {
+  Radar,
+  RadarChart,
+  PolarGrid,
+  PolarAngleAxis,
+  PolarRadiusAxis,
+  Tooltip,
+  ResponsiveContainer,
+} from "recharts";
 
 function SoilHealth() {
   const [search, setSearch] = useState("");
   const [language, setLanguage] = useState("en");
+  const [results, setResults] = useState([]);
   const [message, setMessage] = useState("");
-  const [searchedSoils, setSearchedSoils] = useState([]);
-
-  // 🧠 Load saved soils from localStorage
-  useEffect(() => {
-    const savedSoils = localStorage.getItem("searchedSoils");
-    if (savedSoils) {
-      setSearchedSoils(JSON.parse(savedSoils));
-    }
-  }, []);
-
-  // 💾 Save soils whenever they change
-  useEffect(() => {
-    localStorage.setItem("searchedSoils", JSON.stringify(searchedSoils));
-  }, [searchedSoils]);
-
-  // 🌐 Language Toggle
-  const toggleLanguage = () => {
-    setLanguage((prev) => (prev === "en" ? "kn" : "en"));
-    setMessage("");
-    setSearch("");
-  };
 
   // 🎤 Voice Input
   const handleVoiceInput = () => {
@@ -46,135 +35,113 @@ function SoilHealth() {
     };
   };
 
-  // 🔍 Search Soil Type
+  // 🔍 Search by District
   const handleSearch = (customQuery) => {
     const query = (customQuery || search).trim().toLowerCase();
     if (!query) {
-      setMessage("⚠️ Please enter or speak a soil type.");
+      setMessage("⚠️ Please enter or speak a district name.");
+      setResults([]);
       return;
     }
 
-    setMessage("🔍 Searching soil details...");
-
-    const foundSoil = soilData.find(
-      (s) =>
-        s.name?.toLowerCase().includes(query) ||
-        s.kannadaName?.toLowerCase().includes(query)
+    // ✅ Match district name (ignore spaces)
+    const matchedDistrict = soilData.find((d) =>
+      d.district.toLowerCase().replace(/\s+/g, "").includes(query.replace(/\s+/g, ""))
     );
 
-    setTimeout(() => {
-      if (foundSoil) {
-        const exists = searchedSoils.some(
-          (s) =>
-            s.name.toLowerCase() === foundSoil.name.toLowerCase() ||
-            s.kannadaName.toLowerCase() === foundSoil.kannadaName.toLowerCase()
-        );
-
-        if (!exists) {
-          setSearchedSoils((prev) => [...prev, foundSoil]);
-          setMessage("");
-        } else {
-          setMessage("✅ Soil already displayed.");
-        }
-      } else {
-        setMessage("❌ No data found for this soil type.");
-      }
-    }, 600);
-  };
-
-  // 🗑️ Remove single soil card
-  const handleRemove = (index) => {
-    const updated = searchedSoils.filter((_, i) => i !== index);
-    setSearchedSoils(updated);
-    localStorage.setItem("searchedSoils", JSON.stringify(updated));
-  };
-
-  // 🗑️ Clear all
-  const handleClearAll = () => {
-    if (window.confirm("Are you sure you want to clear all soils?")) {
-      setSearchedSoils([]);
-      localStorage.removeItem("searchedSoils");
+    if (matchedDistrict) {
+      setResults(matchedDistrict.soilTypes);
+      setMessage(`✅ Found soils for ${matchedDistrict.district}`);
+    } else {
+      setResults([]);
+      setMessage("❌ No data found for the entered district.");
     }
   };
 
   return (
     <div className="soil-container">
+      {/* Header */}
       <div className="header-section">
-        <h2>🌍 Soil Information & Analysis</h2>
-        <button className="lang-toggle" onClick={toggleLanguage}>
+        <h2>🌾 Soil Information by District</h2>
+        <button
+          className="lang-toggle"
+          onClick={() => setLanguage((prev) => (prev === "en" ? "kn" : "en"))}
+        >
           🌐 {language === "en" ? "Switch to Kannada" : "Switch to English"}
         </button>
       </div>
 
       <p className="note">
         {language === "en"
-          ? "Enter or speak a soil type to view its characteristics and crop suitability."
-          : "ಮಣ್ಣಿನ ಪ್ರಕಾರವನ್ನು ನಮೂದಿಸಿ ಅಥವಾ ಹೇಳಿ ಅದರ ವೈಶಿಷ್ಟ್ಯಗಳು ಮತ್ತು ಬೆಳೆಗೆ ಅನುಕೂಲತೆಗಳನ್ನು ನೋಡಲು."}
+          ? "Enter a district name to view soil types and nutrient composition."
+          : "ಜಿಲ್ಲೆ ಹೆಸರನ್ನು ನಮೂದಿಸಿ ಮಣ್ಣಿನ ಪ್ರಕಾರ ಮತ್ತು ಪೋಷಕಾಂಶ ನೋಡಲು."}
       </p>
 
+      {/* Input Section */}
       <div className="input-section">
         <input
           type="text"
           placeholder={
             language === "en"
-              ? "Enter soil type (e.g., Red soil)"
-              : "ಮಣ್ಣಿನ ಪ್ರಕಾರವನ್ನು ನಮೂದಿಸಿ (ಉದಾ: ಕೆಂಪು ಮಣ್ಣು)"
+              ? "Enter district name (e.g., Mysuru)"
+              : "ಜಿಲ್ಲೆ ಹೆಸರನ್ನು ನಮೂದಿಸಿ (ಉದಾ: ಮೈಸೂರು)"
           }
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
         <button onClick={() => handleSearch()}>🔍 Search</button>
         <button onClick={handleVoiceInput}>🎤 Voice</button>
-        <button onClick={handleClearAll} className="clear-btn">
-          🗑️ Clear All
-        </button>
       </div>
 
       {message && <p className="message">{message}</p>}
 
-      <div className="soil-history">
-        <h3>{language === "en" ? "🪴 Fetched Soils" : "🪴 ಪಡೆದ ಮಣ್ಣುಗಳು"}</h3>
-        <div className="soil-grid">
-          {searchedSoils.map((soil, index) => (
-            <div key={index} className="soil-card">
-              <button
-                className="delete-btn"
-                onClick={() => handleRemove(index)}
-                title="Remove soil"
-              >
-                🗑️
-              </button>
+      {/* Display Soil Data */}
+      <div className="soil-grid">
+        {results.map((soil, index) => {
+          const nutrientData = Object.entries(soil.nutrients || {}).map(
+            ([key, value]) => ({
+              subject: key,
+              A: typeof value === "number" ? value : 50, // default numeric conversion
+            })
+          );
 
+          return (
+            <div key={index} className="soil-card">
               <img
                 src={soil.image || "/images/default-soil.jpg"}
                 alt={soil.name}
                 className="soil-img"
               />
-
               <h4>
                 {soil.kannadaName} ({soil.name})
               </h4>
-              <p>
-                <strong>🌱 Description:</strong> {soil.description || "N/A"}
-              </p>
-              <p>
-                <strong>🌾 Suitable Crops:</strong>{" "}
-                {soil.suitableCrops?.join(", ") || "N/A"}
-              </p>
-              <p>
-                <strong>💧 Water Holding Capacity:</strong>{" "}
-                {soil.waterHoldingCapacity || "N/A"}
-              </p>
-              <p>
-                <strong>🌤 Ideal Conditions:</strong>{" "}
-                {soil.conditions || "N/A"}
-              </p>
-              <p>
-                <strong>📍 Region Found:</strong> {soil.region || "N/A"}
-              </p>
+              <p><strong>🧱 Description:</strong> {soil.description}</p>
+              <p><strong>🌾 Suitable Crops:</strong> {soil.suitableCrops.join(", ")}</p>
+              <p><strong>💧 Water Holding:</strong> {soil.waterHoldingCapacity}</p>
+              <p><strong>🌤 Conditions:</strong> {soil.conditions}</p>
+              <p><strong>📍 Region:</strong> {soil.region}</p>
+
+              {/* Radar Chart */}
+              <div className="chart-container">
+                <ResponsiveContainer width="100%" height={250}>
+                  <RadarChart data={nutrientData}>
+                    <PolarGrid />
+                    <PolarAngleAxis dataKey="subject" />
+                    <PolarRadiusAxis angle={30} domain={[0, 100]} />
+                    <Radar
+                      name="Nutrients"
+                      dataKey="A"
+                      stroke="#2e7d32"
+                      fill="#66bb6a"
+                      fillOpacity={0.6}
+                    />
+                    <Tooltip />
+                  </RadarChart>
+                </ResponsiveContainer>
+              </div>
             </div>
-          ))}
-        </div>
+          );
+        })}
       </div>
     </div>
   );
