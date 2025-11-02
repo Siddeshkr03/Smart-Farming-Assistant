@@ -1,69 +1,101 @@
-// src/pages/Home.jsx
 import React, { useState, useRef, useEffect } from "react";
-import axios from "axios";
 import "./Home.css";
 import botAvatar from "../assets/bot-avatar.png";
 import userAvatar from "../assets/u-avatar.png";
 import DashboardCards from "../components/DashboardCards";
 
+// 📦 Import your local JSON data (you can replace these files later)
+import soilData from "../data/soilData.json";
+import cropData from "../data/cropData.json";
+
 const Home = () => {
   const [listening, setListening] = useState(false);
   const [chat, setChat] = useState([]);
-  const [language, setLanguage] = useState("en"); // 🔄 Toggle English/Kannada
+  const [language, setLanguage] = useState("en");
+  const [userInput, setUserInput] = useState("");
+
+  // 🌦 Weather state
+  const [weather, setWeather] = useState({
+    temperature: "--",
+    humidity: "--",
+    rainfall: "--",
+    city: "Loading...",
+  });
+
   const chatEndRef = useRef(null);
   const recognitionRef = useRef(null);
 
-  // Scroll to bottom when chat updates
-  useEffect(() => {
-    if (chatEndRef.current) {
-      chatEndRef.current.scrollIntoView({ behavior: "smooth" });
+  // 🌍 Fetch weather (using OpenWeatherMap public API without .env)
+  const fetchWeather = async (lat, lon) => {
+    try {
+      const apiKey = "54c97255a7876f103ea635bc8cd671d9"; // Direct key usage
+      const res = await fetch(
+        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
+      );
+      const data = await res.json();
+      setWeather({
+        temperature: data.main.temp,
+        humidity: data.main.humidity,
+        rainfall: data.rain ? data.rain["1h"] || 0 : 0,
+        city: data.name,
+      });
+    } catch (err) {
+      console.error("Weather fetch failed:", err);
+      setWeather({ temperature: "--", humidity: "--", rainfall: "--", city: "Unavailable" });
     }
+  };
+
+  // 📍 Get user location once on page load
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (pos) => fetchWeather(pos.coords.latitude, pos.coords.longitude),
+        () => fetchWeather(12.9716, 77.5946) // Default Bengaluru
+      );
+    } else {
+      fetchWeather(12.9716, 77.5946);
+    }
+  }, []);
+
+  // Auto-scroll to bottom when new message
+  useEffect(() => {
+    chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [chat]);
 
-  // Initialize Speech Recognition
+  // 🎤 Initialize Speech Recognition
   if (!recognitionRef.current && "webkitSpeechRecognition" in window) {
     const recognition = new window.webkitSpeechRecognition();
     recognition.continuous = false;
-    recognition.interimResults = true;
+    recognition.interimResults = false;
     recognition.lang = language === "en" ? "en-IN" : "kn-IN";
 
     recognition.onresult = (event) => {
-      let transcript = "";
-
-      for (let i = event.resultIndex; i < event.results.length; i++) {
-        if (event.results[i].isFinal) {
-          transcript += event.results[i][0].transcript;
-        }
-      }
-
-      if (!transcript) return;
-
+      const transcript = event.results[0][0].transcript;
       setChat((prev) => [...prev, { sender: "user", text: transcript }]);
       handleBotResponse(transcript);
     };
-
     recognition.onend = () => setListening(false);
     recognitionRef.current = recognition;
   }
 
-  // 🔄 Toggle Language Handler
+  // 🌐 Language Toggle
   const toggleLanguage = () => {
     const newLang = language === "en" ? "kn" : "en";
     setLanguage(newLang);
-
-    if (recognitionRef.current) {
+    if (recognitionRef.current)
       recognitionRef.current.lang = newLang === "en" ? "en-IN" : "kn-IN";
-    }
 
-    const msg = newLang === "en" ? "Language changed to English" : "ಭಾಷೆ ಕನ್ನಡಕ್ಕೆ ಬದಲಾಯಿಸಲಾಗಿದೆ";
+    const msg =
+      newLang === "en"
+        ? "Language changed to English."
+        : "ಭಾಷೆ ಕನ್ನಡಕ್ಕೆ ಬದಲಾಯಿಸಲಾಗಿದೆ.";
     typeBotMessage(msg);
   };
 
-  // 🎤 Start/Stop Voice Recognition
+  // 🎤 Voice Button
   const handleVoiceClick = () => {
-    if (!recognitionRef.current) {
-      return alert("Browser does not support Speech Recognition");
-    }
+    if (!recognitionRef.current)
+      return alert("Speech Recognition not supported in this browser.");
 
     if (!listening) {
       recognitionRef.current.start();
@@ -74,32 +106,27 @@ const Home = () => {
     }
   };
 
-  // 🔊 Text-to-Speech
+  // 🔊 Bot speech output
   const speakText = (text) => {
-    if ("speechSynthesis" in window) {
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = language === "en" ? "en-IN" : "kn-IN";
-      window.speechSynthesis.speak(utterance);
-    }
+    const utter = new SpeechSynthesisUtterance(text);
+    utter.lang = language === "en" ? "en-IN" : "kn-IN";
+    window.speechSynthesis.speak(utter);
   };
 
-  // ⌨️ Typing animation for bot
+  // ✍️ Bot typing animation
   const typeBotMessage = (text) => {
     let index = 0;
     let botText = "";
-
     setChat((prev) => [...prev, { sender: "bot", text: "" }]);
 
     const interval = setInterval(() => {
       botText += text[index];
       index++;
-
       setChat((prev) => {
         const updated = [...prev];
         updated[updated.length - 1] = { sender: "bot", text: botText };
         return updated;
       });
-
       if (index === text.length) {
         clearInterval(interval);
         speakText(text);
@@ -107,93 +134,87 @@ const Home = () => {
     }, 30);
   };
 
-  // 🤖 Bot Logic
-  const handleBotResponse = async (userInput) => {
-    const lower = userInput.toLowerCase();
+  // 🧠 Bot Logic
+  const handleBotResponse = (userText) => {
+    const lower = userText.toLowerCase();
     let botReply = "";
 
-    // 🔹 Simple keyword-based logic
-    if (lower.includes("weather")) {
+    // Weather Query
+    if (lower.includes("weather") || lower.includes("ಹವಾಮಾನ")) {
       botReply =
         language === "en"
-          ? "The weather today is sunny with a temperature of 28°C."
-          : "ಇಂದು ಹವಾಮಾನ ಸೂರ್ಯಪ್ರಕಾಶದಿಂದ ಕೂಡಿದೆ, ತಾಪಮಾನ 28°C.";
-      return typeBotMessage(botReply);
-    } else if (lower.includes("soil")) {
-      botReply =
-        language === "en"
-          ? "The soil moisture is 45% with a pH of 6.5 — great for wheat!"
-          : "ಮಣ್ಣಿನ ತೇವಾಂಶ 45% ಮತ್ತು pH 6.5 — ಗೋಧಿಗೆ ಉತ್ತಮ.";
-      return typeBotMessage(botReply);
-    } else if (lower.includes("crop")) {
-      botReply =
-        language === "en"
-          ? "This season, wheat, rice, and maize are good options."
-          : "ಈ ಕಾಲದಲ್ಲಿ ಗೋಧಿ, ಅಕ್ಕಿ ಮತ್ತು ಮೆಕ್ಕೆಜೋಳ ಉತ್ತಮ ಆಯ್ಕೆಗಳು.";
-      return typeBotMessage(botReply);
-    } else if (lower.includes("pest")) {
-      botReply =
-        language === "en"
-          ? "There’s a locust warning and possible aphid infestation."
-          : "ಕಿಡುಗುಂಡು ಮತ್ತು ಆಫಿಡ್ ಕೀಟ ಹಾನಿಯ ಸಾಧ್ಯತೆ ಇದೆ.";
-      return typeBotMessage(botReply);
-    }
+          ? `Weather in ${weather.city}: ${weather.temperature}°C, humidity ${weather.humidity}%, rainfall ${weather.rainfall}mm.`
+          : `${weather.city} ನ ಹವಾಮಾನ: ತಾಪಮಾನ ${weather.temperature}°C, ತೇವಾಂಶ ${weather.humidity}%, ಮಳೆ ${weather.rainfall}mm.`;
 
-    // 🔹 Fallback to OpenAI API (optional)
-    try {
-      const response = await axios.post(
-        "https://api.openai.com/v1/chat/completions",
-        {
-          model: "gpt-3.5-turbo",
-          messages: [
-            {
-              role: "system",
-              content:
-                language === "en"
-                  ? "You are a helpful smart farming assistant giving answers in English."
-                  : "ನೀವು ಕನ್ನಡದಲ್ಲಿ ಸಹಾಯ ಮಾಡುವ ಸ್ಮಾರ್ಟ್ ಕೃಷಿ ಸಹಾಯಕ.",
-            },
-            { role: "user", content: userInput },
-          ],
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${import.meta.env.VITE_OPENAI_API_KEY}`,
-          },
-        }
+      // Soil Info
+    } else if (lower.includes("soil") || lower.includes("ಮಣ್ಣು")) {
+      const district = Object.keys(soilData).find((d) =>
+        lower.includes(d.toLowerCase())
       );
+      if (district) {
+        const soil = soilData[district];
+        botReply =
+          language === "en"
+            ? `🧱 ${district} soil: ${soil.description}\n🌾 Crops: ${soil.crops}\n💧 Water holding: ${soil.waterHolding}`
+            : `${district} ಮಣ್ಣು: ${soil.description_kn}\nಬೆಳೆಗಳು: ${soil.crops_kn}\nನೀರಿನ ಹಿಡಿತ: ${soil.waterHolding}`;
+      } else {
+        botReply =
+          language === "en"
+            ? "Please specify a district to get soil information."
+            : "ಮಣ್ಣಿನ ಮಾಹಿತಿಗಾಗಿ ದಯವಿಟ್ಟು ಜಿಲ್ಲೆಯ ಹೆಸರನ್ನು ಹೇಳಿ.";
+      }
 
-      botReply = response.data.choices[0].message.content.trim();
-      typeBotMessage(botReply);
-    } catch (error) {
-      console.error(error);
+      // Crop Info
+    } else if (lower.includes("crop") || lower.includes("ಬೆಳೆ")) {
+      const season = Object.keys(cropData).find((s) =>
+        lower.includes(s.toLowerCase())
+      );
+      if (season) {
+        const crops = cropData[season];
+        botReply =
+          language === "en"
+            ? `🌾 Recommended crops for ${season}: ${crops.join(", ")}.`
+            : `${season} ಕಾಲಕ್ಕೆ ಶಿಫಾರಸು ಮಾಡಿದ ಬೆಳೆಗಳು: ${crops.join(", ")}.`;
+      } else {
+        botReply =
+          language === "en"
+            ? "Please mention a season (Kharif, Rabi, or Summer)."
+            : "ದಯವಿಟ್ಟು ಋತುವನ್ನು ಹೇಳಿ (ಖರೀಫ್, ರಬಿ ಅಥವಾ ಬೇಸಿಗೆ).";
+      }
+
+      // Default fallback
+    } else {
       botReply =
         language === "en"
-          ? "Sorry, I couldn't connect to the AI service right now."
-          : "ಕ್ಷಮಿಸಿ, ಈಗ AI ಸೇವೆಗೆ ಸಂಪರ್ಕಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.";
-      typeBotMessage(botReply);
+          ? "I'm your Smart Farming Assistant! Ask about soil, crops, or weather."
+          : "ನಾನು ನಿಮ್ಮ ಸ್ಮಾರ್ಟ್ ಕೃಷಿ ಸಹಾಯಕ! ಮಣ್ಣು, ಬೆಳೆ ಅಥವಾ ಹವಾಮಾನ ಕುರಿತು ಕೇಳಿ.";
     }
+
+    typeBotMessage(botReply);
+  };
+
+  // 💬 Send manual text
+  const handleSend = () => {
+    if (!userInput.trim()) return;
+    setChat((prev) => [...prev, { sender: "user", text: userInput }]);
+    handleBotResponse(userInput);
+    setUserInput("");
   };
 
   return (
     <div className="home-container">
-      {/* Left Column: Chat */}
+      {/* Chat Section */}
       <div className="chat-column">
-        {/* Chat Header */}
         <div className="chat-header">
           <div className="chat-title">
             <img src={botAvatar} alt="Bot" className="chat-avatar" />
             <h2>Smart Farming Assistant</h2>
           </div>
-
-          {/* 🌐 Language Toggle Button */}
           <button onClick={toggleLanguage} className="lang-toggle">
             {language === "en" ? "ಕನ್ನಡ" : "EN"}
           </button>
         </div>
 
-        {/* Chat Messages */}
         <div className="chat-container">
           {chat.length === 0 && (
             <p className="chat-placeholder">
@@ -215,7 +236,23 @@ const Home = () => {
           <div ref={chatEndRef} />
         </div>
 
-        {/* 🎤 Floating Mic Button */}
+        {/* Input Section */}
+        <div className="input-section">
+          <input
+            type="text"
+            placeholder={
+              language === "en"
+                ? "Type your question..."
+                : "ನಿಮ್ಮ ಪ್ರಶ್ನೆಯನ್ನು ಟೈಪ್ ಮಾಡಿ..."
+            }
+            value={userInput}
+            onChange={(e) => setUserInput(e.target.value)}
+            onKeyDown={(e) => e.key === "Enter" && handleSend()}
+          />
+          <button onClick={handleSend}>Send</button>
+        </div>
+
+        {/* Voice Button */}
         <button
           onClick={handleVoiceClick}
           className={`voice-btn ${listening ? "listening" : ""}`}
@@ -224,13 +261,17 @@ const Home = () => {
         </button>
       </div>
 
-      {/* Right Column: Dashboard */}
+      {/* Dashboard Section */}
       <div className="dashboard-column">
         <DashboardCards
-          weather={{ temperature: 28, rainfall: 5, humidity: 70 }}
+          weather={{
+            temperature: weather.temperature,
+            humidity: weather.humidity,
+            rainfall: weather.rainfall,
+          }}
           soil={{ moisture: 45, ph: 6.5 }}
-          crops={["Wheat", "Rice", "Maize"]}
-          pestAlerts={["Locust warning", "Aphid infestation"]}
+          crops={["Rice", "Maize", "Pulses"]}
+          pestAlerts={["Aphid", "Leafhopper"]}
         />
       </div>
     </div>
