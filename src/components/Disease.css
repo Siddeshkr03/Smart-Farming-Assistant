@@ -1,0 +1,91 @@
+.disease-page {
+  padding: 25px;
+  max-width: 850px;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.title {
+  text-align: center;
+  color: #1a5d1a;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.search-section input {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.search-section button {
+  background-color: #1a5d1a;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-section button:hover {
+  background-color: #237d23;
+}
+
+.dropdown-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dropdown-section select {
+  margin-left: 10px;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.result-card {
+  background: #f4fff4;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-card h3 {
+  color: #0b4d0b;
+  margin-bottom: 8px;
+}
+
+.result-card span {
+  font-size: 14px;
+  color: #666;
+}
+
+.disease-image {
+  width: 100%;
+  max-height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin: 10px 0;
+}
+
+.result-card h4 {
+  color: #2f7d32;
+  margin-top: 15px;
+}
+
+.result-card ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.result-card p {
+  margin: 6px 0;
+}

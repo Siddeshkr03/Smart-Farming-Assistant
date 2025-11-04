@@ -30,7 +30,7 @@ function Navbar() {
             to="/soil"
             className={({ isActive }) => (isActive ? "active-link" : "")}
           >
-            Soil Health
+            Soil Info
           </NavLink>
         </li>
         <li>
@@ -46,7 +46,7 @@ function Navbar() {
             to="/disease"
             className={({ isActive }) => (isActive ? "active-link" : "")}
           >
-            Disease Detection
+            Disease and Pest
           </NavLink>
         </li>
       </ul>

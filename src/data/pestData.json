@@ -1,0 +1,1172 @@
+[
+  {
+    "crop": "Rice / ಅಕ್ಕಿ",
+    "diseases": [
+      {
+        "name_en": "Blast",
+        "name_kn": "ಬ್ಲಾಸ್ಟ್",
+        "symptoms_en": "Lesions on leaves and necks.",
+        "symptoms_kn": "ಎಲೆಗಳು ಮತ್ತು ಕಣಿಗಳ ಮೇಲೆ ಕಲೆಗಳು ಕಾಣಿಸುತ್ತವೆ."
+      },
+      {
+        "name_en": "Bacterial Leaf Blight",
+        "name_kn": "ಬ್ಯಾಕ್ಟೀರಿಯಲ್ ಲೀಫ್ ಬ್ಲೈಟ್",
+        "symptoms_en": "Yellowing and wilting of leaves.",
+        "symptoms_kn": "ಎಲೆಗಳು ಹಳದಿ ಬಣ್ಣಕ್ಕಾಗುತ್ತವೆ ಮತ್ತು ಒಣಗುತ್ತವೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Brown Planthopper",
+        "name_kn": "ಕಂದು ಸಸ್ಯ ಕೀಟ",
+        "description_en": "Sucks sap from rice stems.",
+        "description_kn": "ಅಕ್ಕಿ ಕಾಂಡದಿಂದ ರಸ ಹೀರುತ್ತದೆ."
+      },
+      {
+        "name_en": "Stem Borer",
+        "name_kn": "ಕಾಂಡ ತಿನ್ನುವ ಕೀಟ",
+        "description_en": "Larvae bore into stems causing dead hearts.",
+        "description_kn": "ಕೀಟದ ಕಿರಿಯಗಳು ಕಾಂಡವನ್ನು ತಿನ್ನುತ್ತವೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      {
+        "en": "Use resistant varieties.",
+        "kn": "ಪ್ರತಿರೋಧಕ ತಳಿಗಳನ್ನು ಬಳಸಿ."
+      },
+      {
+        "en": "Avoid excessive nitrogen.",
+        "kn": "ಹೆಚ್ಚಿನ ನೈಟ್ರೋಜನ್ ರಸಗೊಬ್ಬರ ತಪ್ಪಿಸಿ."
+      },
+      {
+        "en": "Ensure good field drainage.",
+        "kn": "ಹೊಲದಲ್ಲಿ ನೀರು ನಿಲ್ಲದಂತೆ ನೋಡಿಕೊಳ್ಳಿ."
+      }
+    ]
+  },
+  {
+    "crop": "Rice / ಅಕ್ಕಿ",
+    "diseases": [
+      {
+        "name_en": "Blast",
+        "name_kn": "ಬ್ಲಾಸ್ಟ್",
+        "symptoms_en": "Lesions on leaves and necks.",
+        "symptoms_kn": "ಎಲೆಗಳು ಮತ್ತು ಕಣಿಗಳ ಮೇಲೆ ಕಲೆಗಳು ಕಾಣಿಸುತ್ತವೆ."
+      },
+      {
+        "name_en": "Bacterial Leaf Blight",
+        "name_kn": "ಬ್ಯಾಕ್ಟೀರಿಯಲ್ ಲೀಫ್ ಬ್ಲೈಟ್",
+        "symptoms_en": "Yellowing and wilting of leaves.",
+        "symptoms_kn": "ಎಲೆಗಳು ಹಳದಿ ಬಣ್ಣಕ್ಕಾಗುತ್ತವೆ ಮತ್ತು ಒಣಗುತ್ತವೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Brown Planthopper",
+        "name_kn": "ಕಂದು ಸಸ್ಯ ಕೀಟ",
+        "description_en": "Sucks sap from rice stems.",
+        "description_kn": "ಅಕ್ಕಿ ಕಾಂಡದಿಂದ ರಸ ಹೀರುತ್ತದೆ."
+      },
+      {
+        "name_en": "Stem Borer",
+        "name_kn": "ಕಾಂಡ ತಿನ್ನುವ ಕೀಟ",
+        "description_en": "Larvae bore into stems causing dead hearts.",
+        "description_kn": "ಕೀಟದ ಕಿರಿಯಗಳು ಕಾಂಡವನ್ನು ತಿನ್ನುತ್ತವೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Use resistant varieties.", "kn": "ಪ್ರತಿರೋಧಕ ತಳಿಗಳನ್ನು ಬಳಸಿ." },
+      { "en": "Avoid excessive nitrogen.", "kn": "ಹೆಚ್ಚಿನ ನೈಟ್ರೋಜನ್ ರಸಗೊಬ್ಬರ ತಪ್ಪಿಸಿ." },
+      { "en": "Ensure good field drainage.", "kn": "ಹೊಲದಲ್ಲಿ ನೀರು ನಿಲ್ಲದಂತೆ ನೋಡಿಕೊಳ್ಳಿ." }
+    ]
+  },
+
+  {
+    "crop": "Ragi / ರಾಗಿ",
+    "diseases": [
+      {
+        "name_en": "Leaf Blast",
+        "name_kn": "ಎಲೆ ಬ್ಲಾಸ್ಟ್",
+        "symptoms_en": "Small brown spots on leaves that merge to form large patches.",
+        "symptoms_kn": "ಎಲೆಗಳಲ್ಲಿ ಸಣ್ಣ ಕಂದು ಕಲೆಗಳು ಉಂಟಾಗಿ ದೊಡ್ಡ ಕಲೆಗಳಾಗುತ್ತವೆ."
+      },
+      {
+        "name_en": "Foot Rot",
+        "name_kn": "ಮೂಲ ಕುಳುಚು",
+        "symptoms_en": "Roots rot and plants topple.",
+        "symptoms_kn": "ಮೂಲಗಳು ಕುಳಿತು ಗಿಡಗಳು ಬಿದ್ದಿಹೋಗುತ್ತವೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Stem Borer",
+        "name_kn": "ಕಾಂಡ ಕೀಟ",
+        "description_en": "Bores into stems and damages the plant.",
+        "description_kn": "ಕಾಂಡವನ್ನು ತಿನ್ನುವ ಮೂಲಕ ಗಿಡವನ್ನು ಹಾನಿ ಮಾಡುತ್ತದೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Use clean seeds.", "kn": "ಶುದ್ಧ ಬೀಜಗಳನ್ನು ಬಳಸಿ." },
+      { "en": "Rotate crops yearly.", "kn": "ಬೆಳೆ ಪರಿವರ್ತನೆ ಪಾಲಿಸಿ." }
+    ]
+  },
+
+  {
+    "crop": "Wheat / ಗೋಧಿ",
+    "diseases": [
+      {
+        "name_en": "Rust",
+        "name_kn": "ರಸ್ಟ್ ರೋಗ",
+        "symptoms_en": "Orange-brown pustules on leaves and stems.",
+        "symptoms_kn": "ಎಲೆ ಮತ್ತು ಕಾಂಡಗಳಲ್ಲಿ ಕಿತ್ತಳೆ ಬಣ್ಣದ ಕಲೆಗಳು ಕಾಣುತ್ತವೆ."
+      },
+      {
+        "name_en": "Smut",
+        "name_kn": "ಸ್ಮಟ್ ರೋಗ",
+        "symptoms_en": "Black powdery masses replace grains.",
+        "symptoms_kn": "ಗೊಣೆಯು ಕಪ್ಪು ಧೂಳಿನಿಂದ ತುಂಬಿರುತ್ತದೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Aphids",
+        "name_kn": "ಆಫಿಡ್‌ಗಳು",
+        "description_en": "Suck sap from young leaves.",
+        "description_kn": "ಹೊಸ ಎಲೆಗಳಿಂದ ರಸ ಹೀರುತ್ತವೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Plant disease-free seeds.", "kn": "ರೋಗರಹಿತ ಬೀಜಗಳನ್ನು ಬಳಸಿ." },
+      { "en": "Use fungicides as needed.", "kn": "ಅಗತ್ಯವಿದ್ದರೆ ಶಿಲೀಂಧ್ರನಾಶಕ ಬಳಸಿ." }
+    ]
+  },
+
+  {
+    "crop": "Tomato / ಟೊಮ್ಯಾಟೊ",
+    "diseases": [
+      {
+        "name_en": "Late Blight",
+        "name_kn": "ಲೇಟು ಬ್ಲೈಟ್",
+        "symptoms_en": "Dark lesions on leaves and fruit.",
+        "symptoms_kn": "ಎಲೆ ಮತ್ತು ಹಣ್ಣಿನಲ್ಲಿ ಕಪ್ಪು ಕಲೆಗಳು ಕಾಣಿಸುತ್ತವೆ."
+      },
+      {
+        "name_en": "Leaf Curl",
+        "name_kn": "ಎಲೆ ಮಡಚು ರೋಗ",
+        "symptoms_en": "Leaves curl upward and plant stunts.",
+        "symptoms_kn": "ಎಲೆಗಳು ಮೇಲಕ್ಕೆ ಮಡಚುತ್ತವೆ ಮತ್ತು ಬೆಳವಣಿಗೆ ಕಡಿಮೆಯಾಗುತ್ತದೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Fruit Borer",
+        "name_kn": "ಹಣ್ಣು ಕೀಟ",
+        "description_en": "Larvae bore into fruits causing holes.",
+        "description_kn": "ಕೀಟದ ಕಿರಿಯಗಳು ಹಣ್ಣನ್ನು ತಿನ್ನುತ್ತವೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Remove infected plants.", "kn": "ರೋಗಗ್ರಸ್ತ ಗಿಡಗಳನ್ನು ತೆಗೆದುಹಾಕಿ." },
+      { "en": "Spray neem extract.", "kn": "ನೀಮ್ ಎಣ್ಣೆ ಸ್ಪ್ರೇ ಮಾಡಿ." }
+    ]
+  },
+
+  {
+    "crop": "Potato / ಆಲೂಗಡ್ಡೆ",
+    "diseases": [
+      {
+        "name_en": "Early Blight",
+        "name_kn": "ಆರಂಭಿಕ ಬ್ಲೈಟ್",
+        "symptoms_en": "Brown spots on lower leaves.",
+        "symptoms_kn": "ಕೆಳ ಎಲೆಗಳಲ್ಲಿ ಕಂದು ಕಲೆಗಳು ಕಾಣಿಸುತ್ತವೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Aphids",
+        "name_kn": "ಆಫಿಡ್‌ಗಳು",
+        "description_en": "Transmits viruses and sucks sap.",
+        "description_kn": "ವೈರಸ್ ಹರಡುವುದರ ಜೊತೆಗೆ ರಸ ಹೀರುತ್ತವೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Use healthy tubers.", "kn": "ಆರೋಗ್ಯಕರ ಗುಡ್ಡೆಗಳನ್ನು ಬಳಸಿ." },
+      { "en": "Ensure proper spacing.", "kn": "ಗಿಡಗಳ ನಡುವಿನ ಅಂತರ ಕಾಯ್ದುಕೊಳ್ಳಿ." }
+    ]
+  },
+
+  {
+    "crop": "Brinjal / ಬದನೇಕಾಯಿ",
+    "diseases": [
+      {
+        "name_en": "Phomopsis Blight",
+        "name_kn": "ಫೊಮೋಪ್ಸಿಸ್ ರೋಗ",
+        "symptoms_en": "Brown spots on stems and fruits.",
+        "symptoms_kn": "ಕಾಂಡ ಮತ್ತು ಹಣ್ಣಿನಲ್ಲಿ ಕಂದು ಕಲೆಗಳು ಕಾಣಿಸುತ್ತವೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Shoot and Fruit Borer",
+        "name_kn": "ಕಾಂಡ ಮತ್ತು ಹಣ್ಣು ತಿನ್ನುವ ಕೀಟ",
+        "description_en": "Bores into shoots and fruits.",
+        "description_kn": "ಕಾಂಡ ಮತ್ತು ಹಣ್ಣನ್ನು ತಿನ್ನುತ್ತದೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Remove affected fruits.", "kn": "ಹಾನಿಗೊಳಗಾದ ಹಣ್ಣುಗಳನ್ನು ತೆಗೆದುಹಾಕಿ." },
+      { "en": "Use pheromone traps.", "kn": "ಫೆರೋಮೋನ್ ಟ್ರ್ಯಾಪ್‌ಗಳನ್ನು ಬಳಸಿ." }
+    ]
+  },
+
+  {
+    "crop": "Onion / ಈರುಳ್ಳಿ",
+    "diseases": [
+      {
+        "name_en": "Purple Blotch",
+        "name_kn": "ನೇರಳೆ ಬ್ಲಾಟ್ಚ್",
+        "symptoms_en": "Purple patches on leaves.",
+        "symptoms_kn": "ಎಲೆಗಳಲ್ಲಿ ನೇರಳೆ ಕಲೆಗಳು ಕಾಣಿಸುತ್ತವೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Thrips",
+        "name_kn": "ಥ್ರಿಪ್ಸ್",
+        "description_en": "Scrape leaf surface causing silvery appearance.",
+        "description_kn": "ಎಲೆಗಳನ್ನು ಹಿಚುಕುವ ಮೂಲಕ ಬೆಳ್ಳಿಯ ಬಣ್ಣ ಕಾಣುತ್ತದೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Avoid waterlogging.", "kn": "ನೀರಿನ ನಿಲ್ಲುವಿಕೆ ತಪ್ಪಿಸಿ." },
+      { "en": "Spray neem oil.", "kn": "ನೀಮ್ ಎಣ್ಣೆ ಸ್ಪ್ರೇ ಮಾಡಿ." }
+    ]
+  },
+
+  {
+    "crop": "Garlic / ಬೆಳ್ಳುಳ್ಳಿ",
+    "diseases": [
+      {
+        "name_en": "White Rot",
+        "name_kn": "ಬಿಳಿ ಕುಳುಚು",
+        "symptoms_en": "White fungal growth near bulb.",
+        "symptoms_kn": "ಬೆಳ್ಳುಳ್ಳಿ ಹತ್ತಿರ ಬಿಳಿ ಶಿಲೀಂಧ್ರ ಬೆಳವಣಿಗೆ ಕಾಣಿಸುತ್ತದೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Onion Maggot",
+        "name_kn": "ಈರುಳ್ಳಿ ಕೀಟ",
+        "description_en": "Larvae attack bulbs and roots.",
+        "description_kn": "ಕೀಟದ ಕಿರಿಯಗಳು ಬೆಳ್ಳುಳ್ಳಿ ಹಣ್ಣು ಮತ್ತು ಬೇರು ತಿನ್ನುತ್ತವೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Use crop rotation.", "kn": "ಬೆಳೆ ಪರಿವರ್ತನೆ ಪಾಲಿಸಿ." },
+      { "en": "Ensure soil drainage.", "kn": "ಮಣ್ಣಿನಲ್ಲಿ ನೀರು ನಿಲ್ಲದಂತೆ ನೋಡಿಕೊಳ್ಳಿ." }
+    ]
+  },
+
+  {
+    "crop": "Ginger / ಶುಂಠಿ",
+    "diseases": [
+      {
+        "name_en": "Rhizome Rot",
+        "name_kn": "ಮೂಲ ಕುಳುಚು",
+        "symptoms_en": "Yellowing leaves and soft rhizomes.",
+        "symptoms_kn": "ಎಲೆಗಳು ಹಳದಿ ಬಣ್ಣಕ್ಕಾಗುತ್ತವೆ ಮತ್ತು ಮೂಲ ಮೃದುವಾಗುತ್ತದೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Rhizome Fly",
+        "name_kn": "ಮೂಲ ಹಾರುವ ಕೀಟ",
+        "description_en": "Larvae damage rhizomes by feeding inside.",
+        "description_kn": "ಕೀಟದ ಕಿರಿಯಗಳು ಮೂಲದೊಳಗೆ ತಿನ್ನುತ್ತವೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Treat seed rhizomes before planting.", "kn": "ನೆಡುವ ಮೊದಲು ಬೀಜ ಮೂಲವನ್ನು ಚಿಕಿತ್ಸೆ ನೀಡಿ." },
+      { "en": "Avoid water stagnation.", "kn": "ನೀರಿನ ನಿಲ್ಲುವಿಕೆ ತಪ್ಪಿಸಿ." }
+    ]
+  },
+
+  {
+    "crop": "Capsicum / ದೊಣ್ಣೆ ಮೆಣಸಿನಕಾಯಿ",
+    "diseases": [
+      {
+        "name_en": "Anthracnose",
+        "name_kn": "ಆಂಥ್ರಕ್ನೋಸ್",
+        "symptoms_en": "Dark sunken spots on fruits.",
+        "symptoms_kn": "ಹಣ್ಣಿನಲ್ಲಿ ಕಪ್ಪು ಕಲೆಗಳು ಕಾಣಿಸುತ್ತವೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Thrips",
+        "name_kn": "ಥ್ರಿಪ್ಸ್",
+        "description_en": "Feed on leaves causing deformation.",
+        "description_kn": "ಎಲೆಗಳ ಮೇಲೆ ತಿನ್ನುವ ಮೂಲಕ ಆಕಾರ ಬದಲಾಗುತ್ತದೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Use disease-free seedlings.", "kn": "ರೋಗರಹಿತ ಚಿಗುರುಗಳನ್ನು ಬಳಸಿ." },
+      { "en": "Spray neem oil or garlic extract.", "kn": "ನೀಮ್ ಅಥವಾ ಬೆಳ್ಳುಳ್ಳಿ ಎಣ್ಣೆ ಸ್ಪ್ರೇ ಮಾಡಿ." }
+    ]
+  },
+
+  {
+    "crop": "Carrot / ಗಾಜರ",
+    "diseases": [
+      {
+        "name_en": "Leaf Blight",
+        "name_kn": "ಎಲೆ ಬ್ಲೈಟ್",
+        "symptoms_en": "Brown patches on leaves.",
+        "symptoms_kn": "ಎಲೆಗಳಲ್ಲಿ ಕಂದು ಕಲೆಗಳು ಕಾಣಿಸುತ್ತವೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Carrot Fly",
+        "name_kn": "ಗಾಜರ ಕೀಟ",
+        "description_en": "Larvae feed on roots causing tunnels.",
+        "description_kn": "ಕೀಟದ ಕಿರಿಯಗಳು ಬೇರುಗಳನ್ನು ತಿನ್ನುತ್ತವೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Avoid planting in infected soil.", "kn": "ರೋಗಗ್ರಸ್ತ ಮಣ್ಣಿನಲ್ಲಿ ನೆಡುವುದನ್ನು ತಪ್ಪಿಸಿ." },
+      { "en": "Use row covers.", "kn": "ಗಿಡಗಳ ಮೇಲೆ ಜಾಲಾವರಣ ಬಳಸಿ." }
+    ]
+  },
+
+  {
+    "crop": "Beetroot / ಬೀಟ್ರೂಟ್",
+    "diseases": [
+      {
+        "name_en": "Downy Mildew",
+        "name_kn": "ಡೌನಿ ಮಿಲ್ಡ್ಯೂ",
+        "symptoms_en": "Yellow patches on upper leaf surface.",
+        "symptoms_kn": "ಎಲೆಗಳ ಮೇಲ್ಮೈಯಲ್ಲಿ ಹಳದಿ ಕಲೆಗಳು ಕಾಣಿಸುತ್ತವೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Leaf Miner",
+        "name_kn": "ಎಲೆ ತಿನ್ನುವ ಕೀಟ",
+        "description_en": "Larvae feed inside leaves creating tunnels.",
+        "description_kn": "ಕೀಟದ ಕಿರಿಯಗಳು ಎಲೆಗಳ ಒಳಗೆ ತಿನ್ನುತ್ತವೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Remove infected leaves.", "kn": "ರೋಗಗ್ರಸ್ತ ಎಲೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ." },
+      { "en": "Maintain proper spacing.", "kn": "ಸಮರ್ಪಕ ಅಂತರ ಕಾಯ್ದುಕೊಳ್ಳಿ." }
+    ]
+  },
+
+  {
+    "crop": "Radish / ಮೂಲಂಗಿ",
+    "diseases": [
+      {
+        "name_en": "Root Rot",
+        "name_kn": "ಮೂಲ ಕುಳುಚು",
+        "symptoms_en": "Roots decay and turn brown.",
+        "symptoms_kn": "ಬೇರುಗಳು ಕುಳಿದು ಕಂದು ಬಣ್ಣಕ್ಕೆ ತಿರುಗುತ್ತವೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Root Maggot",
+        "name_kn": "ಮೂಲ ಕೀಟ",
+        "description_en": "Larvae feed on roots causing holes.",
+        "description_kn": "ಕೀಟದ ಕಿರಿಯಗಳು ಬೇರುಗಳಲ್ಲಿ ತಿನ್ನುತ್ತವೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Avoid overwatering.", "kn": "ಅತಿಯಾದ ನೀರು ಹಾಕಬೇಡಿ." },
+      { "en": "Use well-drained soil.", "kn": "ನೀರಿನ ನಿಕಾಸು ಹೊಂದಿರುವ ಮಣ್ಣನ್ನು ಬಳಸಿ." }
+    ]
+  },
+  
+{
+  "crop": "Maize / ಮೆಕ್ಕೆಜೋಳ",
+  "diseases": [
+    {
+      "name_en": "Turcicum Leaf Blight",
+      "name_kn": "ಟರ್ಸಿಕಮ್ ಎಲೆ ಬ್ಲೈಟ್",
+      "symptoms_en": "Long, grayish lesions on leaves.",
+      "symptoms_kn": "ಎಲೆಗಳಲ್ಲಿ ಉದ್ದವಾದ ಬೂದು ಬಣ್ಣದ ಕಲೆಗಳು ಕಾಣಿಸುತ್ತವೆ."
+    },
+    {
+      "name_en": "Downy Mildew",
+      "name_kn": "ಡೌನಿ ಮಿಲ್ಡ್ಯೂ",
+      "symptoms_en": "Yellowing and white fungal growth on leaves.",
+      "symptoms_kn": "ಎಲೆಗಳು ಹಳದಿ ಬಣ್ಣಕ್ಕಾಗುತ್ತವೆ ಮತ್ತು ಬಿಳಿ ಶಿಲೀಂಧ್ರ ಬೆಳೆಯುತ್ತದೆ."
+    }
+  ],
+  "pests": [
+    {
+      "name_en": "Stem Borer",
+      "name_kn": "ಕಾಂಡ ಕೀಟ",
+      "description_en": "Larvae bore into stems, damaging the plant.",
+      "description_kn": "ಕೀಟದ ಕಿರಿಯಗಳು ಕಾಂಡದೊಳಗೆ ತಿನ್ನುತ್ತವೆ ಮತ್ತು ಗಿಡವನ್ನು ಹಾನಿ ಮಾಡುತ್ತವೆ."
+    },
+    {
+      "name_en": "Fall Armyworm",
+      "name_kn": "ಫಾಲ್ ಆರ್ಮಿವೋರ್ಮ್",
+      "description_en": "Feeds on young leaves and cobs.",
+      "description_kn": "ಹೊಸ ಎಲೆಗಳು ಮತ್ತು ಕೊಂಬುಗಳನ್ನು ತಿನ್ನುತ್ತದೆ."
+    }
+  ],
+  "preventiveMeasures": [
+    { "en": "Use resistant varieties.", "kn": "ಪ್ರತಿರೋಧಕ ತಳಿಗಳನ್ನು ಬಳಸಿ." },
+    { "en": "Monitor fields regularly.", "kn": "ಹೊಲವನ್ನು ನಿಯಮಿತವಾಗಿ ಪರಿಶೀಲಿಸಿ." },
+    { "en": "Use pheromone traps.", "kn": "ಫೆರೋಮೋನ್ ಟ್ರ್ಯಾಪ್‌ಗಳನ್ನು ಬಳಸಿ." }
+  ]
+},
+
+{
+  "crop": "Sugarcane / ಕಬ್ಬು",
+  "diseases": [
+    {
+      "name_en": "Red Rot",
+      "name_kn": "ರೆಡ್ ರಾಟ್",
+      "symptoms_en": "Reddish discoloration inside the stem.",
+      "symptoms_kn": "ಕಾಂಡದ ಒಳಗೆ ಕೆಂಪು ಬಣ್ಣದ ಬದಲಾವಣೆ ಕಾಣುತ್ತದೆ."
+    },
+    {
+      "name_en": "Smut",
+      "name_kn": "ಸ್ಮಟ್ ರೋಗ",
+      "symptoms_en": "Black whip-like structures from the top of the shoot.",
+      "symptoms_kn": "ಕಾಂಡದ ಮೇಲ್ಭಾಗದಿಂದ ಕಪ್ಪು ರೆಪ್ಪೆಯಂತಹ ಭಾಗಗಳು ಹೊರಬರುತ್ತವೆ."
+    }
+  ],
+  "pests": [
+    {
+      "name_en": "Early Shoot Borer",
+      "name_kn": "ಆರಂಭಿಕ ಕಾಂಡ ಕೀಟ",
+      "description_en": "Bores into young shoots causing dead hearts.",
+      "description_kn": "ಹೊಸ ಕಾಂಡದೊಳಗೆ ತಿನ್ನುತ್ತವೆ ಮತ್ತು ಡೆಡ್ ಹಾರ್ಟ್ ಉಂಟಾಗುತ್ತದೆ."
+    },
+    {
+      "name_en": "Termites",
+      "name_kn": "ಉಳುವುಗಳು",
+      "description_en": "Attack roots and lower parts of the stem.",
+      "description_kn": "ಮೂಲ ಮತ್ತು ಕಾಂಡದ ಕೆಳಭಾಗವನ್ನು ತಿನ್ನುತ್ತವೆ."
+    }
+  ],
+  "preventiveMeasures": [
+    { "en": "Plant disease-free setts.", "kn": "ರೋಗರಹಿತ ಕಬ್ಬಿನ ತುಂಡುಗಳನ್ನು ನೆಡಿ." },
+    { "en": "Rotate crops to prevent pest buildup.", "kn": "ಕೀಟ ಹರಡುವಿಕೆ ತಪ್ಪಿಸಲು ಬೆಳೆ ಪರಿವರ್ತನೆ ಪಾಲಿಸಿ." },
+    { "en": "Maintain field hygiene.", "kn": "ಹೊಲವನ್ನು ಸ್ವಚ್ಛವಾಗಿಡಿ." }
+  ]
+},
+
+{
+  "crop": "Cotton / ಹತ್ತಿ",
+  "diseases": [
+    {
+      "name_en": "Wilt",
+      "name_kn": "ವಿಲ್ಟ್ ರೋಗ",
+      "symptoms_en": "Plants wilt and leaves turn yellow.",
+      "symptoms_kn": "ಗಿಡಗಳು ಒಣಗುತ್ತವೆ ಮತ್ತು ಎಲೆಗಳು ಹಳದಿ ಬಣ್ಣಕ್ಕಾಗುತ್ತವೆ."
+    },
+    {
+      "name_en": "Leaf Spot",
+      "name_kn": "ಎಲೆ ಕಲೆ ರೋಗ",
+      "symptoms_en": "Brown circular spots on leaves.",
+      "symptoms_kn": "ಎಲೆಗಳಲ್ಲಿ ಕಂದು ವೃತ್ತಾಕಾರದ ಕಲೆಗಳು ಕಾಣಿಸುತ್ತವೆ."
+    }
+  ],
+  "pests": [
+    {
+      "name_en": "Bollworm",
+      "name_kn": "ಹತ್ತಿ ಬೋಲ್ ವರ್ಮ್",
+      "description_en": "Larvae feed inside cotton bolls.",
+      "description_kn": "ಕೀಟದ ಕಿರಿಯಗಳು ಹತ್ತಿ ಹಣ್ಣುಗಳಲ್ಲಿ ತಿನ್ನುತ್ತವೆ."
+    },
+    {
+      "name_en": "Whitefly",
+      "name_kn": "ಬಿಳಿ ಹಾರುವ ಕೀಟ",
+      "description_en": "Sucks sap and transmits leaf curl virus.",
+      "description_kn": "ರಸ ಹೀರುತ್ತದೆ ಮತ್ತು ಎಲೆ ಮಡಚು ವೈರಸ್ ಹರಡುತ್ತದೆ."
+    }
+  ],
+  "preventiveMeasures": [
+    { "en": "Remove affected bolls.", "kn": "ಹಾನಿಗೊಳಗಾದ ಹಣ್ಣುಗಳನ್ನು ತೆಗೆದುಹಾಕಿ." },
+    { "en": "Use neem oil spray.", "kn": "ನೀಮ್ ಎಣ್ಣೆ ಸ್ಪ್ರೇ ಮಾಡಿ." },
+    { "en": "Adopt crop rotation.", "kn": "ಬೆಳೆ ಪರಿವರ್ತನೆ ಪಾಲಿಸಿ." }
+  ]
+},
+
+{
+  "crop": "Chilli / ಮೆಣಸಿನಕಾಯಿ",
+  "diseases": [
+    {
+      "name_en": "Anthracnose",
+      "name_kn": "ಆಂಥ್ರಕ್ನೋಸ್",
+      "symptoms_en": "Sunken dark spots on fruits.",
+      "symptoms_kn": "ಹಣ್ಣಿನಲ್ಲಿ ಕಪ್ಪು ಕಲೆಗಳು ಕಾಣಿಸುತ್ತವೆ."
+    },
+    {
+      "name_en": "Leaf Curl Virus",
+      "name_kn": "ಎಲೆ ಮಡಚು ವೈರಸ್",
+      "symptoms_en": "Leaves curl and plant stunts.",
+      "symptoms_kn": "ಎಲೆಗಳು ಮಡಚುತ್ತವೆ ಮತ್ತು ಗಿಡದ ಬೆಳವಣಿಗೆ ನಿಲ್ಲುತ್ತದೆ."
+    }
+  ],
+  "pests": [
+    {
+      "name_en": "Thrips",
+      "name_kn": "ಥ್ರಿಪ್ಸ್",
+      "description_en": "Scrape leaf surface causing deformation.",
+      "description_kn": "ಎಲೆಗಳ ಮೇಲ್ಮೈಯನ್ನು ಹಿಚುಕುವ ಮೂಲಕ ಆಕಾರ ಬದಲಾಗುತ್ತದೆ."
+    },
+    {
+      "name_en": "Fruit Borer",
+      "name_kn": "ಹಣ್ಣು ತಿನ್ನುವ ಕೀಟ",
+      "description_en": "Bores into fruits causing damage.",
+      "description_kn": "ಹಣ್ಣಿನೊಳಗೆ ತಿನ್ನುವ ಮೂಲಕ ಹಾನಿ ಉಂಟುಮಾಡುತ್ತದೆ."
+    }
+  ],
+  "preventiveMeasures": [
+    { "en": "Use virus-free seedlings.", "kn": "ವೈರಸ್ ರಹಿತ ಚಿಗುರುಗಳನ್ನು ಬಳಸಿ." },
+    { "en": "Spray neem or garlic extract.", "kn": "ನೀಮ್ ಅಥವಾ ಬೆಳ್ಳುಳ್ಳಿ ಎಣ್ಣೆ ಸ್ಪ್ರೇ ಮಾಡಿ." },
+    { "en": "Avoid monocropping.", "kn": "ಒಂದು ಬೆಳೆ ಮಾತ್ರ ಬೆಳೆಸುವುದನ್ನು ತಪ್ಪಿಸಿ." }
+  ]
+},
+{
+    "crop": "Coconut / ತೆಂಗು",
+    "diseases": [
+      {
+        "name_en": "Root Wilt",
+        "name_kn": "ಮೂಲ ಕುಲುಛು ರೋಗ",
+        "symptoms_en": "Tapering of the trunk top, small leaves, early nut drop.",
+        "symptoms_kn": " trunk ಮೇಲ್ಭಾಗವು ಸಿಕ್ಕಿಹಾಕುತ, ಎಲೆಗಳು ಸಣ್ಣವಾಗುತ್ತವೆ, ಬೇಜಾರು ಕೊಳೆತವು ಬೇಗ ಬಿದ್ದಿಹೋಗುತ್ತದೆ."
+      },
+      {
+        "name_en": "Bud Rot",
+        "name_kn": "ಬಡ್ ರಾಟ್",
+        "symptoms_en": "Rotting of bud and death of palm crown.",
+        "symptoms_kn": "ಮೂಡ್ ಕುಳಿ, ಮರದ Kroವನ್ ಭಾಗ ಸಾವು."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Rhinoceros Beetle",
+        "name_kn": "ಗಜೆ ಹದ್ದಿನ ಕೀಟ",
+        "description_en": "Feeds on unopened fronds and bore into crown region.",
+        "description_kn": "ಮುಚ್ಚಿಹೋಗಿರುವ ಎಲೆಗಳನ್ನು ಹಾಗೂ ಕ್ರೌನ್ ಭಾಗವನ್ನು ತಿನ್ನುತ್ತದೆ."
+      },
+      {
+        "name_en": "Red Palm Weevil",
+        "name_kn": "ಕೆಂಪು ಹಾಲ್ಮ್ వీವಿಲ್",
+        "description_en": "Larvae tunnel inside stem causing wilting and death.",
+        "description_kn": "ಕಾಂಡದೊಳಗೆ ಅನಾರೋಗ್ಯದ ರಂಧ್ರ ಉಂಟುಮಾಡಿ ಒಣಗುವಿಕೆ ಮತ್ತು ಸಾವು ಉಂಟುಮಾಡುತ್ತದೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Ensure clean planting material.", "kn": "ಶುದ್ಧ ನೆಡುವ ಸಾಮಗ್ರಿ ಭದ್ರಪಡಿಸಿ." },
+      { "en": "Sanitize the crown and remove dead fronds.", "kn": "ಕ್ರೌನ್ ಸ್ವಚ್ಛ ಮಾಡಿ, ಸಾವು ಎಲೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ." },
+      { "en": "Use pheromone traps for weevils.", "kn": "ಏಶಿಯಾನ್ ವ್ಯೆವಿಲ್ಗಾಗಿ ಫೆರೋಮೋನ್ ಟ್ರ್ಯಾಪ್ ಬಳಸಿ." }
+    ]
+  },
+  {
+    "crop": "Areca Nut / ಸವೆನಟು",
+    "diseases": [
+      {
+        "name_en": "Mahali Disease",
+        "name_kn": "ಮಹಾಲಿ ರೋಗ",
+        "symptoms_en": "Yellow leaf stripes and nut drop in areca palms.",
+        "symptoms_kn": "ಎಲೆಗಳಲ್ಲಿ ಹಳದಿ ರೇಖೆಗಳು ಮತ್ತು ಕಡಿಮೆ ಬೆಳೆಯುವನು ಹಾಗೂ ಬೀಜ ಬಿದ್ದುಹೋಗುವುದು."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Rhynchophorus Ferrugineus",
+        "name_kn": "ರಿಂಕ್ಖೋಫೋರಸ್ ಕೀಟ",
+        "description_en": "Palm weevil damaging younger palms.",
+        "description_kn": "ಹೊಸ ಸವೆನಟು ಮರಗಳನ್ನು ಹಾನಿಗೊಳಪಡಿಸುತ್ತದೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Use virus-free planting stock.", "kn": "ವೈರಸ್ ರಹಿತ ನೆಡುವ ಸ್ಟಾಕ್ ಬಳಸಿ." },
+      { "en": "Maintain good sanitation and avoid water stagnation.", "kn": "ಉತ್ತಮ ಸ್ವಚ್ಛತೆ ಕಾಯ್ದುಕೊಳ್ಳಿ ಮತ್ತು ನೀರಿನ ನಿಲ್ಲುವಿಕೆಯನ್ನು ತಪ್ಪಿಸಿ." }
+    ]
+  },
+  {
+    "crop": "Corn / ಮೆಕ್ಕೆಜೋಳ",
+    "diseases": [
+      {
+        "name_en": "Turcicum Leaf Blight",
+        "name_kn": "ಟರ್ಸಿಕಮ್ ಎಲೆ ಬ್ಲೈಟ್",
+        "symptoms_en": "Long grayish lesions on leaves that reduce photosynthesis.",
+        "symptoms_kn": "ಎಲೆಗಳಲ್ಲಿ ಉದ್ದವಾದ ಬೂದು ಬಣ್ಣದ ಕಲೆಗಳು ಕಂಡುಬರುತ್ತವೆ, ಫೋಟೋಸಿಂಥಸಿಸ್ ಕಡಿಮೆ ಮಾಡುತ್ತದೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Fall Armyworm",
+        "name_kn": "ಫಾಲ್ ಆರ್ಮಿವೋರ್ಮ್",
+        "description_en": "Feeds on young leaf blades and whorls, causing skeletonisation.",
+        "description_kn": "ಹೊಸ ಎಲೆ ಉರಿದು ಹೋಗುವಂತೆ ತಿನ್ನುತ್ತದೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Use resistant hybrids.", "kn": "ಪ್ರತಿರೋಧಕ ಹೈಬ್ರಿಡ್ ಬಳಸಿ." },
+      { "en": "Monitor fields and remove infested plants.", "kn": "ಹೊಲ ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಸೋಂಕಿತ ಗಿಡಗಳನ್ನು ತೆಗೆದುಹಾಕಿ." }
+    ]
+  },
+  {
+    "crop": "Coffee / ಕಾಫಿ",
+    "diseases": [
+      {
+        "name_en": "Coffee Leaf Rust",
+        "name_kn": "ಕಾಫಿ ಎಲೆ ರಸ್ಟ್",
+        "symptoms_en": "Orange-yellow dust on underside of leaves and defoliation.",
+        "symptoms_kn": "ಎಲೆಗಳ ಅಡಿಯಲ್ಲಿ ಕಿತ್ತಳೆ-ಹಳದಿ ಧೂಳಿನಂತಹಂದು, ಎಲೆ ಬಿದ್ದುಹೋಗುವುದು."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Coffee Berry Borer",
+        "name_kn": "ಕಾಫಿ ಬೆರ್ರಿ ಬೋರರ್",
+        "description_en": "Bores into coffee cherries and reduces bean quality.",
+        "description_kn": "ಕಾಫಿ ಚೆರಿಗಳೊಳಗೆ ತಿನ್ನುವುದು ಮತ್ತು ಬೀನ್ ಗುಣಮಟ್ಟ ಕಡಿಮೆ ಮಾಡುತ್ತದೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Use clean seed and maintain shade management.", "kn": "ಶುದ್ಧ ಬೀಜ ಬಳಸಿ ಮತ್ತು ಛಾಯಾ ನಿರ್ವಹಣೆ ಮಾಡಿ." },
+      { "en": "Harvest timely and destroy infested berries.", "kn": "ಸಮಯಕ್ಕೆ ಕೊಯ್ದು, ಸೋಂಕಿತ ಚೆರಿಗಳನ್ನು ನಾಶ ಮಾಡಿ." }
+    ]
+  },
+  {
+    "crop": "Tea / ಚಹಾ",
+    "diseases": [
+      {
+        "name_en": "Blister Blight",
+        "name_kn": "ಬ್ಲಿಸ್ಟರ್ ಬ್ಲೈಟ್",
+        "symptoms_en": "Water-soaked patches on young leaves turning brown.",
+        "symptoms_kn": "ಹೊಸ ಎಲೆಗಳಲ್ಲಿ ನೀರು ನೆರೆದಂತೆ ಬಣ್ಣ ಬದಲಾಗುವುದು ಮತ್ತು ಕಂದು ಹೊಳಿಗೆಯಾಗಿ ಕಾಣುವುದು."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Tea Mosquito Bug",
+        "name_kn": "ಚಹಾ ಮೊಸ್ಕೀಟೋ ಬಗ್",
+        "description_en": "Feeds on tea shoots causing withering of pluckable leaves.",
+        "description_kn": "ಚಹಾ ಚಿಗುರುಗಳ ರಸ ಹೀರುತ್ತದೆ ಮತ್ತು ಗುಂಡೀ ಎಲೆಗಳು ಒಣಗುತ್ತವೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Prune regularly and apply Bordeaux mixture.", "kn": "ನಿಯಮಿತವಾಗಿ ಕತ್ತರಿಸಿ ಮತ್ತು ಬೋರ್ಡೋ ಮಿಶ್ರಣ ಬಳಸಿ." },
+      { "en": "Maintain shade and avoid water stagnation.", "kn": "ಛಾಯೆ ಕಾಯ್ದುಕೊಳ್ಳಿ ಮತ್ತು ನೀರು ನಿಲ್ಲದಂತೆ ಮಾಡಿ." }
+    ]
+  },
+  {
+    "crop": "Jute / ಜ್ಯೂಟ್",
+    "diseases": [
+      {
+        "name_en": "Stem Rot",
+        "name_kn": "ಕಾಂಡ ಕುಳುಚು",
+        "symptoms_en": "Stems turn mushy and collapse under wind.",
+        "symptoms_kn": "ಕಾಂಡಗಳು ಕುದುರುವಂತೆ ತಿರುಗಿ, ಧ್ರುವಕ್ಕೆ ಬರುತ್ತವೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Jute Hairy Caterpillar",
+        "name_kn": "ಜ್ಯೂಟ್ ಕೂದಲು ಕೀಟ",
+        "description_en": "Feeds on leaves creating ragged appearance.",
+        "description_kn": "ಎಲೆಗಳಿಂದ ತಿನ್ನುವ ಮೂಲಕ ಕೊಚ್ಚಿದಂತೆ ಕಾಣಿಸುತ್ತದೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Ensure field drainage and avoid water logging.", "kn": "ಹೊಲದಲ್ಲಿ ನೀರು ನಿಲ್ಲದಂತೆ ಹಾಗೂ ನಿಕಾಸು ಮೆರೆಯುವಂತೆ ನೋಡಿಕೊಳ್ಳಿ." },
+      { "en": "Use recommended fungicide at first sign of disease.", "kn": "ರೋಗದ ಮೊದಲ ಲಕ್ಷಣದಲ್ಲಿ ಶಿಲೀಂಧ್ರನಾಶಕ ಬಳಸಿ." }
+    ]
+  },
+  {
+    "crop": "Tobacco / ಬಿಳಿಗಿಡೊಳೆ",
+    "diseases": [
+      {
+        "name_en": "Leaf Blight",
+        "name_kn": "ಎಲೆ ಬ್ಲೈಟ್",
+        "symptoms_en": "Dark lesions on leaves and dry patching.",
+        "symptoms_kn": "ಎಲೆಗಳಲ್ಲಿ ಕಪ್ಪು ಕಲೆಗಳು ಮತ್ತು ಒಣಗುವಿಕೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Tobacco Caterpillar",
+        "name_kn": "ಬಿಳಿಗಿಡೊಳೆ ಕೀಟ",
+        "description_en": "Feeds on foliage and buds of tobacco plant.",
+        "description_kn": "ಬಿಳಿಗಿಡೊಳೆ ಹಸಿರು ಮತ್ತು ಚುಗುರುಗಳನ್ನು ತಿನ್ನುತ್ತದೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Use disease-free seedlings and good spacing.", "kn": "ರೋಗ ರಹಿತ ಚಿಗುರುಗಳು ಮತ್ತು ಸರಿಯಾದ ಅಂತರ ಬಳಸಿ." },
+      { "en": "Destroy crop residues after harvest.", "kn": "ಕೊಯ್ದ ನಂತರ ಬೆಳೆ ಉಳಿಸಿಹೋಗಿರುವ ಭಾಗಗಳನ್ನು ನಾಶಮಾಡಿ." }
+    ]
+  },
+  {
+    "crop": "Rubber / ರಬ್ಬರ್",
+    "diseases": [
+      {
+        "name_en": "Brown Root Rot",
+        "name_kn": "ಬ್ರೌನ್ ರೂಟ್ ರಾಟ್",
+        "symptoms_en": "Roots decay and plant wilts, latex yield drops.",
+        "symptoms_kn": "ಮೂಲಗಳು कुಳಿದು ಗಿಡ ಒಣಗುತ್ತದೆ ಮತ್ತು ಲ್ಯಾಟೆקס್ ಹಸ್ವ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Tapping Panel Borer",
+        "name_kn": "ಟಾಪಿಂಗ್ ಪ್ಯಾನೆಲ್ ಬೋರರ್",
+        "description_en": "Bores under bark near tapping panel reducing yield.",
+        "description_kn": "ಟಾಪಿಂಗ್ ಭಾಗದ ಬಳಿಯ ಚರ್ಮದೊಳಗೆ ತಿನ್ನುವ ಮೂಲಕ ಉತ್ಪಾದನೆ ಕಡಿಮೆ ಮಾಡುತ್ತದೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Ensure proper tapping and tree spacing.", "kn": "ಸರಿಯಾದ ಟಾಪಿಂಗ್ ಹಾಗೂ ಗಿಡಗಳ ಅಂತರ ಕಾಯ್ದುಕೊಳ್ಳಿ." },
+      { "en": "Remove dead wood and maintain plantation hygiene.", "kn": "ಸಾವು ಮರವನ್ನು ತೆಗೆದುಹಾಕಿ, ತೋಟ ಸ್ವಚ್ಛ ಮಾಡಿ." }
+    ]
+  },
+  {
+    "crop": "Cauliflower / ಹೂಕೊಚ್ಚಿ",
+    "diseases": [
+      {
+        "name_en": "Black Rot",
+        "name_kn": "ಕಪ್ಪು ಕುಲ್ಲು ರೋಗ",
+        "symptoms_en": "V-shaped yellowing on leaf margins turning black.",
+        "symptoms_kn": "ಎಲೆಗಡಿಯಲ್ಲಿ V-ಆಕಾರ ಹಳದಿ ಬಣ್ಣ ವ್ಯಾಪಿಸಿ, ನಂತರ ಕಪ್ಪಾಗುವುದು."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Cabbage Worm",
+        "name_kn": "ಹೂಕೊಚ್ಚಿ ಕೃಷಿ ಕೀಟ",
+        "description_en": "Feeds within leaves creating tunnels.",
+        "description_kn": "ಎಲೆಗಳಲ್ಲಿ ರಂಧ್ರವಿರುವಂತೆ túnnels ಮಾಡಿ ತಿನ್ನುತ್ತದೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Use row covers and destroy infested debris.", "kn": "ದಾರಿಗೆ ಕವರ್ ಬಳಸಿ, ಸೋಂಕಿತ ಮಣ್ಣು/ಪಾಚಿ ಹಾಳೆಯ ಮರು ಹಾಕಿ." },
+      { "en": "Rotate crops to avoid pest buildup.", "kn": "ಕೀಟ ಸಂಗ್ರಹ ತಪ್ಪಿಸಲು ಬೆಳೆ ಪರಿವರ್ತನೆ ಮಾಡಿ." }
+    ]
+  },
+  {
+    "crop": "Cabbage / ಕ್ಯಾಬೇಜ್",
+    "diseases": [
+      {
+        "name_en": "Downy Mildew",
+        "name_kn": "ಡೌನಿ ಮಿಲ್ಡ್ಯೂ",
+        "symptoms_en": "White fluffy growth underside of leaves, yellowing above.",
+        "symptoms_kn": "ಎಲೆ ಕೆಳಭಾಗದಲ್ಲಿ ಬಿಳಿ ಹುಳಿಕೆಯಿಂದಾಗಿ ವಿಸ್ತಾರ, ಮೇಲ್ಭಾಗದಲ್ಲಿ ಹಳದಿ ಬಣ್ಣ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Diamondback Moth",
+        "name_kn": "ಡೈಮಂಡ್ ಬ್ಯಾಕ್ ಮತ್",
+        "description_en": "Larvae feed on leaf surface leaving transparent patches.",
+        "description_kn": "ಎಲೆ ಮೇಲ್ಮೈಯಲ್ಲಿ ಕೀಟದ ತಿನ್ನುವಿಕೆ ಮೂಲಕ ಪಾರದರ್ಶಕ ವೆಳೆ ತಂಡ ಉಂಟಾಗುತ್ತದೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Monitor leaves regularly and apply biocontrol.", "kn": "ಎಲೆಗಳನ್ನು ನಿಯಮಿತವಾಗಿ ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಜೀವ ನಿರೋಧಕಾರಿ ಬಳಸಿ." },
+      { "en": "Keep fields weed-free and maintain spacing.", "kn": "ಹೊಲವನ್ನು ಹುಲ್ಲಿಲ್ಲದೇ ಮಾಡಿ ಹಾಗೂ ಗಿಡಗಳ ನಡುವಿನ ಅಂತರ ಕಾಯ್ದುಕೊಳ್ಳಿ." }
+    ]
+  },
+  {
+    "crop": "Bottle Gourd / ಚೂರುಕಕ್ಕರಿ",
+    "diseases": [
+      {
+        "name_en": "Powdery Mildew",
+        "name_kn": "ಪುಡರಿ ಬ್ಲೈಟ್",
+        "symptoms_en": "White powdery coating on leaves and stems.",
+        "symptoms_kn": "ಎಲೆ ಮತ್ತು ಕಾಂಡದಲ್ಲಿ ಬಿಳಿ ಪುಡರಿ-ಬಣ್ಣದ ಬಣ್ಣ ಕಾಣಿಸುತ್ತದೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Fruit Fly",
+        "name_kn": "ಹಣ್ಣು ಈಗೆ",
+        "description_en": "Lays eggs in fruits; larvae cause maggot damage.",
+        "description_kn": "ಹಣ್ಣಿನ ಒಳಗೆ ಮೊಟ್ಟೆಹಾಕುತ್ತದೆ; ಕೀಟದ ಕಿರಿಯಗಳು ಮ್ಯಾಗೊಟ್ ಹಾನಿ ಮಾಡುತ್ತವೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Use traps and bag fruits early.", "kn": "ಬಲೆಗಳು ಬಳಸಿ ಮತ್ತು ಹಣ್ಣುಗಳನ್ನು ಬೇಗ ಚೀಲದಲ್ಲಿ ಮುಡುಪುಗೊಳಿಸಿ." },
+      { "en": "Apply sulphur spray for mildew control.", "kn": "ಮಿಲ್ಡ್ಯೂ ನಿಯಂತ್ರಣಕ್ಕೆ ಗುಬ್ಬಚ್ಚಿನ ಸ್ಪ್ರೇ ಮಾಡಿ." }
+    ]
+  },
+  {
+    "crop": "Bitter Gourd / ಕಟಕಿ",
+    "diseases": [
+      {
+        "name_en": "Downy Mildew",
+        "name_kn": "ಡೌನಿ ಮಿಲ್ಡ್ಯೂ",
+        "symptoms_en": "Yellow-green patches on leaves then grey mold beneath.",
+        "symptoms_kn": "ಎಲೆಗಳ ಮೇಲೆ ಹಳದಿ- ಹಸಿರು ಕಲೆಗಳು, ನಂತರ ಕೆಳಭಾಗದಲ್ಲಿ ಬೂದು ಬಣ್ಣದ ಹುಳಿ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Fruit Fly",
+        "name_kn": "ಹಣ್ಣು ಈಗೆ",
+        "description_en": "Infests fruits causing premature drop and rot.",
+        "description_kn": "ಹಣ್ಣುಗಳಲ್ಲಿ ಕೊಳೆದಂತೆ ಹಾನಿ ಮಾಡಿ ಬೇಗ ಬಿದ್ದುಹೋಗುವುದು."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Spray neem and cover fruits.", "kn": "ನೀಮ್ ಸಿಂಪಡಿಸಿ ಮತ್ತು ಹಣ್ಣುಗಳನ್ನು ಮುಡುಪುಗೊಳಿಸಿ." },
+      { "en": "Avoid over-watering and keep vines spaced.", "kn": "ಅತಿಯಾದ ನೀರಾವರಿ ತಪ್ಪಿಸಿ ಮತ್ತು ಇಳಿ ಮಧ್ಯೆ ಅಂತರ ಕಾಯ್ದುಕೊಳ್ಳಿ." }
+    ]
+  },
+  {
+    "crop": "Ash Gourd / ಬದನೆಕಾಯಿ ಬದಿ (ಕಸಬಳ್ಳಿ)",
+    "diseases": [
+      {
+        "name_en": "Anthracnose",
+        "name_kn": "ಆಂಥ್ರಕ್ನೋಸ್",
+        "symptoms_en": "Sunken brown spots on rind and internal rot.",
+        "symptoms_kn": "ಒಳಗೆ ಮತ್ತು ಹೊರಗೆ ಹಣ್ಣಿನ ಗಿತ್ತಿಗೆ ಕಂದು ಕಲೆಗಳು ಕಾಣಿಸುತ್ತವೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Red Pumpkin Beetle",
+        "name_kn": "ಕೆಂಪು ಲೋಹದ ಕೀಟ",
+        "description_en": "Feeds on leaves and young shoots causing skeletonisation.",
+        "description_kn": "ಎಲೆಗಳು ಮತ್ತು ಚುಟುಬುಟು ಕಾಂಡಗಳನ್ನು ತಿನ್ನುತ್ತಾರೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Use mulch and avoid direct sun scorch.", "kn": "ಮಲ್ಚ್ ಬಳಸಿ ಮತ್ತು ನೇರ ಬಿಸಿಲಿನಿಂದ ತಪ್ಪಿಸಿ." },
+      { "en": "Maintain cleanliness and remove old debris.", "kn": "ಸ್ವಚ್ಛತೆ ಕಾಯ್ದುಕೊಳ್ಳಿ ಮತ್ತು ಹಳೆ ಉಳಿಕೆ ತೆಗೆಯಿರಿ." }
+    ]
+  },
+  {
+    "crop": "Beans / ಬೆಳೆಬಡಿಕೆ (ಬೀನುಗಳು)",
+    "diseases": [
+      {
+        "name_en": "Rust",
+        "name_kn": "ರಸ್ಟ್",
+        "symptoms_en": "Orange pustules on leaves, bean pods affected.",
+        "symptoms_kn": "ಎಲೆಗಳಲ್ಲಿ ಕಿತ್ತಳೆ ಕಲೆಗಳು, ಬೀನು ಕಪ್ ಡ ಭಾಗದ ಮೇಲೆ ಹಾನಿ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Bean Weevil",
+        "name_kn": "ಬೀನು ಕೀಟ",
+        "description_en": "Larvae feed inside pods and beans reducing seed viability.",
+        "description_kn": "ಕೀಟದ ಕಿರಿಯಗಳು ಕಪ್ ಡೆ ಮತ್ತು ಬೀನುಗಳೊಳಗೆ ತಿನ್ನಿ ಬೀಜ ತಾರತಮ್ಯ ಕಡಿಮೆ ಮಾಡುತ್ತವೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Use clean seed and crop rotation.", "kn": "ಶುದ್ಧ ಬೀಜ ಬಳಸಿ ಮತ್ತು ಬೇಳೆ ಪರಿವರ್ತನೆ ಮಾಡಿ." },
+      { "en": "Keep field weed-free and harvest timely.", "kn": "ಹೊಲದಲ್ಲಿ ಹುಲ್ಲಿಲ್ಲದೇ ಇರಿಸಿ ಮತ್ತು ಸಮಯಕ್ಕೆ ಕಾಶಿ ಮಾಡಿ." }
+    ]
+  },
+  {
+    "crop": "Mango / ಮಾವು",
+    "diseases": [
+      {
+        "name_en": "Powdery Mildew",
+        "name_kn": "ಪುಡರಿ ರೋಗ",
+        "symptoms_en": "White powdery patches on leaves and fruits.",
+        "symptoms_kn": "ಎಲೆಗಳು ಮತ್ತು ಹಣ್ಣುಗಳ ಮೇಲೆ ಬಿಳಿ ಪುಡರಿ ಕಲೆಗಳು ಕಾಣಿಸುತ್ತವೆ."
+      },
+      {
+        "name_en": "Anthracnose",
+        "name_kn": "ಆಂಥ್ರಕ್ನೋಸ್",
+        "symptoms_en": "Dark spots on fruits and leaf tips die back.",
+        "symptoms_kn": "ಹಣ್ಣುಗಳ ಮೇಲೆ ಕಪ್ಪು ಕಲೆಗಳು ಮತ್ತು ಎಲೆ ತುದಿಗಳು ಒಣಗುತ್ತವೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Fruit Fly",
+        "name_kn": "ಹಣ್ಣು ಈಗೆ",
+        "description_en": "Lays eggs in fruits; larvae damage pulp.",
+        "description_kn": "ಹಣ್ಣುಗಳಲ್ಲಿ ಮೊಟ್ಟೆ ಹಾಕಿ ಒಳಗಿನ ಭಾಗವನ್ನು ಹಾನಿಗೊಳಿಸುತ್ತದೆ."
+      },
+      {
+        "name_en": "Mango Hopper",
+        "name_kn": "ಮಾವು ಹಾಪರ್",
+        "description_en": "Sucks sap from tender shoots and flowers.",
+        "description_kn": "ಹೊಸ ಚಿಗುರುಗಳು ಮತ್ತು ಹೂಗಳಿಂದ ರಸ ಹೀರುತ್ತದೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Prune trees and remove infected twigs.", "kn": "ಮರಗಳನ್ನು ಕತ್ತರಿಸಿ ಸೋಂಕಿತ ಕೊಂಬೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ." },
+      { "en": "Use neem oil spray to control hoppers.", "kn": "ಹಾಪರ್ ನಿಯಂತ್ರಣಕ್ಕೆ ನೀಮ್ ಎಣ್ಣೆ ಸಿಂಪಡಿಸಿ." }
+    ]
+  },
+  {
+    "crop": "Banana / ಬಾಳೆಹಣ್ಣು",
+    "diseases": [
+      {
+        "name_en": "Panama Wilt",
+        "name_kn": "ಪನಾಮಾ ವಿಲ್ಟ್",
+        "symptoms_en": "Yellowing of lower leaves and plant wilting.",
+        "symptoms_kn": "ಕೆಳಗಿನ ಎಲೆಗಳು ಹಳದಿ ಬಣ್ಣಕ್ಕಾಗುತ್ತವೆ ಮತ್ತು ಗಿಡ ಒಣಗುತ್ತದೆ."
+      },
+      {
+        "name_en": "Sigatoka Leaf Spot",
+        "name_kn": "ಸಿಗಟೋಕಾ ಎಲೆ ಕಲೆ ರೋಗ",
+        "symptoms_en": "Brown streaks on leaves and reduced yield.",
+        "symptoms_kn": "ಎಲೆಗಳಲ್ಲಿ ಕಂದು ರೇಖೆಗಳು ಕಂಡುಬರುತ್ತವೆ ಮತ್ತು ಉತ್ಪಾದನೆ ಕಡಿಮೆ ಆಗುತ್ತದೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Banana Weevil",
+        "name_kn": "ಬಾಳೆ ಕೀಟ",
+        "description_en": "Bores into corm and weakens plant.",
+        "description_kn": "ಕಾಂಡದೊಳಗೆ ತಿನ್ನುವುದರಿಂದ ಗಿಡ ದುರ್ಬಲಗೊಳ್ಳುತ್ತದೆ."
+      },
+      {
+        "name_en": "Aphids",
+        "name_kn": "ಆಫಿಡ್ಸ್",
+        "description_en": "Suck sap and transmit viral diseases.",
+        "description_kn": "ರಸ ಹೀರುತ್ತವೆ ಮತ್ತು ವೈರಲ್ ರೋಗ ಹರಡಿಸುತ್ತವೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Use tissue culture healthy suckers.", "kn": "ಆರೋಗ್ಯಕರ ಟಿಷ್ಯೂ ಕಲ್ಚರ್ ಸಕ್ಕರ್ ಬಳಸಿ." },
+      { "en": "Destroy old infected plants.", "kn": "ಸೋಂಕಿತ ಹಳೆಯ ಗಿಡಗಳನ್ನು ನಾಶಮಾಡಿ." }
+    ]
+  },
+  {
+    "crop": "Papaya / ಪಪ್ಪಾಯಿ",
+    "diseases": [
+      {
+        "name_en": "Papaya Ring Spot Virus",
+        "name_kn": "ರಿಂಗ್ ಸ್ಪಾಟ್ ವೈರಸ್",
+        "symptoms_en": "Ring-shaped spots on fruits and mottled leaves.",
+        "symptoms_kn": "ಹಣ್ಣುಗಳ ಮೇಲೆ ಉಂಗುರದಾಕಾರದ ಕಲೆಗಳು ಮತ್ತು ಎಲೆಗಳಲ್ಲಿ ಬಣ್ಣ ಬದಲಾವಣೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Papaya Mealy Bug",
+        "name_kn": "ಪಪ್ಪಾಯಿ ಮೀಲಿ ಬಗ್",
+        "description_en": "Sucks sap from leaves and stems causing yellowing.",
+        "description_kn": "ಎಲೆ ಮತ್ತು ಕಾಂಡದಿಂದ ರಸ ಹೀರುತ್ತದೆ, ಎಲೆಗಳು ಹಳದಿಯಾಗುತ್ತವೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Use neem-based insecticides.", "kn": "ನೀಮ್ ಆಧಾರಿತ ಕೀಟನಾಶಕ ಬಳಸಿ." },
+      { "en": "Remove and destroy infested plants.", "kn": "ಸೋಂಕಿತ ಗಿಡಗಳನ್ನು ತೆಗೆದುಹಾಕಿ ನಾಶಮಾಡಿ." }
+    ]
+  },
+  {
+    "crop": "Guava / ಸೀಬೆಹಣ್ಣು",
+    "diseases": [
+      {
+        "name_en": "Wilt Disease",
+        "name_kn": "ವಿಲ್ಟ್ ರೋಗ",
+        "symptoms_en": "Leaves yellow, wilt and fall prematurely.",
+        "symptoms_kn": "ಎಲೆಗಳು ಹಳದಿ ಬಣ್ಣಕ್ಕಾಗುತ್ತವೆ ಮತ್ತು ಬೇಗ ಬಿದ್ದುಹೋಗುತ್ತವೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Fruit Fly",
+        "name_kn": "ಹಣ್ಣು ಈಗೆ",
+        "description_en": "Infests ripe fruits causing rotting.",
+        "description_kn": "ಹಣ್ಣಿನಲ್ಲಿ ಮೊಟ್ಟೆ ಹಾಕಿ ಕೊಳೆ ಉಂಟುಮಾಡುತ್ತದೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Collect and destroy fallen fruits.", "kn": "ಬಿದ್ದ ಹಣ್ಣುಗಳನ್ನು ಸಂಗ್ರಹಿಸಿ ನಾಶಮಾಡಿ." },
+      { "en": "Use pheromone traps.", "kn": "ಫೆರೋಮೋನ್ ಬಲೆಗಳನ್ನು ಬಳಸಿ." }
+    ]
+  },
+  {
+    "crop": "Apple / ಸೇಬು",
+    "diseases": [
+      {
+        "name_en": "Apple Scab",
+        "name_kn": "ಸೇಬು ಸ್ಕ್ಯಾಬ್",
+        "symptoms_en": "Olive green spots on fruits and leaves.",
+        "symptoms_kn": "ಹಣ್ಣು ಮತ್ತು ಎಲೆಗಳಲ್ಲಿ ಹಸಿರು ಕಲೆಗಳು ಕಂಡುಬರುತ್ತವೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Codling Moth",
+        "name_kn": "ಕೋಡ್ಲಿಂಗ್ ಚಿಟ್ಟೆ",
+        "description_en": "Larvae tunnel into fruits making holes.",
+        "description_kn": "ಹಣ್ಣಿನೊಳಗೆ ಕೀಟದ ಕಿರಿಯಗಳು ತಿನ್ನಿ ರಂಧ್ರ ಉಂಟುಮಾಡುತ್ತವೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Prune trees regularly.", "kn": "ಮರಗಳನ್ನು ನಿಯಮಿತವಾಗಿ ಕತ್ತರಿಸಿ." },
+      { "en": "Spray sulphur fungicide for scab.", "kn": "ಸ್ಕ್ಯಾಬ್ ನಿಯಂತ್ರಣಕ್ಕೆ ಗಂಧಕದ ಶಿಲೀಂಧ್ರನಾಶಕ ಸಿಂಪಡಿಸಿ." }
+    ]
+  },
+  {
+    "crop": "Pomegranate / ದಾಳಿಂಬೆ",
+    "diseases": [
+      {
+        "name_en": "Bacterial Blight",
+        "name_kn": "ಬ್ಯಾಕ್ಟೀರಿಯಲ್ ಬ್ಲೈಟ್",
+        "symptoms_en": "Dark spots on leaves and fruits, cracking of fruits.",
+        "symptoms_kn": "ಎಲೆ ಮತ್ತು ಹಣ್ಣುಗಳಲ್ಲಿ ಕಪ್ಪು ಕಲೆಗಳು, ಹಣ್ಣುಗಳು ಬಿರುಕು ಬೀಳುತ್ತವೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Fruit Borer",
+        "name_kn": "ಹಣ್ಣು ತಿನ್ನುವ ಕೀಟ",
+        "description_en": "Bores into fruits and spoils quality.",
+        "description_kn": "ಹಣ್ಣುಗಳಲ್ಲಿ ತಿನ್ನುವ ಮೂಲಕ ಗುಣಮಟ್ಟ ಹಾಳುಮಾಡುತ್ತದೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Avoid overhead irrigation.", "kn": "ಮೇಲಿನ ನೀರಾವರಿ ತಪ್ಪಿಸಿ." },
+      { "en": "Apply copper fungicide.", "kn": "ಕಾಪರ್ ಆಧಾರಿತ ಶಿಲೀಂಧ್ರನಾಶಕ ಸಿಂಪಡಿಸಿ." }
+    ]
+  },
+  {
+    "crop": "Grapes / ದ್ರಾಕ್ಷಿ",
+    "diseases": [
+      {
+        "name_en": "Downy Mildew",
+        "name_kn": "ಡೌನಿ ಮಿಲ್ಡ್ಯೂ",
+        "symptoms_en": "Yellow patches on leaves, white growth underneath.",
+        "symptoms_kn": "ಎಲೆಗಳಲ್ಲಿ ಹಳದಿ ಕಲೆಗಳು, ಕೆಳಭಾಗದಲ್ಲಿ ಬಿಳಿ ಹುಳಿಕೆಯ ಬೆಳವಣಿಗೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Thrips",
+        "name_kn": "ಥ್ರಿಪ್ಸ್",
+        "description_en": "Suck sap from young leaves causing curling.",
+        "description_kn": "ಹೊಸ ಎಲೆಗಳಿಂದ ರಸ ಹೀರುತ್ತದೆ ಮತ್ತು ಎಲೆಗಳು ಸುತ್ತಿಕೊಳ್ಳುತ್ತವೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Maintain air circulation in vineyard.", "kn": "ದ್ರಾಕ್ಷಿ ತೋಟದಲ್ಲಿ ಗಾಳಿ ಹರಿವನ್ನು ಕಾಪಾಡಿ." },
+      { "en": "Use recommended fungicides.", "kn": "ಶಿಫಾರಸು ಮಾಡಿದ ಶಿಲೀಂಧ್ರನಾಶಕ ಬಳಸಿ." }
+    ]
+  },
+  {
+    "crop": "Orange / ಕಿತ್ತಳೆ",
+    "diseases": [
+      {
+        "name_en": "Citrus Canker",
+        "name_kn": "ಸಿಟ್ರಸ್ ಕ್ಯಾನ್ಕರ್",
+        "symptoms_en": "Raised brown spots on leaves and fruits.",
+        "symptoms_kn": "ಎಲೆಗಳು ಮತ್ತು ಹಣ್ಣುಗಳಲ್ಲಿ ಎತ್ತಿಕೊಂಡ ಕಂದು ಕಲೆಗಳು ಕಾಣಿಸುತ್ತವೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Leaf Miner",
+        "name_kn": "ಎಲೆ ಮೈನರ್",
+        "description_en": "Larvae tunnel within leaves making zigzag lines.",
+        "description_kn": "ಎಲೆಗಳಲ್ಲಿ ಸಣ್ಣ ರಂಧ್ರ ರೇಖೆಗಳನ್ನು ಮಾಡುತ್ತದೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Spray copper oxychloride.", "kn": "ಕಾಪರ್ ಆಕ್ಸಿಕ್ಲೋರೈಡ್ ಸಿಂಪಡಿಸಿ." },
+      { "en": "Remove infected twigs.", "kn": "ಸೋಂಕಿತ ಕೊಂಬೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ." }
+    ]
+  },
+  {
+    "crop": "Lemon / ನಿಂಬೆ",
+    "diseases": [
+      {
+        "name_en": "Greening Disease",
+        "name_kn": "ಹಳದಿ ನಿಂಬೆ ರೋಗ",
+        "symptoms_en": "Yellowing of veins and small fruits.",
+        "symptoms_kn": "ಎಲೆ ಶಿರೆಗಳು ಹಳದಿಯಾಗುತ್ತವೆ ಮತ್ತು ಹಣ್ಣುಗಳು ಸಣ್ಣವಾಗುತ್ತವೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Citrus Psylla",
+        "name_kn": "ಸಿಟ್ರಸ್ ಸೈಲಾ",
+        "description_en": "Transmits greening bacteria and sucks sap.",
+        "description_kn": "ರಸ ಹೀರುತ್ತದೆ ಮತ್ತು ಗ್ರೀನಿಂಗ್ ಬ್ಯಾಕ್ಟೀರಿಯಾ ಹರಡಿಸುತ್ತದೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Use disease-free saplings.", "kn": "ರೋಗ ರಹಿತ ಚಿಗುರುಗಳನ್ನು ಬಳಸಿ." },
+      { "en": "Spray systemic insecticides.", "kn": "ಸಿಸ್ಟೆಮಿಕ್ ಕೀಟನಾಶಕ ಸಿಂಪಡಿಸಿ." }
+    ]
+  },
+  {
+    "crop": "Watermelon / ಕಲ್ಲಂಗಡಿ",
+    "diseases": [
+      {
+        "name_en": "Fusarium Wilt",
+        "name_kn": "ಫ್ಯೂಸೇರಿಯಮ್ ವಿಲ್ಟ್",
+        "symptoms_en": "Vines wilt suddenly and yellowing of leaves.",
+        "symptoms_kn": "ಬೆಳ್ಳೆಹಣ್ಣುಗಳು ಒಣಗುತ್ತವೆ ಮತ್ತು ಎಲೆಗಳು ಹಳದಿಯಾಗುತ್ತವೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Melon Fruit Fly",
+        "name_kn": "ಮೆಲನ್ ಹಣ್ಣು ಈಗೆ",
+        "description_en": "Damages fruits by laying eggs inside.",
+        "description_kn": "ಹಣ್ಣಿನೊಳಗೆ ಮೊಟ್ಟೆ ಹಾಕಿ ಹಾನಿ ಉಂಟುಮಾಡುತ್ತದೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Rotate crops yearly.", "kn": "ಪ್ರತಿ ವರ್ಷ ಬೆಳೆ ಪರಿವರ್ತನೆ ಮಾಡಿ." },
+      { "en": "Use pheromone traps.", "kn": "ಫೆರೋಮೋನ್ ಬಲೆ ಬಳಸಿ." }
+    ]
+  },
+  {
+    "crop": "Muskmelon / ಕರ್ಬೂಜಾ",
+    "diseases": [
+      {
+        "name_en": "Downy Mildew",
+        "name_kn": "ಡೌನಿ ಮಿಲ್ಡ್ಯೂ",
+        "symptoms_en": "Yellowing and wilting of leaves.",
+        "symptoms_kn": "ಎಲೆಗಳು ಹಳದಿಯಾಗುತ್ತವೆ ಮತ್ತು ಒಣಗುತ್ತವೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Aphids",
+        "name_kn": "ಆಫಿಡ್ಸ್",
+        "description_en": "Suck sap and spread viruses.",
+        "description_kn": "ರಸ ಹೀರುತ್ತವೆ ಮತ್ತು ವೈರಸ್ ಹರಡಿಸುತ್ತವೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Avoid overhead irrigation.", "kn": "ಮೇಲಿನಿಂದ ನೀರಾವರಿ ತಪ್ಪಿಸಿ." },
+      { "en": "Use resistant varieties.", "kn": "ಪ್ರತಿರೋಧಕ ತಳಿಗಳನ್ನು ಬಳಸಿ." }
+    ]
+  },
+  {
+    "crop": "Sapota / ಚಿಕ್ಕು",
+    "diseases": [
+      {
+        "name_en": "Leaf Spot",
+        "name_kn": "ಎಲೆ ಕಲೆ ರೋಗ",
+        "symptoms_en": "Circular brown spots on leaves.",
+        "symptoms_kn": "ಎಲೆಗಳಲ್ಲಿ ವೃತ್ತಾಕಾರದ ಕಂದು ಕಲೆಗಳು ಕಾಣಿಸುತ್ತವೆ."
+      }
+    ],
+    "pests": [
+      {
+        "name_en": "Fruit Borer",
+        "name_kn": "ಹಣ್ಣು ತಿನ್ನುವ ಕೀಟ",
+        "description_en": "Damages ripening fruits internally.",
+        "description_kn": "ಹಣ್ಣು ಒಳಗೆ ತಿನ್ನಿ ಹಾನಿ ಉಂಟುಮಾಡುತ್ತದೆ."
+      }
+    ],
+    "preventiveMeasures": [
+      { "en": "Destroy fallen fruits.", "kn": "ಬಿದ್ದ ಹಣ್ಣುಗಳನ್ನು ನಾಶಮಾಡಿ." },
+      { "en": "Spray neem extract.", "kn": "ನೀಮ್ ಎಕ್ಸ್‌ಟ್ರ್ಯಾಕ್ಟ್ ಸಿಂಪಡಿಸಿ." }
+    ]
+  }
+]
